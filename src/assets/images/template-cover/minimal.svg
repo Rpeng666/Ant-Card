@@ -1,0 +1,11 @@
+<svg width="200" height="280" viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="280" fill="#ffffff" stroke="#f3f4f6" stroke-width="1"/>
+  <text x="100" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="300" letter-spacing="0.1em" fill="#374151">简约模板</text>
+  <rect x="40" y="80" width="120" height="1" fill="#e5e7eb"/>
+  <rect x="60" y="110" width="80" height="10" fill="#e5e7eb" rx="2"/>
+  <rect x="70" y="130" width="60" height="8" fill="#e5e7eb" rx="2"/>
+  <rect x="80" y="150" width="40" height="8" fill="#e5e7eb" rx="2"/>
+  <rect x="40" y="190" width="120" height="1" fill="#e5e7eb"/>
+  <rect x="60" y="220" width="80" height="10" fill="#e5e7eb" rx="2"/>
+  <rect x="70" y="240" width="60" height="8" fill="#e5e7eb" rx="2"/>
+</svg>

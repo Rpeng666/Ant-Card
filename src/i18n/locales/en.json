@@ -1,0 +1,1011 @@
+{
+  "common": {
+    "title": "Ant Card",
+    "subtitle": "AI Driven Resume Editor",
+    "description": "Ant Card is an open source resume editor, free, privacy-first. No registration required, all data stored locally, support data backup and export, ensuring your resume data is always available.",
+    "dashboard": "Dashboard",
+    "edit": "Edit",
+    "delete": "Delete",
+    "newResume": "New Resume",
+    "copy": "Copy"
+  },
+  "home": {
+    "header": {
+      "title": "Ant Card",
+      "startButton": "Get Started",
+      "features": "Features",
+      "pricing": "Pricing",
+      "about": "About",
+      "login": "Login",
+      "register": "Register",
+      "dashboard": "Dashboard"
+    },
+    "hero": {
+      "badge": "Smart Resume Creation",
+      "title": "Make Resume Creation Simple and Smart",
+      "subtitle": "Ant Card uses AI technology to help you quickly create professional resumes. No registration required, free to use, with secure data storage.",
+      "cta": "Get Started",
+      "secondary": "Browse Templates"
+    },
+    "features": {
+      "title": "Why Choose Ant Card?",
+      "subtitle": "We provide an all-in-one resume solution to make your job search journey smoother",
+      "ai": {
+        "badge": "AI Smart Check",
+        "title": "Smart Detection, Professional Advice",
+        "description": "Built-in smart grammar check, automatically identifies inappropriate expressions, provides professional modification suggestions, making your resume more outstanding.",
+        "item1": "Intelligent enhancement",
+        "item1_description": "AI automatically optimizes content expression, making your resume more professional",
+        "item2": "Grammar check",
+        "item2_description": "Automatically detects and corrects grammar and spelling errors"
+      },
+      "storage": {
+        "badge": "Local Storage",
+        "title": "Data Security, Privacy First",
+        "description": "All resume data is fully stored locally, no need to worry about privacy leaks. Support data export backup, ensure your resume data is always available.",
+        "item1": "Local file storage",
+        "item1_description": "Resume data securely stored on your computer's hard drive",
+        "item2": "Multiple export formats",
+        "item2_description": "Support PDF and JSON format export",
+        "item3": "Support data export backup"
+      },
+      "preview": {
+        "badge": "Real-time Preview",
+        "title": "What You See Is What You Get",
+        "item1": "Real-time preview of editing effects",
+        "item2": "Multiple export format support"
+      }
+    },
+    "news": {
+      "label": "News",
+      "content": "New AI Resume Enhancement Feature is Live"
+    },
+    "footer": {
+      "copyright": " 2025 Ant Card. All rights reserved."
+    },
+    "changelog": "Changelog",
+    "cta": {
+      "title": "Start Your New Career Chapter",
+      "description": "Start using Ant Card now to create an impressive resume",
+      "button": "Start Using for Free"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "Is Ant Card free to use?",
+          "answer": "Ant Card is currently free, meeting basic resume creation needs. The open-source version's features will remain unchanged, and the PDF export feature will always be free."
+        },
+        {
+          "question": "Is my resume data secure?",
+          "answer": "Yes, very secure. Ant Card uses local storage, meaning all your data is stored on your own device with no cloud storage, ensuring complete privacy protection."
+        },
+        {
+          "question": "What export formats are supported?",
+          "answer": "We currently support PDF export, ensuring your resume maintains consistent formatting on any device. We plan to support more export formats in the future."
+        },
+        {
+          "question": "How can I sync across devices?",
+          "answer": "We provide JSON configuration export, allowing you to save your resume settings in JSON format, accessible anytime, anywhere, on any device."
+        },
+        {
+          "question": "How customizable is it?",
+          "answer": "We offer rich customization options, including colors, layouts, and more, allowing you to adjust your resume style according to personal preferences and industry requirements."
+        }
+      ]
+    }
+  },
+  "dashboard": {
+    "sidebar": {
+      "resumes": "Resumes",
+      "settings": "Settings",
+      "templates": "Templates",
+      "ai": "AI Config"
+    },
+    "resumes": {
+      "created": "Created At",
+      "synced": "Synced Files",
+      "view": "View",
+      "myResume": "My Resumes",
+      "create": "Create Resume",
+      "newResume": "New Resume",
+      "newResumeDescription": "Create a new resume to get started.",
+      "import": "Import JSON Config",
+      "untitled": "Untitled Resume",
+      "importSuccess": "Configuration imported successfully",
+      "importError": "Import failed, please check the file format",
+      "notice": {
+        "title": "Attention",
+        "description": "It is recommended to configure a resume backup folder in the settings to prevent your data from being lost when the browser cache is cleared",
+        "goToSettings": "Go to Settings"
+      }
+    },
+    "settings": {
+      "title": "Settings",
+      "syncDirectory": {
+        "title": "Sync Directory",
+        "description": "Choose a folder to sync and backup your resumes.",
+        "currentSyncFolder": "Current Sync Folder",
+        "noFolderConfigured": "No folder configured",
+        "changeFolder": "Change Folder",
+        "selectFolder": "Select Folder"
+      },
+      "sync": {
+        "title": "Sync Directory",
+        "description": "Choose a folder to sync and backup your resumes.",
+        "select": "Select Folder"
+      },
+      "ai": {
+        "title": "AI Configuration",
+        "currentModel": "Current Model",
+        "selectModel": "Select Model",
+        "getApiKey": "Get API Key",
+        "doubao": {
+          "title": "Doubao",
+          "description": "Get API key from Volcengine",
+          "apiKey": "Doubao API Key",
+          "modelId": "Model ID"
+        },
+        "deepseek": {
+          "title": "DeepSeek",
+          "description": "Get API key from DeepSeek Platform",
+          "apiKey": "DeepSeek API Key"
+        },
+        "openai": {
+          "title": "OpenAI",
+          "description": "Obtain the API key at OpenAI or an open platform compatible with the OpenAI format",
+          "apiKey": "OpenAI API Key",
+          "modelId": "Model ID",
+          "apiEndpoint": "API Endpoint, example: https://openai.example.org/v1"
+        }
+      }
+    },
+    "templates": {
+      "title": "Templates",
+      "useTemplate": "Use Template",
+      "preview": "Preview",
+      "switchTemplate": "Switch Template",
+      "classic": {
+        "name": "Classic",
+        "description": "Traditional and minimalist layout, suitable for most job applications"
+      },
+      "modern": {
+        "name": "Two Column",
+        "description": "Classic two-column layout, highlighting personal characteristics"
+      },
+      "leftRight": {
+        "name": "Section Title Background",
+        "description": "Distinctive section titles with background color"
+      },
+      "timeline": {
+        "name": "Timeline Layout",
+        "description": "Timeline style, emphasizing chronological order of experiences"
+      }
+    }
+  },
+  "pdfExport": {
+    "button": {
+      "export": "Export",
+      "exportPdf": "Export PDF (Server)",
+      "exportJson": "Export JSON Config",
+      "exporting": "Exporting...",
+      "exportingJson": "Exporting...",
+      "print": "Browser Print"
+    },
+    "toast": {
+      "success": "PDF exported successfully",
+      "error": "PDF export failed",
+      "jsonSuccess": "Configuration exported successfully",
+      "jsonError": "Configuration export failed"
+    }
+  },
+  "previewDock": {
+    "switchTemplate": "Switch Template",
+    "grammarCheck": {
+      "idle": "AI Grammar Check",
+      "checking": "Checking...",
+      "configurePrompt": "Please configure AI Model",
+      "configureButton": "Configure",
+      "errorToast": "Grammar check failed, please try again"
+    },
+    "sidePanel": {
+      "expand": "Expand Side Panel",
+      "collapse": "Collapse Side Panel"
+    },
+    "editPanel": {
+      "expand": "Expand Edit Panel",
+      "collapse": "Collapse Edit Panel"
+    },
+    "github": "GitHub",
+    "backToDashboard": "Back to Dashboard",
+    "copyResume": {
+      "tooltip": "Copy Resume",
+      "success": "Resume copied successfully",
+      "error": "Failed to copy resume"
+    },
+    "export": {
+      "tooltip": "Export Resume",
+      "pdf": "Export PDF",
+      "json": "Export JSON",
+      "print": "Print"
+    }
+  },
+  "workbench": {
+    "sidePanel": {
+      "layout": {
+        "title": "Layout",
+        "addCustomSection": "Add Custom Section"
+      },
+      "theme": {
+        "title": "Theme Color",
+        "custom": "Custom"
+      },
+      "typography": {
+        "title": "Typography",
+        "font": {
+          "title": "Font",
+          "sans": "Sans-serif",
+          "serif": "Serif",
+          "mono": "Monospace"
+        },
+        "lineHeight": {
+          "title": "Line Height",
+          "normal": "Default",
+          "relaxed": "Relaxed",
+          "loose": "Loose"
+        },
+        "baseFontSize": {
+          "title": "Base Font Size"
+        },
+        "headerSize": {
+          "title": "Section Header Size"
+        },
+        "subheaderSize": {
+          "title": "Subsection Header Size"
+        }
+      },
+      "spacing": {
+        "title": "Spacing",
+        "pagePadding": {
+          "title": "Page Padding"
+        },
+        "sectionSpacing": {
+          "title": "Section Spacing"
+        },
+        "paragraphSpacing": {
+          "title": "Paragraph Spacing"
+        }
+      },
+      "mode": {
+        "title": "Mode",
+        "useIconMode": {
+          "title": "Icon Mode"
+        },
+        "centerSubtitle": {
+          "title": "Center Subtitle"
+        }
+      }
+    },
+    "basicPanel": {
+      "title": "Profile",
+      "avatar": "Avatar",
+      "basicField": "Basic",
+      "customField": "Custom",
+      "layout": "Align",
+      "customFields": {
+        "placeholders": {
+          "label": "Label",
+          "value": "Value"
+        },
+        "addButton": "Add Custom Field"
+      },
+      "basicFields": {
+        "name": "Name",
+        "title": "Title",
+        "email": "Email",
+        "phone": "Phone",
+        "website": "Website",
+        "location": "Location",
+        "birthDate": "Birth Date",
+        "employementStatus": "Employ"
+      },
+      "fieldVisibility": {
+        "show": "Show",
+        "hide": "Hide"
+      },
+      "githubContributions": "GitHub Contributions"
+    },
+    "experiencePanel": {
+      "title": "Work Experience",
+      "addButton": "Add Work Experience",
+      "defaultProject": {
+        "company": "Tech Company Ltd.",
+        "position": "Senior Frontend Engineer",
+        "date": "2020-Present",
+        "details": "Responsible for core product development..."
+      },
+      "placeholders": {
+        "company": "company name",
+        "position": "job title",
+        "date": "employment period",
+        "details": "job responsibilities and achievements"
+      }
+    },
+    "experienceItem": {
+      "labels": {
+        "company": "Company Name",
+        "position": "Position",
+        "date": "Employment Period",
+        "details": "Job Responsibilities"
+      },
+      "placeholders": {
+        "company": "Enter company name",
+        "position": "e.g., Frontend Engineer",
+        "date": "e.g., 2020-Present",
+        "details": "Describe your responsibilities and achievements in this role"
+      },
+      "buttons": {
+        "edit": "Edit",
+        "save": "Save",
+        "cancel": "Cancel",
+        "delete": "Delete"
+      },
+      "visibility": {
+        "show": "Show",
+        "hide": "Hide"
+      }
+    },
+    "projectPanel": {
+      "title": "Project Experience",
+      "addButton": "Add Project",
+      "defaultProject": {
+        "name": "Personal Project",
+        "description": "Project Description",
+        "role": "Responsibilities",
+        "date": "2023.01 - 2023.06"
+      },
+      "placeholders": {
+        "name": "Project Name",
+        "description": "Briefly describe project background and goals",
+        "role": "Your role and responsibilities in the project",
+        "date": "Project time range",
+        "link": "Project link "
+      }
+    },
+    "projectItem": {
+      "labels": {
+        "name": "Project Name",
+        "role": "Project Role",
+        "date": "Project Period",
+        "description": "Project Description",
+        "technologies": "Tech Stack",
+        "link": "Project Link"
+      },
+      "placeholders": {
+        "name": "Enter project name",
+        "role": "Your role in the project",
+        "date": "Project time range",
+        "description": "Briefly describe project background and goals",
+        "technologies": "Technologies and tools used",
+        "link": "Project link"
+      },
+      "buttons": {
+        "edit": "Edit",
+        "save": "Save",
+        "cancel": "Cancel",
+        "delete": "Delete"
+      },
+      "visibility": {
+        "show": "Show",
+        "hide": "Hide"
+      }
+    },
+    "educationPanel": {
+      "title": "Education",
+      "addButton": "Add Education",
+      "defaultProject": {
+        "school": "School Name",
+        "degree": "Degree",
+        "major": "Major",
+        "date": "2020.09 - 2024.06"
+      },
+      "placeholders": {
+        "school": "Enter school name",
+        "degree": "Select degree",
+        "major": "Enter major",
+        "date": "Enter study period"
+      }
+    },
+    "educationItem": {
+      "labels": {
+        "school": "School Name",
+        "degree": "Degree",
+        "major": "Major",
+        "date": "Study Period",
+        "description": "Description",
+        "gpa": "GPA",
+        "location": "Location",
+        "startDate": "Start Date",
+        "endDate": "End Date"
+      },
+      "placeholders": {
+        "school": "Enter school name",
+        "degree": "Select degree",
+        "major": "Enter major",
+        "date": "Enter study time range",
+        "description": "Enter school description",
+        "gpa": "Enter GPA",
+        "location": "Enter location"
+      },
+      "buttons": {
+        "edit": "Edit",
+        "save": "Save",
+        "cancel": "Cancel",
+        "delete": "Delete"
+      },
+      "visibility": {
+        "show": "Show",
+        "hide": "Hide"
+      }
+    }
+  },
+  "field": {
+    "selectDate": "Select Date",
+    "enterYear": "Enter Year"
+  },
+  "richEditor": {
+    "bold": "Bold",
+    "italic": "Italic",
+    "underline": "Underline",
+    "textColor": "Text Color",
+    "backgroundColor": "Background Color",
+    "alignLeft": "Align Left",
+    "alignCenter": "Align Center",
+    "alignRight": "Align Right",
+    "alignJustify": "Justify",
+    "bulletList": "Bullet List",
+    "orderedList": "Ordered List",
+    "undo": "Undo",
+    "redo": "Redo",
+    "aiPolish": "AI Polish",
+    "paragraph": "Paragraph",
+    "heading1": "Heading 1",
+    "heading2": "Heading 2",
+    "heading3": "Heading 3",
+    "colors": {
+      "black": "Black",
+      "darkGray": "Dark Gray",
+      "gray": "Gray",
+      "red": "Red",
+      "orange": "Orange",
+      "orangeYellow": "Orange Yellow",
+      "yellow": "Yellow",
+      "yellowGreen": "Yellow Green",
+      "green": "Green",
+      "cyan": "Cyan",
+      "lightBlue": "Light Blue",
+      "blue": "Blue",
+      "purple": "Purple",
+      "magenta": "Magenta",
+      "pink": "Pink"
+    }
+  },
+  "iconSelector": {
+    "all": "All",
+    "searchPlaceholder": "Search icons...",
+    "noMatchingIcons": "No matching icons found",
+    "tryOtherKeywords": "Please try other search keywords",
+    "selectOtherCategory": "Please select another category",
+    "categories": {
+      "personal": "Personal Info",
+      "education": "Education",
+      "experience": "Work Experience",
+      "skills": "Skills",
+      "languages": "Languages",
+      "projects": "Projects",
+      "achievements": "Achievements",
+      "hobbies": "Hobbies",
+      "social": "Social Media",
+      "others": "Others"
+    },
+    "icons": {
+      "user": "User",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "website": "Website",
+      "mobile": "Mobile",
+      "education": "Education",
+      "school": "School",
+      "major": "Major",
+      "library": "Library",
+      "scholarship": "Scholarship",
+      "work": "Work",
+      "company": "Company",
+      "office": "Office",
+      "dateRange": "Date Range",
+      "workTime": "Work Time",
+      "programming": "Programming",
+      "system": "System",
+      "database": "Database",
+      "terminal": "Terminal",
+      "techStack": "Tech Stack",
+      "language": "Language",
+      "speaking": "Speaking",
+      "communication": "Communication",
+      "project": "Project",
+      "branch": "Branch",
+      "release": "Release",
+      "target": "Target",
+      "trophy": "Trophy",
+      "medal": "Medal",
+      "star": "Star",
+      "interest": "Interest",
+      "music": "Music",
+      "art": "Art",
+      "photography": "Photography",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "profile": "Profile",
+      "review": "Review",
+      "filter": "Filter",
+      "link": "Link",
+      "salary": "Salary",
+      "idea": "Idea",
+      "send": "Send",
+      "share": "Share",
+      "settings": "Settings",
+      "search": "Search",
+      "flag": "Flag",
+      "bookmark": "Bookmark",
+      "thumbsUp": "Thumbs Up",
+      "skill": "Skill"
+    }
+  },
+  "aiPolishDialog": {
+    "title": "AI Polish",
+    "description": {
+      "polishing": "Polishing your content...",
+      "finished": "Content has been optimized, please check the result"
+    },
+    "error": {
+      "configRequired": "Please configure AI model first",
+      "polishFailed": "Polish failed",
+      "applied": "Polish content applied"
+    },
+    "content": {
+      "original": "Original Content",
+      "polished": "Polished Content"
+    },
+    "button": {
+      "regenerate": "Regenerate",
+      "generating": "Generating...",
+      "apply": "Apply Content"
+    }
+  },
+  "photoConfig": {
+    "title": "Photo Settings",
+    "description": "Customize your resume photo",
+    "upload": {
+      "title": "Online Link",
+      "dragHint": "Drag and drop or click to upload image",
+      "sizeLimit": "Image size must not exceed 2MB",
+      "typeLimit": "Please upload an image file",
+      "urlPlaceholder": "Enter image link",
+      "invalidUrl": "Invalid image URL or inaccessible, please try another image link",
+      "timeout": "Loading timeout",
+      "loadError": "Failed to load image"
+    },
+    "config": {
+      "aspectRatio": "Aspect Ratio",
+      "size": "Size",
+      "width": "Width",
+      "height": "Height",
+      "border-radius": "Border Radius",
+      "widthPlaceholder": "Width",
+      "heightPlaceholder": "Height",
+      "ratios": {
+        "1:1": "1:1 Square",
+        "4:3": "4:3 Landscape",
+        "3:4": "3:4 Portrait",
+        "16:9": "16:9 Widescreen",
+        "custom": "Custom"
+      },
+      "borderRadius": {
+        "none": "None",
+        "medium": "Medium",
+        "full": "Circle",
+        "custom": "Custom",
+        "customPlaceholder": "Custom border radius"
+      }
+    },
+    "actions": {
+      "reset": "Reset",
+      "close": "Close",
+      "cancel": "Cancel",
+      "removePhoto": "Remove Photo"
+    }
+  },
+  "templates": {
+    "switchTemplate": "Switch Template"
+  },
+  "themeModal": {
+    "delete": {
+      "title": "Are you sure you want to delete?",
+      "description": "Are you sure you want to delete {title}?",
+      "confirmText": "Delete",
+      "cancelText": "Cancel"
+    }
+  },
+  "cardEditor": {
+    "sidePanel": {
+      "templateSelection": "Template Selection",
+      "templateDescription": "Choose card design template",
+      "layoutSettings": "Layout Settings",
+      "layoutDescription": "Adjust card size and ratio",
+      "aspectRatio": "Aspect Ratio",
+      "styleSettings": "Style Settings",
+      "styleDescription": "Customize card appearance and font",
+      "fontFamily": "Font Family",
+      "fontSize": "Font Size",
+      "textAlign": "Text Alignment",
+      "advancedSettings": "Advanced Settings",
+      "advancedDescription": "More personalization options",
+      "displayOptions": "Display Options",
+      "showAuthor": "Show Author",
+      "showDate": "Show Date",
+      "showQRCode": "Show QR Code",
+      "showPageNum": "Show Page Number",
+      "showTextCount": "Show Text Count",
+      "textProcessing": "Long Text Processing",
+      "enableTextSplit": "Enable Text Splitting",
+      "textSplitDescription": "Automatically split into multiple cards when content is too long",
+      "maxCharsPerCard": "Character Limit Per Card",
+      "characters": "characters",
+      "charLimitTip": "Recommended 150-300 characters to ensure appropriate card content",
+      "splitMode": "Split Mode",
+      "splitByParagraph": "Split by Paragraph",
+      "splitBySentence": "Split by Sentence",
+      "splitByCharacter": "Split by Character Count",
+      "splitModeTip": "Choose appropriate split mode to maintain content integrity",
+      "splitPreview": "Split Preview",
+      "executeSplit": "Execute Split",
+      "willSplitInto": "Will split into",
+      "cards": "cards",
+      "averageLength": "Average per card approximately",
+      "originalLength": "Original text length:",
+      "noSplitNeeded": "Current content doesn't need splitting",
+      "multiCardMerge": "Multi-card Merge",
+      "mergeNow": "Merge Now",
+      "detected": "Detected",
+      "mergeRecommendation": "Recommend merging into single card after disabling split",
+      "mergeKeepsContent": "All content will be preserved after merging",
+      "fontOptions": {
+        "sans": "Sans Serif",
+        "serif": "Serif",
+        "mono": "Monospace"
+      },
+      "alignOptions": {
+        "left": "Left",
+        "center": "Center",
+        "right": "Right"
+      }
+    },
+    "preview": {
+      "title": "Preview",
+      "totalCards": "Total",
+      "dragToView": "Drag to view",
+      "export": {
+        "tooltip": "Export",
+        "png": "Export as PNG",
+        "jpeg": "Export as JPEG",
+        "svg": "Export as SVG",
+        "pdf": "Export as PDF",
+        "copyPng": "Copy as PNG"
+      },
+      "exportSuccess": {
+        "png": "PNG export successful",
+        "jpeg": "JPEG export successful",
+        "svg": "SVG export successful",
+        "pdf": "PDF export successful",
+        "pngBatch": "Successfully exported {count} PNG files",
+        "jpegBatch": "Successfully exported {count} JPEG files",
+        "pdfBatch": "Successfully exported PDF with {count} cards",
+        "copied": "Copied to clipboard"
+      },
+      "exportError": {
+        "png": "PNG export failed",
+        "jpeg": "JPEG export failed",
+        "svg": "SVG export failed",
+        "pdf": "PDF export failed",
+        "copy": "Copy failed"
+      },
+      "noCard": "Please select a card to preview"
+     }
+   },
+   "language": {
+      "switch": "Switch Language",
+      "chinese": "中文",
+      "english": "English"
+    },
+    "landing": {
+      "hero": {
+        "smartCard": "Smart Card",
+        "makingTool": "Creation Tool",
+        "description": "Easily create professional and beautiful personal cards with real-time editing, multiple templates, and smart layouts. Make your personal presentation outstanding.",
+        "startMaking": "Start Creating",
+        "githubRepo": "Github Repository"
+      },
+      "about": {
+        "title": "About",
+        "description": "Ant Card is a professional personal card creation tool dedicated to providing users with an easy-to-use and powerful card design experience. We believe everyone should have a beautiful personal showcase card, whether for business occasions or personal branding. Through intelligent design systems and rich template libraries, card creation becomes simple and fun."
+      },
+      "features": {
+        "title": "Powerful",
+        "coreFeatures": "Core Features",
+        "smartDesign": {
+          "title": "Smart Card Design",
+          "description": "AI-driven intelligent layout system that automatically optimizes card design, making your personal presentation more professional and beautiful."
+        },
+        "realTimeEdit": {
+          "title": "Real-time Edit Preview",
+          "description": "WYSIWYG editing experience with real-time card effect preview, making your creative process more intuitive and efficient."
+        },
+        "diverseTemplates": {
+          "title": "Diverse Templates",
+          "description": "Rich card template library covering business, creative, minimalist and other styles to meet different scenario needs."
+        },
+        "featureList": {
+          "darkLight": "Dark/Light Theme",
+          "dragResize": "Drag to Resize",
+          "multiTemplate": "Multiple Templates",
+          "realTimePreview": "Real-time Preview",
+          "smartLayout": "Smart Layout",
+          "responsive": "Responsive Design",
+          "oneClickExport": "One-click Export",
+          "cloudSave": "Cloud Save",
+          "cleanBeautiful": "Clean & Beautiful"
+        }
+      },
+      "services": {
+        "title": "Our Services",
+        "subtitle": "Professional Services Focused on User Experience",
+        "codeCollaboration": {
+          "title": "Code Collaboration",
+          "description": "Support real-time collaborative editing for multiple users, making team card creation more efficient and convenient."
+        },
+        "projectManagement": {
+          "title": "Project Management",
+          "description": "Complete project management functions, from template selection to final export, fully controllable throughout the process."
+        },
+        "taskAutomation": {
+          "title": "Smart Automation",
+          "description": "AI-driven automated processes that intelligently optimize layouts and content to improve creation efficiency."
+        },
+        "clientCentric": {
+          "title": "Client-Centric",
+          "subtitle": "Professional and Considerate Service Philosophy",
+          "description": "We always prioritize user needs and provide the highest quality card creation experience."
+        }
+      },
+      "howItWorks": {
+        "title": "How It Works",
+        "subtitle": "Four Simple Steps to Create Professional Cards",
+        "steps": {
+          "selectTemplate": {
+            "title": "Select Template",
+            "description": "Choose a design that suits your style from our rich template library"
+          },
+          "editContent": {
+            "title": "Edit Content",
+            "description": "Easily edit card content with support for rich text and multimedia"
+          },
+          "adjustLayout": {
+            "title": "Adjust Layout",
+            "description": "Freely adjust layout and styles to create personalized cards"
+          },
+          "exportShare": {
+            "title": "Export & Share",
+            "description": "Multiple export formats, easily share to major platforms"
+          }
+        }
+      },
+      "cta": {
+        "title": "All Your Ideas & Concepts In One Interface",
+        "subtitle": "Professional card creation tool that perfectly presents your creativity. Whether it's business cards, personal introductions, or creative designs, all can be easily achieved.",
+        "primaryButton": "Request a Demo",
+        "secondaryButton": "View All Features"
+      },
+      "testimonials": {
+        "title": "Discover Why People Love This Platform",
+        "subtitle": "Reviews and feedback from real users",
+        "reviews": [
+          {
+            "name": "John Doe",
+            "username": "@johndoe",
+            "comment": "This card creation tool is awesome! Clean interface, powerful features, helped me quickly create professional business cards.",
+            "rating": 5
+          },
+          {
+            "name": "Jane Smith",
+            "username": "@janesmith",
+            "comment": "The templates are very beautiful, editing experience is great, and export quality is excellent. Highly recommend!",
+            "rating": 5
+          },
+          {
+            "name": "Mike Johnson",
+            "username": "@mikejohnson",
+            "comment": "As a designer, I'm very satisfied with the layout and color scheme of this tool. Clients love the cards I made.",
+            "rating": 5
+          },
+          {
+            "name": "Sarah Wilson",
+            "username": "@sarahwilson",
+            "comment": "Simple operation, comprehensive features. Especially the AI smart optimization feature saved me a lot of time.",
+            "rating": 5
+          }
+        ]
+      },
+      "team": {
+        "title": "Our Professional Team",
+        "subtitle": "Focus on Innovation, Pursue Excellence",
+        "description": "We are a passionate team dedicated to providing users with the best card creation experience.",
+        "members": [
+          {
+            "name": "Emma Smith",
+            "position": "Product Manager",
+            "bio": "Focused on user experience design and product innovation"
+          },
+          {
+            "name": "David Chen",
+            "position": "Technical Director",
+            "bio": "Responsible for technical architecture and system optimization"
+          },
+          {
+            "name": "Lisa Wang",
+            "position": "Design Lead",
+            "bio": "Responsible for visual design and user experience"
+          },
+          {
+            "name": "Tom Johnson",
+            "position": "Frontend Developer",
+            "bio": "Focused on frontend development and user interaction"
+          }
+        ]
+      },
+      "pricing": {
+        "title": "Choose the Plan That's Right for You",
+        "subtitle": "Flexible Pricing to Meet Different Needs",
+        "plans": [
+          {
+            "title": "Free",
+            "description": "Basic features for individual users",
+            "buttonText": "Get Started",
+            "benefits": [
+              "5 card projects",
+              "Basic template library",
+              "Standard export formats",
+              "Community support",
+              "Local storage"
+            ]
+          },
+          {
+            "title": "Professional",
+            "description": "Complete features for professional users",
+            "buttonText": "Upgrade to Professional",
+            "benefits": [
+              "Unlimited card projects",
+              "Premium template library",
+              "Advanced export formats",
+              "Priority technical support",
+              "Cloud sync",
+              "AI smart optimization"
+            ],
+            "popular": true
+          },
+          {
+            "title": "Enterprise",
+            "description": "Enterprise solutions for team collaboration",
+            "buttonText": "Contact Sales",
+            "benefits": [
+              "Team collaboration features",
+              "Custom branding",
+              "API access",
+              "Dedicated customer service",
+              "Data security guarantee",
+              "Customization services"
+            ]
+          }
+        ],
+        "guarantee": {
+          "title": "Get Unlimited Access",
+          "description": "Upgrade now to unlock all premium features"
+        },
+        "popular": "Most Popular",
+        "monthly": "/month"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "We've compiled some common questions",
+        "questions": [
+          {
+            "question": "Is this template free?",
+            "answer": "Yes, this is a completely free open-source template that you can use and modify freely."
+          },
+          {
+            "question": "What export formats are supported?",
+            "answer": "Currently supports PNG, JPEG, SVG, PDF and other mainstream formats, with more format support coming in the future."
+          },
+          {
+            "question": "How is data security guaranteed?",
+            "answer": "All data is stored on your local device, we do not collect or store any of your personal information."
+          },
+          {
+            "question": "Can I customize templates?",
+            "answer": "Yes, we provide flexible customization features where you can adjust colors, fonts, layouts and other aspects."
+          },
+          {
+            "question": "Is there technical support?",
+            "answer": "We provide community support, you can submit issues through GitHub Issues and we will respond as soon as possible."
+          }
+        ],
+        "stillHaveQuestions": "Still have questions?",
+        "contactUs": "Contact Us"
+      },
+      "statistics": {
+        "users": {
+          "quantity": "2.7K+",
+          "description": "Users"
+        },
+        "subscribers": {
+          "quantity": "1.8K+",
+          "description": "Subscribers"
+        },
+        "downloads": {
+          "quantity": "112",
+          "description": "Downloads"
+        },
+        "products": {
+          "quantity": "4",
+          "description": "Products"
+        }
+      },
+      "footer": {
+        "followUs": "Follow Us",
+        "platforms": {
+          "title": "Platform Support",
+          "web": "Web",
+          "mobile": "Mobile",
+          "desktop": "Desktop"
+        },
+        "about": {
+          "title": "About",
+          "features": "Features",
+          "pricing": "Pricing",
+          "faq": "FAQ"
+        },
+        "community": {
+          "title": "Community",
+          "youtube": "YouTube",
+          "discord": "Discord",
+          "twitch": "Twitch"
+        },
+        "socialLinks": {
+          "github": "GitHub",
+          "twitter": "Twitter",
+          "dribbble": "Dribbble"
+        },
+        "copyright": "© 2024 Ant Card Team. All rights reserved.",
+        "poweredBy": "Built with Next.js/React"
+      },
+      "navbar": {
+        "features": "Features",
+        "testimonials": "Testimonials",
+        "pricing": "Pricing",
+        "faq": "FAQ",
+        "cardProject": "Card Project"
+      }
+    }
+  }

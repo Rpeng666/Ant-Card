@@ -1,0 +1,769 @@
+{
+  "aiPolishDialog": {
+    "description": {
+      "finished": "コンテンツが最適化されました。結果を確認してください",
+      "polishing": "コンテンツを磨き中..."
+    },
+    "error": {
+      "applied": "ポーランド語コンテンツが適用されました",
+      "configRequired": "最初に AI モデルを設定してください",
+      "polishFailed": "ポーランド語は失敗しました"
+    }
+  },
+  "cardEditor": {
+    "preview": {
+      "export": {
+        "png": "PNG としてエクスポート",
+        "svg": "SVGとしてエクスポート",
+        "tooltip": "輸出"
+      },
+      "exportError": {
+        "copy": "コピーに失敗しました",
+        "jpeg": "JPEGエクスポートに失敗しました",
+        "pdf": "PDF エクスポートに失敗しました",
+        "png": "PNG エクスポートに失敗しました",
+        "svg": "SVG エクスポートに失敗しました"
+      },
+      "exportSuccess": {
+        "copied": "クリップボードにコピーされました",
+        "jpeg": "JPEGエクスポートに成功しました",
+        "jpegBatch": "{count} 個の JPEG ファイルが正常にエクスポートされました",
+        "pdf": "PDF エクスポートに成功しました",
+        "pdfBatch": "{count} 枚のカードを含む PDF が正常にエクスポートされました",
+        "png": "PNG エクスポートに成功しました",
+        "pngBatch": "{count} 個の PNG ファイルが正常にエクスポートされました",
+        "svg": "SVGエクスポートに成功しました"
+      },
+      "noCard": "プレビューするカードを選択してください",
+      "title": "プレビュー",
+      "totalCards": "合計"
+    },
+    "sidePanel": {
+      "advancedDescription": "より多くのパーソナライズオプション",
+      "advancedSettings": "詳細設定",
+      "alignOptions": {
+        "center": "中心",
+        "left": "左",
+        "right": "右"
+      },
+      "aspectRatio": "アスペクト比",
+      "averageLength": "カードあたりの平均はおよそ",
+      "cards": "カード",
+      "charLimitTip": "適切なカード内容を保証するために 150 ～ 300 文字を推奨",
+      "characters": "キャラクター",
+      "detected": "検出されました",
+      "displayOptions": "表示オプション",
+      "enableTextSplit": "テキスト分割を有効にする",
+      "executeSplit": "スプリットの実行",
+      "fontFamily": "フォントファミリー",
+      "fontOptions": {
+        "mono": "等空間",
+        "sans": "サンセリフ",
+        "serif": "セリフ"
+      },
+      "fontSize": "フォントサイズ",
+      "layoutDescription": "カードのサイズと比率を調整する",
+      "layoutSettings": "レイアウト設定",
+      "maxCharsPerCard": "カードごとの文字数制限",
+      "mergeKeepsContent": "すべてのコンテンツは結合後も保持されます",
+      "mergeNow": "今すぐ結合",
+      "mergeRecommendation": "分割を無効にした後、単一のカードに結合することをお勧めします",
+      "multiCardMerge": "複数カードの結合",
+      "noSplitNeeded": "現在のコンテンツは分割する必要がありません",
+      "originalLength": "元のテキストの長さ:",
+      "showAuthor": "著者を表示",
+      "showDate": "表示日",
+      "showPageNum": "ページ番号を表示",
+      "showQRCode": "QRコードを表示",
+      "showTextCount": "テキスト数を表示",
+      "splitByCharacter": "文字数で分割",
+      "splitByParagraph": "段落ごとに分割",
+      "splitBySentence": "文ごとに分割",
+      "splitMode": "分割モード",
+      "splitModeTip": "コンテンツの整合性を維持するには、適切な分割モードを選択してください",
+      "splitPreview": "分割プレビュー",
+      "styleDescription": "カードの外観とフォントをカスタマイズする",
+      "styleSettings": "スタイル設定",
+      "templateDescription": "カードのデザインテンプレートを選択してください",
+      "templateSelection": "テンプレートの選択",
+      "textAlign": "テキストの配置",
+      "textProcessing": "長いテキストの処理",
+      "textSplitDescription": "コンテンツが長すぎる場合は、自動的に複数のカードに分割されます",
+      "willSplitInto": "に分かれます"
+    }
+  },
+  "common": {
+    "copy": "コピー",
+    "dashboard": "ダッシュボード",
+    "delete": "消去",
+    "description": "Ant Card は、オープンソースの履歴書エディタであり、無料でプライバシーを第一に考えています。\n登録は不要で、すべてのデータはローカルに保存され、データのバックアップとエクスポートをサポートしているため、履歴書データを常に利用できるようになります。",
+    "edit": "編集",
+    "newResume": "新しい履歴書",
+    "subtitle": "AI ドリブンの履歴書エディター",
+    "title": "アリのカード"
+  },
+  "dashboard": {
+    "resumes": {
+      "create": "履歴書の作成",
+      "created": "作成日",
+      "import": "JSON 構成をインポートする",
+      "importError": "インポートに失敗しました。ファイル形式を確認してください",
+      "importSuccess": "構成が正常にインポートされました",
+      "myResume": "私の履歴書",
+      "newResume": "新しい履歴書",
+      "newResumeDescription": "始めるには、新しい履歴書を作成してください。",
+      "notice": {
+        "description": "ブラウザのキャッシュがクリアされたときにデータが失われないように、設定で再開バックアップ フォルダーを構成することをお勧めします。",
+        "goToSettings": "設定に移動",
+        "title": "注意"
+      },
+      "synced": "同期されたファイル",
+      "untitled": "無題の履歴書",
+      "view": "ビュー"
+    },
+    "settings": {
+      "ai": {
+        "currentModel": "現行モデル",
+        "deepseek": {
+          "apiKey": "DeepSeek API キー",
+          "description": "DeepSeek プラットフォームから API キーを取得する",
+          "title": "ディープシーク"
+        },
+        "doubao": {
+          "apiKey": "Doubao APIキー",
+          "description": "Volcengine から API キーを取得する",
+          "modelId": "モデルID",
+          "title": "豆宝"
+        },
+        "getApiKey": "APIキーの取得",
+        "openai": {
+          "apiEndpoint": "API エンドポイント、例: https://openai.example.org/v1",
+          "apiKey": "OpenAI APIキー",
+          "description": "OpenAIまたはOpenAI形式と互換性のあるオープンプラットフォームでAPIキーを取得します。",
+          "modelId": "モデルID",
+          "title": "OpenAI"
+        },
+        "selectModel": "モデルの選択",
+        "title": "AIの構成"
+      },
+      "sync": {
+        "description": "履歴書を同期してバックアップするフォルダーを選択します。",
+        "select": "フォルダーの選択",
+        "title": "同期ディレクトリ"
+      },
+      "syncDirectory": {
+        "changeFolder": "フォルダーの変更",
+        "currentSyncFolder": "現在の同期フォルダー",
+        "description": "履歴書を同期してバックアップするフォルダーを選択します。",
+        "noFolderConfigured": "フォルダが設定されていません",
+        "selectFolder": "フォルダーの選択",
+        "title": "同期ディレクトリ"
+      },
+      "title": "設定"
+    },
+    "sidebar": {
+      "ai": "AI構成",
+      "resumes": "履歴書",
+      "settings": "設定",
+      "templates": "テンプレート"
+    },
+    "templates": {
+      "classic": {
+        "description": "伝統的かつシンプルなレイアウトで、ほとんどの業務用途に適しています",
+        "name": "クラシック"
+      },
+      "leftRight": {
+        "description": "背景色付きの特徴的なセクション タイトル",
+        "name": "セクションタイトルの背景"
+      },
+      "modern": {
+        "description": "個人の特徴を強調するクラシックな 2 列レイアウト",
+        "name": "2 列"
+      },
+      "preview": "プレビュー",
+      "switchTemplate": "スイッチテンプレート",
+      "timeline": {
+        "description": "経験の時系列順を強調したタイムライン スタイル",
+        "name": "タイムラインのレイアウト"
+      },
+      "title": "テンプレート",
+      "useTemplate": "テンプレートを使用する"
+    }
+  },
+  "field": {
+    "enterYear": "年を入力してください",
+    "selectDate": "日付を選択してください"
+  },
+  "home": {
+    "changelog": "変更履歴",
+    "cta": {
+      "button": "無料で使い始める",
+      "description": "今すぐ Ant Card を使用して印象的な履歴書を作成しましょう",
+      "title": "新しいキャリアを始める章"
+    },
+    "faq": {
+      "items[0]": {
+        "answer": "Ant Card は現在無料で、基本的な履歴書作成のニーズに応えます。\nオープンソース バージョンの機能に変更はなく、PDF エクスポート機能は常に無料です。",
+        "question": "アントカードは無料で使えますか？"
+      },
+      "items[1]": {
+        "answer": "はい、非常に安全です。 \nAnt Card はローカル ストレージを使用します。つまり、すべてのデータはクラウド ストレージを使用せずに自分のデバイスに保存され、完全なプライバシー保護が保証されます。",
+        "question": "私の履歴書のデータは安全ですか?"
+      },
+      "items[2]": {
+        "answer": "現在、PDF エクスポートをサポートしているため、履歴書はどのデバイスでも一貫した形式を維持できます。\n将来的には、さらに多くのエクスポート形式をサポートする予定です。",
+        "question": "どのようなエクスポート形式がサポートされていますか?"
+      },
+      "items[3]": {
+        "answer": "JSON 構成のエクスポートを提供しているため、履歴書設定を JSON 形式で保存でき、いつでも、どこでも、どのデバイスでもアクセスできます。",
+        "question": "デバイス間で同期するにはどうすればよいですか?"
+      },
+      "items[4]": {
+        "answer": "色、レイアウトなどを含む豊富なカスタマイズ オプションを提供しており、個人の好みや業界の要件に応じて履歴書のスタイルを調整できます。",
+        "question": "どれくらいカスタマイズ可能ですか?"
+      },
+      "title": "よくある質問"
+    },
+    "features": {
+      "ai": {
+        "badge": "AIスマートチェック",
+        "description": "内蔵のスマートな文法チェックにより、不適切な表現を自動的に特定し、専門的な修正提案を提供して、履歴書をより優れたものにします。",
+        "item1": "インテリジェントな機能強化",
+        "item1_description": "AI が内容表現を自動的に最適化し、履歴書をよりプロフェッショナルなものにします",
+        "item2": "文法チェック",
+        "item2_description": "文法やスペルの間違いを自動的に検出して修正します",
+        "title": "スマートな検出、専門的なアドバイス"
+      },
+      "preview": {
+        "badge": "リアルタイムプレビュー",
+        "description": "",
+        "item1": "編集効果のリアルタイムプレビュー",
+        "item2": "複数のエクスポート形式のサポート",
+        "title": "見たものがそのまま手に入る"
+      },
+      "storage": {
+        "badge": "ローカルストレージ",
+        "description": "すべての履歴書データは完全にローカルに保存されるため、プライバシー漏洩を心配する必要はありません。\nデータ エクスポートのバックアップをサポートし、履歴書データを常に利用できるようにします。",
+        "item1": "ローカルファイルストレージ",
+        "item1_description": "コンピュータのハードドライブに安全に保存されたデータを再開します",
+        "item2": "複数のエクスポート形式",
+        "item2_description": "PDF および JSON 形式のエクスポートをサポート",
+        "item3": "データエクスポートバックアップをサポート",
+        "title": "データセキュリティ、プライバシー第一"
+      },
+      "subtitle": "就職活動をよりスムーズにするためのオールインワンの履歴書ソリューションを提供します",
+      "title": "アントカードを選ぶ理由"
+    },
+    "footer": {
+      "copyright": "2025 アリ カード。\n無断転載を禁じます。"
+    },
+    "header": {
+      "about": "について",
+      "dashboard": "ダッシュボード",
+      "features": "特徴",
+      "login": "ログイン",
+      "pricing": "価格設定",
+      "register": "登録する",
+      "startButton": "始めましょう",
+      "title": "アリのカード"
+    },
+    "hero": {
+      "badge": "スマートな履歴書作成",
+      "cta": "始めましょう",
+      "secondary": "テンプレートを参照する",
+      "subtitle": "Ant Card は AI テクノロジーを使用して、職務経歴書を迅速に作成できるようにします。\n登録不要、無料で使用でき、安全なデータストレージを備えています。",
+      "title": "履歴書作成をシンプルかつスマートに"
+    },
+    "news": {
+      "content": "新しい AI 履歴書拡張機能が稼働中",
+      "label": "ニュース"
+    }
+  },
+  "iconSelector": {
+    "all": "全て",
+    "categories": {
+      "achievements": "業績",
+      "education": "教育",
+      "experience": "実務経験",
+      "hobbies": "趣味",
+      "languages": "言語",
+      "others": "その他",
+      "personal": "個人情報",
+      "projects": "プロジェクト",
+      "skills": "スキル",
+      "social": "ソーシャルメディア"
+    },
+    "icons": {
+      "address": "住所",
+      "art": "美術",
+      "bookmark": "ブックマーク",
+      "branch": "支店",
+      "communication": "コミュニケーション",
+      "company": "会社",
+      "database": "データベース",
+      "dateRange": "日付範囲",
+      "education": "教育",
+      "email": "電子メール",
+      "facebook": "フェイスブック",
+      "filter": "フィルター",
+      "flag": "フラグ",
+      "idea": "アイデア",
+      "instagram": "インスタグラム",
+      "interest": "興味",
+      "language": "言語",
+      "library": "図書館",
+      "link": "リンク",
+      "linkedin": "リンクトイン",
+      "major": "選考科目",
+      "medal": "メダル",
+      "mobile": "携帯",
+      "music": "音楽",
+      "office": "オフィス",
+      "phone": "電話",
+      "photography": "写真",
+      "profile": "プロフィール",
+      "programming": "プログラミング",
+      "project": "プロジェクト",
+      "release": "リリース",
+      "review": "レビュー",
+      "salary": "給料",
+      "scholarship": "奨学金",
+      "school": "学校",
+      "search": "検索",
+      "send": "送信",
+      "settings": "設定",
+      "share": "共有",
+      "skill": "スキル",
+      "speaking": "話し中",
+      "star": "星",
+      "system": "システム",
+      "target": "ターゲット",
+      "techStack": "技術スタック",
+      "terminal": "ターミナル",
+      "thumbsUp": "いいぞ",
+      "trophy": "トロフィー",
+      "twitter": "ツイッター",
+      "user": "ユーザー",
+      "website": "Webサイト",
+      "work": "仕事",
+      "workTime": "作業時間"
+    },
+    "noMatchingIcons": "一致するアイコンが見つかりませんでした",
+    "searchPlaceholder": "検索アイコン...",
+    "selectOtherCategory": "別のカテゴリを選択してください",
+    "tryOtherKeywords": "他の検索キーワードをお試しください"
+  },
+  "landing": {
+    "about": {
+      "description": "Ant Card は、使いやすく強力なカード デザイン エクスペリエンスをユーザーに提供することに特化した、プロフェッショナルな個人用カード作成ツールです。\n私たちは、ビジネスシーンでも個人のブランディングでも、誰もが美しい個人的なショーケースカードを持っているべきだと考えています。\nインテリジェントなデザイン システムと豊富なテンプレート ライブラリにより、カードの作成が簡単かつ楽しくなります。",
+      "title": "について"
+    },
+    "features": {
+      "coreFeatures": "コア機能",
+      "diverseTemplates": {
+        "description": "ビジネス、クリエイティブ、ミニマリスト、その他のスタイルをカバーし、さまざまなシナリオのニーズを満たす豊富なカード テンプレート ライブラリ。",
+        "title": "多様なテンプレート"
+      },
+      "featureList": {
+        "cleanBeautiful": "クリーン",
+        "cloudSave": "クラウド保存",
+        "darkLight": "ダーク/ライトのテーマ",
+        "dragResize": "ドラッグしてサイズを変更する",
+        "multiTemplate": "複数のテンプレート",
+        "oneClickExport": "ワンクリックでエクスポート",
+        "realTimePreview": "リアルタイムプレビュー",
+        "responsive": "レスポンシブデザイン",
+        "smartLayout": "スマートなレイアウト"
+      },
+      "realTimeEdit": {
+        "description": "リアルタイムのカード効果プレビューを備えた WYSIWYG 編集エクスペリエンスにより、クリエイティブなプロセスがより直観的かつ効率的になります。",
+        "title": "リアルタイム編集プレビュー"
+      },
+      "smartDesign": {
+        "description": "AI を活用したインテリジェントなレイアウト システムにより、カード デザインが自動的に最適化され、個人的なプレゼンテーションがよりプロフェッショナルで美しくなります。",
+        "title": "スマートカードの設計"
+      },
+      "title": "強力な"
+    },
+    "hero": {
+      "description": "リアルタイム編集、複数のテンプレート、スマートなレイアウトを使用して、プロフェッショナルで美しい個人カードを簡単に作成できます。\nあなたの個人的なプレゼンテーションを際立ったものにしましょう。",
+      "githubRepo": "Githubリポジトリ",
+      "makingTool": "作成ツール",
+      "smartCard": "スマートカード",
+      "startMaking": "作成を開始する"
+    },
+    "navbar": {
+      "cardProject": "カードプロジェクト",
+      "faq": "よくある質問",
+      "features": "特徴",
+      "pricing": "価格設定",
+      "testimonials": "お客様の声"
+    }
+  },
+  "language": {
+    "chinese": "中国語",
+    "english": "英語",
+    "switch": "言語を切り替える"
+  },
+  "pdfExport": {
+    "button": {
+      "export": "輸出",
+      "exportJson": "JSON 構成のエクスポート",
+      "exportPdf": "PDFのエクスポート（サーバー）",
+      "exporting": "エクスポート中...",
+      "exportingJson": "エクスポート中...",
+      "print": "ブラウザ印刷"
+    },
+    "toast": {
+      "error": "PDF エクスポートに失敗しました",
+      "jsonError": "構成のエクスポートに失敗しました",
+      "jsonSuccess": "構成は正常にエクスポートされました",
+      "success": "PDF が正常にエクスポートされました"
+    }
+  },
+  "photoConfig": {
+    "actions": {
+      "cancel": "キャンセル",
+      "close": "近い",
+      "reset": "リセット"
+    },
+    "config": {
+      "aspectRatio": "アスペクト比",
+      "border-radius": "境界半径",
+      "borderRadius": {
+        "custom": "カスタム",
+        "customPlaceholder": "カスタム境界線の半径",
+        "full": "丸",
+        "medium": "中くらい",
+        "none": "なし"
+      },
+      "height": "身長",
+      "heightPlaceholder": "身長",
+      "ratios": {
+        "16:9": "16:9 ワイドスクリーン",
+        "1:1": "1:1 正方形",
+        "3:4": "3:4 ポートレート",
+        "4:3": "4:3 風景",
+        "custom": "カスタム"
+      },
+      "size": "サイズ",
+      "width": "幅",
+      "widthPlaceholder": "幅"
+    },
+    "description": "履歴書の写真をカスタマイズする",
+    "title": "写真の設定",
+    "upload": {
+      "dragHint": "ドラッグアンドドロップまたはクリックして画像をアップロードします",
+      "invalidUrl": "画像 URL が無効かアクセスできません。別の画像リンクをお試しください。",
+      "loadError": "画像の読み込みに失敗しました",
+      "sizeLimit": "画像サイズは 2MB を超えてはなりません",
+      "timeout": "ロードタイムアウト",
+      "title": "オンラインリンク",
+      "typeLimit": "画像ファイルをアップロードしてください",
+      "urlPlaceholder": "画像リンクを入力してください"
+    }
+  },
+  "previewDock": {
+    "backToDashboard": "ダッシュボードに戻る",
+    "copyResume": {
+      "error": "履歴書のコピーに失敗しました",
+      "success": "履歴書が正常にコピーされました",
+      "tooltip": "履歴書のコピー"
+    },
+    "editPanel": {
+      "collapse": "編集パネルを折りたたむ",
+      "expand": "編集パネルを展開する"
+    },
+    "export": {
+      "json": "JSONのエクスポート",
+      "pdf": "PDFをエクスポート",
+      "print": "印刷する",
+      "tooltip": "輸出再開"
+    },
+    "github": "GitHub",
+    "grammarCheck": {
+      "checking": "チェック中...",
+      "configureButton": "設定する",
+      "configurePrompt": "AIモデルを設定してください",
+      "errorToast": "文法チェックに失敗しました。もう一度お試しください。",
+      "idle": "AI文法チェック"
+    },
+    "sidePanel": {
+      "collapse": "サイドパネルを折りたたむ",
+      "expand": "サイドパネルを展開する"
+    },
+    "switchTemplate": "スイッチテンプレート"
+  },
+  "richEditor": {
+    "aiPolish": "AIポリッシュ",
+    "alignCenter": "中央揃え",
+    "alignJustify": "正当化する",
+    "alignLeft": "左揃え",
+    "alignRight": "右揃え",
+    "backgroundColor": "背景色",
+    "bold": "大胆な",
+    "bulletList": "箇条書きリスト",
+    "colors": {
+      "black": "黒",
+      "blue": "青",
+      "cyan": "シアン",
+      "darkGray": "ダークグレー",
+      "gray": "グレー",
+      "green": "緑",
+      "lightBlue": "水色",
+      "magenta": "マゼンタ",
+      "orange": "オレンジ",
+      "orangeYellow": "オレンジイエロー",
+      "pink": "ピンク",
+      "purple": "紫",
+      "red": "赤",
+      "yellow": "黄色",
+      "yellowGreen": "黄緑"
+    },
+    "heading1": "見出し1",
+    "heading2": "見出し2",
+    "heading3": "見出し 3",
+    "italic": "イタリック",
+    "orderedList": "順序付きリスト",
+    "paragraph": "段落",
+    "redo": "やり直し",
+    "textColor": "文字の色",
+    "underline": "下線",
+    "undo": "元に戻す"
+  },
+  "templates": {
+    "switchTemplate": "スイッチテンプレート"
+  },
+  "themeModal": {
+    "delete": {
+      "cancelText": "キャンセル",
+      "confirmText": "消去",
+      "description": "{title} を削除してもよろしいですか?",
+      "title": "削除してもよろしいですか?"
+    }
+  },
+  "workbench": {
+    "backToDashboard": "",
+    "basicPanel": {
+      "avatar": "アバター",
+      "basicField": "基本",
+      "basicFields": {
+        "birthDate": "生年月日",
+        "email": "電子メール",
+        "employementStatus": "雇用する",
+        "location": "位置",
+        "name": "名前",
+        "phone": "電話",
+        "title": "タイトル",
+        "website": "Webサイト"
+      },
+      "customField": "カスタム",
+      "customFields": {
+        "addButton": "カスタムフィールドの追加",
+        "placeholders": {
+          "label": "ラベル",
+          "value": "価値"
+        }
+      },
+      "fieldVisibility": {
+        "hide": "隠れる",
+        "show": "見せる"
+      },
+      "githubContributions": "GitHub への貢献",
+      "layout": "整列",
+      "layoutCenter": "",
+      "layoutLeft": "",
+      "layoutRight": "",
+      "title": "プロフィール"
+    },
+    "educationItem": {
+      "buttons": {
+        "cancel": "キャンセル",
+        "delete": "消去",
+        "edit": "編集",
+        "save": "保存"
+      },
+      "labels": {
+        "date": "学習期間",
+        "degree": "程度",
+        "description": "説明",
+        "endDate": "終了日",
+        "gpa": "GPA",
+        "location": "位置",
+        "major": "選考科目",
+        "school": "学校名",
+        "startDate": "開始日"
+      },
+      "placeholders": {
+        "date": "学習時間範囲を入力してください",
+        "degree": "学位を選択してください",
+        "description": "学校の説明を入力してください",
+        "gpa": "GPAを入力してください",
+        "location": "場所を入力してください",
+        "major": "専攻を入力してください",
+        "school": "学校名を入力してください"
+      },
+      "visibility": {
+        "hide": "隠れる",
+        "show": "見せる"
+      }
+    },
+    "educationPanel": {
+      "addButton": "教育を追加する",
+      "defaultProject": {
+        "date": "2020.09 - 2024.06",
+        "degree": "程度",
+        "major": "選考科目",
+        "school": "学校名"
+      },
+      "placeholders": {
+        "date": "学習期間を入力してください",
+        "degree": "学位を選択してください",
+        "major": "専攻を入力してください",
+        "school": "学校名を入力してください"
+      },
+      "title": "教育"
+    },
+    "experienceItem": {
+      "buttons": {
+        "cancel": "キャンセル",
+        "delete": "消去",
+        "edit": "編集",
+        "save": "保存"
+      },
+      "labels": {
+        "company": "会社名",
+        "date": "雇用期間",
+        "details": "職務上の責任",
+        "position": "位置"
+      },
+      "placeholders": {
+        "company": "会社名を入力してください",
+        "date": "例: 2020年から現在",
+        "details": "この役割におけるあなたの責任と成果について説明してください",
+        "position": "例: フロントエンドエンジニア"
+      },
+      "visibility": {
+        "hide": "隠れる",
+        "show": "見せる"
+      }
+    },
+    "experiencePanel": {
+      "addButton": "職歴を追加する",
+      "defaultProject": {
+        "company": "株式会社テックカンパニー",
+        "date": "2020年〜現在",
+        "details": "基幹製品の開発を担当していただきます...",
+        "position": "シニアフロントエンドエンジニア"
+      },
+      "placeholders": {
+        "company": "会社名",
+        "date": "雇用期間",
+        "details": "仕事の責任と成果",
+        "position": "役職"
+      },
+      "title": "実務経験"
+    },
+    "projectItem": {
+      "buttons": {
+        "cancel": "キャンセル",
+        "delete": "消去",
+        "edit": "編集",
+        "save": "保存"
+      },
+      "labels": {
+        "date": "事業期間",
+        "description": "プロジェクトの説明",
+        "link": "プロジェクトリンク",
+        "name": "プロジェクト名",
+        "role": "プロジェクトの役割",
+        "technologies": "技術スタック"
+      },
+      "placeholders": {
+        "date": "プロジェクトの期間",
+        "description": "プロジェクトの背景と目標を簡単に説明する",
+        "link": "プロジェクトリンク",
+        "name": "プロジェクト名を入力してください",
+        "role": "プロジェクトにおけるあなたの役割",
+        "technologies": "使用されるテクノロジーとツール"
+      },
+      "visibility": {
+        "hide": "隠れる",
+        "show": "見せる"
+      }
+    },
+    "projectPanel": {
+      "addButton": "プロジェクトの追加",
+      "defaultProject": {
+        "date": "2023.01 - 2023.06",
+        "description": "プロジェクトの説明",
+        "name": "個人プロジェクト",
+        "role": "責任",
+        "technologies": ""
+      },
+      "placeholders": {
+        "date": "プロジェクトの期間",
+        "description": "プロジェクトの背景と目標を簡単に説明する",
+        "link": "プロジェクトリンク",
+        "name": "プロジェクト名",
+        "role": "プロジェクトにおけるあなたの役割と責任",
+        "technologies": ""
+      }
+    },
+    "sidePanel": {
+      "layout": {
+        "addCustomSection": "カスタムセクションの追加",
+        "title": "レイアウト"
+      },
+      "mode": {
+        "centerSubtitle": {
+          "title": "センターサブタイトル"
+        },
+        "title": "モード",
+        "useIconMode": {
+          "title": "アイコンモード"
+        }
+      },
+      "spacing": {
+        "pagePadding": {
+          "title": "ページパディング"
+        },
+        "paragraphSpacing": {
+          "title": "段落の間隔"
+        },
+        "sectionSpacing": {
+          "title": "セクションの間隔"
+        },
+        "title": "間隔"
+      },
+      "theme": {
+        "custom": "カスタム",
+        "title": "テーマカラー"
+      },
+      "typography": {
+        "baseFontSize": {
+          "title": "基本フォントサイズ"
+        },
+        "font": {
+          "mono": "等空間",
+          "sans": "サンセリフ",
+          "serif": "セリフ",
+          "title": "フォント"
+        },
+        "headerSize": {
+          "title": "セクションヘッダーのサイズ"
+        },
+        "lineHeight": {
+          "loose": "ゆるい",
+          "normal": "デフォルト",
+          "relaxed": "リラックスした",
+          "title": "線の高さ"
+        },
+        "subheaderSize": {
+          "title": "サブセクションヘッダーのサイズ"
+        },
+        "title": "タイポグラフィ"
+      }
+    }
+  }
+}

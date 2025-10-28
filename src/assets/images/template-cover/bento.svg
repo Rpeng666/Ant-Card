@@ -1,0 +1,45 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="200" height="200" fill="#f8fafc" rx="12"/>
+
+  <!-- 顶部栏 -->
+  <rect x="20" y="20" width="160" height="20" rx="4" fill="#e2e8f0"/>
+
+  <!-- 标题 -->
+  <rect x="30" y="25" width="60" height="4" rx="2" fill="#64748b"/>
+  <rect x="130" y="25" width="40" height="4" rx="2" fill="#94a3b8"/>
+
+  <!-- 网格布局 -->
+  <!-- 第一行 -->
+  <rect x="20" y="50" width="75" height="50" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="105" y="50" width="75" height="50" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- 第二行 -->
+  <rect x="20" y="110" width="50" height="40" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="75" y="110" width="50" height="40" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="130" y="110" width="50" height="40" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- 内容元素 -->
+  <!-- 左上格子 -->
+  <rect x="30" y="60" width="20" height="4" rx="2" fill="#475569"/>
+  <rect x="30" y="70" width="50" height="3" rx="1.5" fill="#94a3b8"/>
+  <rect x="30" y="78" width="45" height="3" rx="1.5" fill="#94a3b8"/>
+
+  <!-- 右上格子 -->
+  <rect x="115" y="60" width="25" height="4" rx="2" fill="#475569"/>
+  <circle cx="155" cy="65" r="3" fill="#ef4444"/>
+  <rect x="115" y="70" width="45" height="3" rx="1.5" fill="#94a3b8"/>
+  <rect x="115" y="78" width="40" height="3" rx="1.5" fill="#94a3b8"/>
+
+  <!-- 左下格子 -->
+  <rect x="30" y="120" width="15" height="3" rx="1.5" fill="#475569"/>
+  <rect x="30" y="130" width="35" height="3" rx="1.5" fill="#94a3b8"/>
+
+  <!-- 中下格子 -->
+  <rect x="85" y="120" width="15" height="3" rx="1.5" fill="#475569"/>
+  <rect x="85" y="130" width="30" height="3" rx="1.5" fill="#94a3b8"/>
+
+  <!-- 右下格子 -->
+  <rect x="140" y="120" width="15" height="3" rx="1.5" fill="#475569"/>
+  <rect x="140" y="130" width="25" height="3" rx="1.5" fill="#94a3b8"/>
+</svg>

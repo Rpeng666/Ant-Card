@@ -1,0 +1,784 @@
+{
+  "aiPolishDialog": {
+    "button": {
+      "apply": "Fa nsɛm a ɛwɔ mu no di dwuma .",
+      "generating": "Generating...",
+      "regenerate": "Regenerate ."
+    },
+    "content": {
+      "original": "Mfitiase nsɛm a ɛwɔ mu .",
+      "polished": "Nsɛm a ɛwɔ mu a wɔayɛ no fɛfɛɛfɛ ."
+    },
+    "description": {
+      "finished": "Wɔayɛ emu nsɛm no yiye, yɛsrɛ wo hwɛ nea ebefi mu aba .",
+      "polishing": "Polishing wo nsɛm no..."
+    },
+    "error": {
+      "applied": "Poland Nsɛm a Wɔde Di Dwuma .",
+      "configRequired": "Yɛsrɛ wo hyehyɛ AI Model no kan .",
+      "polishFailed": "Polish dii nkogu ."
+    },
+    "title": "AI Polish ."
+  },
+  "cardEditor": {
+    "preview": {
+      "dragToView": "Twe kɔ view so .",
+      "export": {
+        "copyPng": "Kɔpi sɛ PNG .",
+        "jpeg": "Fa kɔ amannɔne sɛ JPEG .",
+        "pdf": "Fa kɔ amannɔne sɛ PDF .",
+        "png": "Fa kɔ amannɔne sɛ PNG .",
+        "svg": "Fa kɔ amannɔne sɛ SVG .",
+        "tooltip": "Mane kɔ"
+      },
+      "exportError": {
+        "copy": "Copy no adi nkogu .",
+        "jpeg": "JPEG a wɔde kɔ amannɔne no adi nkogu .",
+        "pdf": "PDF a wɔde kɔ amannɔne no adi nkogu .",
+        "png": "PNG a wɔde kɔ amannɔne no adi nkogu .",
+        "svg": "SVG a wɔde kɔ amannɔne no adi nkogu ."
+      },
+      "exportSuccess": {
+        "copied": "a wɔayɛ ho mfonini wɔ Clipboard so .",
+        "jpeg": "JPEG a wɔde kɔ amannɔne no yɛ yiye .",
+        "jpegBatch": "Nneɛma a wɔde kɔ amannɔne {count} jpeg fael ahorow no yiye .",
+        "pdf": "PDF a wɔde kɔ amannɔne no di yiye .",
+        "pdfBatch": "PDF a wɔde {count} kaad ahorow akɔ amannɔne no yiye .",
+        "png": "PNG a wɔde kɔ amannɔne no di yiye .",
+        "pngBatch": "Exported {count} PNG fael ahorow no yiye .",
+        "svg": "SVG a wɔde kɔ amannɔne no di yiye ."
+      },
+      "noCard": "Yɛsrɛ wo paw kaad bi a wopɛ sɛ wuhu .",
+      "title": "Preview .",
+      "totalCards": "Ne nyinaa"
+    },
+    "sidePanel": {
+      "advancedDescription": "Nneɛma a Wobɛpaw a Ɛyɛ Ankorankoro Pii .",
+      "advancedSettings": "Nsiesiei a ɛkɔ akyiri .",
+      "alignOptions": {
+        "center": "Mfimfini",
+        "left": "Benkum",
+        "right": "Nifa"
+      },
+      "aspectRatio": "Afã ratio .",
+      "averageLength": "Sɛ wɔkyekyem pɛpɛɛpɛ a, wɔ kaad biara mu bɛyɛ .",
+      "cards": "Kaad .",
+      "charLimitTip": "Nkyerɛwde 150-300 a wɔkamfo kyerɛ na ama wɔahwɛ ahu sɛ kaad no mu nsɛm a ɛfata .",
+      "characters": "Nkyerɛwde .",
+      "detected": "Wɔahu .",
+      "displayOptions": "Kyerɛ Nneɛma a Wobɛpaw .",
+      "enableTextSplit": "Enable Text Splitting .",
+      "executeSplit": "Execute Split .",
+      "fontFamily": "Font abusua .",
+      "fontOptions": {
+        "mono": "Monospace .",
+        "sans": "Sans Serif .",
+        "serif": "Serif ."
+      },
+      "fontSize": "Nkyerɛwde no kɛse .",
+      "layoutDescription": "Yɛ nsakrae wɔ kaad no kɛse ne ne nsusuwii mu .",
+      "layoutSettings": "Nhyehyɛe nhyehyɛe .",
+      "maxCharsPerCard": "Nkyerɛwde anohyeto wɔ kaad biara so .",
+      "mergeKeepsContent": "Wɔbɛkora emu nsɛm nyinaa so bere a wɔaka abom awie no .",
+      "mergeNow": "Merge seesei .",
+      "mergeRecommendation": "Kamfo kyerɛ sɛ menka bom nyɛ kaad biako bere a madi dɛm no mu mpaapaemu akyi .",
+      "multiCardMerge": "Multi-Card Merge .",
+      "noSplitNeeded": "Mprempren nsɛm a ɛwɔ mu no nhia mpaapaemu .",
+      "originalLength": "Mfitiase nkyerɛwee no tenten:",
+      "showAuthor": "Hwɛ ɔkyerɛwfo no .",
+      "showDate": "Kyerɛ da a wɔde kyerɛ .",
+      "showPageNum": "Kyerɛ krataafa no nɔma .",
+      "showQRCode": "Kyerɛ QR koodu .",
+      "showTextCount": "Kyerɛ nsɛm dodow .",
+      "splitByCharacter": "Mpaapaemu denam nkyerɛwde dodow so .",
+      "splitByParagraph": "Wɔakyekyɛ mu wɔ nkyekyem mu .",
+      "splitBySentence": "Wɔapaapae mu denam kasamu so .",
+      "splitMode": "Split mode .",
+      "splitModeTip": "Paw split mode a ɛfata na ama content no mudi mu kura akɔ so .",
+      "splitPreview": "Split preview .",
+      "styleDescription": "Customize card a ɛyɛ fɛ ne font .",
+      "styleSettings": "Style nhyehyɛe .",
+      "templateDescription": "Paw kaad nhyehyɛe ho nhyehyɛe .",
+      "templateSelection": "Template a wɔpaw .",
+      "textAlign": "Nsɛm a wɔahyehyɛ no pɛpɛɛpɛ .",
+      "textProcessing": "Nsɛm a wɔde kyerɛw nsɛm tenten .",
+      "textSplitDescription": "Automatically split mu multiple cards bere a emu nsɛm no ware dodo .",
+      "willSplitInto": "bɛpaapae mu ayɛ ."
+    }
+  },
+  "common": {
+    "copy": "Kɔpi .",
+    "dashboard": "Dashboard .",
+    "delete": "Pepa",
+    "description": "Ant Card yɛ open source resume editor, free, privacy-first. \nNhwehwɛmu biara nni hɔ a ɛho hia, data nyinaa a wɔkora so wɔ mpɔtam hɔ, boa data backup ne export, hwɛ hu sɛ wo resume data no wɔ hɔ bere nyinaa.",
+    "edit": "Sa mu",
+    "newResume": "Resume foforo .",
+    "subtitle": "AI a ɛma obi kɔ ne ho so no, ɔde ne ho hyɛ mu.",
+    "title": "Ant Kaad ."
+  },
+  "dashboard": {
+    "resumes": {
+      "create": "Yɛ resume .",
+      "created": "Wɔyɛɛ no ​​wɔ .",
+      "import": "Fa json config ba .",
+      "importError": "Import failed, yɛsrɛ wo hwɛ fael no format .",
+      "importSuccess": "Nsiesiei a wɔde aba yiye .",
+      "myResume": "Me resumes .",
+      "newResume": "Resume foforo .",
+      "newResumeDescription": "Yɛ resume foforo na ama woafi ase.",
+      "notice": {
+        "description": "Wɔkamfo kyerɛ sɛ wobɛhyehyɛ resume backup folda bi wɔ nhyehyɛe no mu na amma wo data no anyera bere a wɔayi browser cache no .",
+        "goToSettings": "Kɔ nhyehyɛe so .",
+        "title": "Adwene nsisoɔ"
+      },
+      "synced": "Fael ahorow a ɛwɔ synced mu .",
+      "untitled": "Resume a wɔmfa nkyerɛwde nhyɛ mu .",
+      "view": "Hwɛ"
+    },
+    "settings": {
+      "ai": {
+        "currentModel": "Mprempren nhwɛso .",
+        "deepseek": {
+          "apiKey": "Deepseek API Key .",
+          "description": "Nya API Key fi Deepseek Platform so .",
+          "title": "Deepseek ."
+        },
+        "doubao": {
+          "apiKey": "Doubao API safoa no .",
+          "description": "Nya API Key fi Volcengine .",
+          "modelId": "Nhwɛsode ID .",
+          "title": "Doubao ."
+        },
+        "getApiKey": "Nya API Key .",
+        "openai": {
+          "apiEndpoint": "API awiei, nhwɛso: https://openai.example.org/v1.",
+          "apiKey": "OpenAi API safoa no .",
+          "description": "Nya API safoa no wɔ Openai anaasɛ open platform a ɛne OpenAi format no hyia .",
+          "modelId": "Nhwɛsode ID .",
+          "title": "OpenAi ."
+        },
+        "selectModel": "Paw Model .",
+        "title": "AI Nsiesiei ."
+      },
+      "sync": {
+        "description": "Paw folda bi a wode bɛyɛ sync na backup wo resumes.",
+        "select": "Paw folda .",
+        "title": "Sync Directory ."
+      },
+      "syncDirectory": {
+        "changeFolder": "Sesa folda .",
+        "currentSyncFolder": "Mprempren Sync Folda .",
+        "description": "Paw folda bi a wode bɛyɛ sync na backup wo resumes.",
+        "noFolderConfigured": "Folda biara nni hɔ a wɔahyehyɛ .",
+        "selectFolder": "Paw folda .",
+        "title": "Sync Directory ."
+      },
+      "title": "Nsiesiei ."
+    },
+    "sidebar": {
+      "ai": "AI Config .",
+      "resumes": "san fi ase .",
+      "settings": "Nsiesiei .",
+      "templates": "Nhwɛsode ahorow ."
+    },
+    "templates": {
+      "classic": {
+        "description": "Atetesɛm ne minimalist nhyehyɛe, a ɛfata ma adwuma mu nhyehyɛe dodow no ara .",
+        "name": "Classic ."
+      },
+      "leftRight": {
+        "description": "Ɔfã asɛmti ahorow a ɛda nsow a ɛwɔ akyi kɔla .",
+        "name": "Ɔfa Asɛmti Akyi Nsɛm ."
+      },
+      "modern": {
+        "description": "Classic two-column layout, a ɛtwe adwene si ankorankoro su ahorow so .",
+        "name": "Adum abien ."
+      },
+      "preview": "Nhwɛso a ɛwɔ hɔ ansa na ɛreba .",
+      "switchTemplate": "Sesa nsusuwso .",
+      "timeline": {
+        "description": "Bere nhyehyɛe kwan so, a esi osuahu ahorow a wɔahyehyɛ no nnidiso nnidiso so dua .",
+        "name": "Bere nhyehyɛe nhyehyɛe ."
+      },
+      "title": "Nhwɛsode ahorow .",
+      "useTemplate": "Fa nsusuwso di dwuma ."
+    }
+  },
+  "field": {
+    "enterYear": "Hyɛn afe no mu .",
+    "selectDate": "Paw Date ."
+  },
+  "home": {
+    "changelog": "Nsakraeɛ ho nsɛm .",
+    "cta": {
+      "button": "Fi ase de di dwuma kwa .",
+      "description": "Fi ase de Ant Card di dwuma mprempren de yɛ adwuma a ɛyɛ nwonwa a wode bɛsan ayɛ adwuma .",
+      "title": "Fi ase wo adwuma foforo ti ."
+    },
+    "faq": {
+      "items[0]": {
+        "answer": "Mprempren ANT kaad no yɛ nea wontua hwee, na edi mfitiase resume adebɔ ahiade ahorow ho dwuma. \nOpen-source version no features no rensesa, na PDF export feature no bɛyɛ kwa bere nyinaa.",
+        "question": "So Ant Card nni hɔ a wobetumi de adi dwuma?"
+      },
+      "items[1]": {
+        "answer": "Yiw, ahobammɔ kɛse. \nAnt Card de local storage di dwuma, a ɛkyerɛ sɛ wo data nyinaa sie w’ankasa wo device so a cloud storage biara nni mu, na ɛma wo ho yɛ kokoam ahobammɔ koraa.",
+        "question": "So me resume data no yɛ nea ahobammɔ wom?"
+      },
+      "items[2]": {
+        "answer": "Mprempren yɛboa PDF export, hwɛ hu sɛ wo resume no hwɛ ma formatting a ɛkɔ so daa wɔ device biara so. \nYɛayɛ nhyehyɛɛ sɛ yɛbɛboa export formats pii daakye.",
+        "question": "Nneɛma a wɔde kɔ amannɔne ho nhyehyɛe bɛn na wɔboa?"
+      },
+      "items[3]": {
+        "answer": "Yɛde JSON Configuration Export ma, ɛma wo kwan ma wode wo resume nhyehyɛe sie wɔ JSON format mu, bere biara, baabiara, wɔ afiri biara so.",
+        "question": "Ɔkwan bɛn so na metumi ayɛ sync wɔ mfiri ahorow so?"
+      },
+      "items[4]": {
+        "answer": "Yɛde customization options a ɛyɛ fɛ ma, a kɔla, nhyehyɛe, ne nea ɛkeka ho ka ho, a ɛma wutumi sesa wo resume style no sɛnea w’ankasa wopɛ ne nnwuma mu ahwehwɛde ahorow te.",
+        "question": "Ɛyɛ nea wotumi sesa no dɛn?"
+      },
+      "title": "Nsɛm a Wɔtaa Bisa ."
+    },
+    "features": {
+      "ai": {
+        "badge": "AI Smart Check .",
+        "description": "Smart Grammar check a wɔasisi no, a ɛkyerɛ nsɛmfua a ɛmfata ankasa, de adwumayɛfo nsakrae ho nyansahyɛ ahorow ma, na ɛma wo resume no da nsow kɛse.",
+        "item1": "Nhumu a nyansa wom .",
+        "item1_description": "AI no ara ma content expression yɛ optimise, na ɛma wo resume no yɛ professional pii .",
+        "item2": "Kasa Mmara Nhwehwɛmu .",
+        "item2_description": "Ɔno ankasa hu kasa mmara ne nkyerɛwde mu mfomso ahorow na ɛteɛteɛ .",
+        "title": "Smart detection, adwumayɛfo afotu ."
+      },
+      "preview": {
+        "badge": "Bere ankasa mu nhwɛso .",
+        "description": "",
+        "item1": "Bere ankasa mu nhwɛso a ɛfa editing effects ho .",
+        "item2": "Nneɛma pii a wɔde kɔ amannɔne no mmoa .",
+        "title": "Nea wuhu no yɛ nea wunya ."
+      },
+      "storage": {
+        "badge": "Nneɛma a wɔkora so wɔ mpɔtam hɔ .",
+        "description": "Wɔde resume data nyinaa sie wɔ mpɔtam hɔ koraa, ɛho nhia sɛ wobɛhaw wo ho wɔ kokoam nsɛm a ɛretu ho. \nBoa data export backup, hwɛ sɛ wo resume data no wɔ hɔ bere nyinaa.",
+        "item1": "Fael a wɔkora so wɔ wo mpɔtam hɔ .",
+        "item1_description": "San fi ase de data sie wo kɔmputa no hard drive so yiye .",
+        "item2": "Nneɛma a wɔde kɔ amannɔne pii .",
+        "item2_description": "Boa PDF ne JSON format a wɔde kɔ amannɔne .",
+        "item3": "Boa data a wɔde kɔ amannɔne Backup .",
+        "title": "Data ho banbɔ, kokoamsɛm kan ."
+      },
+      "subtitle": "Yɛde all-in-one resume ano aduru ma na ama w’adwuma hwehwɛ akwantu no ayɛ mmerɛw .",
+      "title": "Dɛn nti na ɛsɛ sɛ wopaw Ant Card?"
+    },
+    "footer": {
+      "copyright": "2025 Ant kaad. \nHokwan ahorow nyinaa wɔ hɔ."
+    },
+    "header": {
+      "about": "Fa ho",
+      "dashboard": "Dashboard .",
+      "features": "Su",
+      "login": "Login .",
+      "pricing": "Bo a wɔbɔ .",
+      "register": "Twerɛ wo din",
+      "startButton": "Fi ase .",
+      "title": "Ant Kaad ."
+    },
+    "hero": {
+      "badge": "Smart resume adebɔ .",
+      "cta": "Fi ase .",
+      "secondary": "Hwehwɛ nsusuwso ahorow mu .",
+      "subtitle": "Ant Card de AI mfiridwuma di dwuma de boa wo ma wobɔ adwumayɛfo a wɔsan kɔ adwuma no ho nsɛm ntɛm. \nNhwehwɛmu biara nni hɔ a ɛho hia sɛ wɔkyerɛw wɔn din, a wontua hwee, a data a wɔde sie a ahobammɔ wom ka ho.",
+      "title": "Ma resume adebɔ nyɛ mmerɛw na nyansa wom ."
+    },
+    "news": {
+      "content": "AI resume a ɛma ɛyɛ foforo foforo ne Live .",
+      "label": "Kaseɛbɔ"
+    }
+  },
+  "iconSelector": {
+    "all": "Nyinaa",
+    "categories": {
+      "achievements": "Nneɛma a wɔatumi ayɛ .",
+      "education": "Nwomasua",
+      "experience": "Adwuma mu osuahu .",
+      "hobbies": "Nneɛma a wɔde gye wɔn ani .",
+      "languages": "Kasa horow .",
+      "others": "afoforo nso .",
+      "personal": "Ankorankoro ho nsɛm .",
+      "projects": "Nnwuma ahorow .",
+      "skills": "Nimdeɛ",
+      "social": "Social media ."
+    },
+    "icons": {
+      "address": "Adrɛse",
+      "art": "Adeyɛ",
+      "bookmark": "Nwoma agyiraehyɛdeɛ .",
+      "branch": "Fa",
+      "communication": "Nkutahodie",
+      "company": "Adwumakuo",
+      "database": "Database .",
+      "dateRange": "Date range .",
+      "education": "Nwomasua",
+      "email": "Email .",
+      "facebook": "Facebook .",
+      "filter": "Filter .",
+      "flag": "Frankaa",
+      "idea": "Adwenmpɔ",
+      "instagram": "Instagram .",
+      "interest": "Mfasoɔ",
+      "language": "Kasa",
+      "library": "Laabri",
+      "link": "Link",
+      "linkedin": "LinkedIn .",
+      "major": "Titire",
+      "medal": "Abasobɔde .",
+      "mobile": "Moobaa",
+      "music": "Nnwom",
+      "office": "Ɔfese",
+      "phone": "Fon",
+      "photography": "Mfoninitwa .",
+      "profile": "Ho asɛm",
+      "programming": "Dwumadi nhyehyɛe .",
+      "project": "Dwumadie",
+      "release": "Gyae mu",
+      "review": "Hwɛ mu",
+      "salary": "Akatua",
+      "scholarship": "Akwankyerɛ a wɔde ma wɔ adesua ho .",
+      "school": "Sukuu",
+      "search": "Hwehwɛ",
+      "send": "Mane",
+      "settings": "Nsiesiei .",
+      "share": "Kyɛ",
+      "skill": "Nimdeɛ",
+      "speaking": "Ɔkasa .",
+      "star": "Nsoroma",
+      "system": "Sestɛm",
+      "target": "Deɛ ani si so",
+      "techStack": "Tech Stack .",
+      "terminal": "Terminal .",
+      "thumbsUp": "Thumbs a ɛwɔ soro .",
+      "trophy": "Nkonimdi .",
+      "twitter": "Twitter .",
+      "user": "Ɔdefoɔ .",
+      "website": "Wɛbsaet .",
+      "work": "Adwuma",
+      "workTime": "Adwuma Bere ."
+    },
+    "noMatchingIcons": "Wɔanhu ahyɛnsode biara a ɛne no hyia .",
+    "searchPlaceholder": "Hwehwɛ ahyɛnsode ahorow...",
+    "selectOtherCategory": "Yɛsrɛ sɛ paw ɔfã foforo .",
+    "tryOtherKeywords": "Yɛsrɛ sɛ sɔ nhwehwɛmu nsɛmfua afoforo hwɛ ."
+  },
+  "landing": {
+    "about": {
+      "description": "Ant Card yɛ adwinnade a ɛyɛ adwuma ankasa kaad a wɔde bɔ ade a wɔde ama wɔn a wɔde di dwuma no ma wɔn a wɔde di dwuma no nya osuahu a ɛnyɛ den sɛ wɔde bedi dwuma na ahoɔden wom. \nYɛgye di sɛ ɛsɛ sɛ obiara nya ankorankoro showcase card fɛfɛ, sɛ́ ɛyɛ adwumayɛ mmere anaa ankorankoro branding. \nƐdenam nyansa nhyehyɛe nhyehyɛe ne chrich template libraries so no, card creation bɛyɛ mmerɛw na ɛyɛ anigye.",
+      "title": "Fa ho"
+    },
+    "features": {
+      "coreFeatures": "Core features .",
+      "diverseTemplates": {
+        "description": "Rich card template library covering business, creative, minimalist ne akwan foforo a wɔfa so di tebea horow ho ahiade ahorow ho dwuma.",
+        "title": "Nhwɛsode ahorow ahorow ."
+      },
+      "featureList": {
+        "cleanBeautiful": "Ho te",
+        "cloudSave": "Cloud Save .",
+        "darkLight": "Esum/Hann Asɛmti .",
+        "dragResize": "Twe kɔ resize so .",
+        "multiTemplate": "Nhwɛsode ahorow pii .",
+        "oneClickExport": "Klik One-Click Export so .",
+        "realTimePreview": "Bere ankasa mu nhwɛso .",
+        "responsive": "Nsɛm a wɔka kyerɛ a ɛyɛ adwuma .",
+        "smartLayout": "Smart nhyehyɛe ."
+      },
+      "realTimeEdit": {
+        "description": "Wysiwyg editing osuahu a ɛwɔ real-time card effect preview, a ɛma w’adebɔ nhyehyɛe no yɛ nea ɛyɛ mmerɛw na ɛyɛ adwuma yiye.",
+        "title": "Bere ankasa mu nsakrae ho nhwɛso ."
+      },
+      "smartDesign": {
+        "description": "AI-driven intelligent layout system a ɛma kaad no yɛ adwuma yiye ankasa, na ɛma w’ankasa wo nkyerɛkyerɛmu yɛ adwuma yiye na ɛyɛ fɛ.",
+        "title": "Smart card ho nhyehyɛe ."
+      },
+      "title": "Ano yɛ den"
+    },
+    "hero": {
+      "description": "Ɛnyɛ den sɛ wobɛbɔ ankorankoro kaad a ɛyɛ adwuma yiye na ɛyɛ fɛ a bere ankasa mu nsakrae, nsusuwso ahorow pii, ne nhyehyɛe a nyansa wom. \nMa w’ankasa wo nsɛm a wobɛka no nyɛ nea ɛda nsow.",
+      "githubRepo": "GitHub akoraeɛ .",
+      "makingTool": "Adebɔ Adwinnade .",
+      "smartCard": "Smart Kaad .",
+      "startMaking": "Fi ase bɔ ."
+    },
+    "navbar": {
+      "cardProject": "Kaad adwuma .",
+      "faq": "FAQ .",
+      "features": "Su",
+      "pricing": "Bo a wɔbɔ .",
+      "testimonials": "Adansedi ahorow ."
+    }
+  },
+  "language": {
+    "chinese": "中文 .",
+    "english": "Borɔfo",
+    "switch": "Sesa kasa ."
+  },
+  "pdfExport": {
+    "button": {
+      "export": "Mane kɔ",
+      "exportJson": "Nneɛma a wɔde kɔ amannɔne JSON Config .",
+      "exportPdf": "Export PDF (Ɔsomfoɔ) .",
+      "exporting": "Nneɛma a wɔde kɔ amannɔne...",
+      "exportingJson": "Nneɛma a wɔde kɔ amannɔne...",
+      "print": "Browser Print ."
+    },
+    "toast": {
+      "error": "PDF a wɔde kɔ amannɔne no adi nkogu .",
+      "jsonError": "Nsiesiei a wɔde kɔ amannɔne no adi nkogu .",
+      "jsonSuccess": "Nsiesiei a wɔde kɔ amannɔne yiye .",
+      "success": "PDF a wɔde kɔ amannɔne yiye ."
+    }
+  },
+  "photoConfig": {
+    "actions": {
+      "cancel": "Twam",
+      "close": "To mu",
+      "removePhoto": "Yi mfonini no fi hɔ .",
+      "reset": "Reset ."
+    },
+    "config": {
+      "aspectRatio": "Afã ratio .",
+      "border-radius": "Ɔhye so radius .",
+      "borderRadius": {
+        "custom": "Amaneɛ",
+        "customPlaceholder": "Amanne kwan so ɔhye radius .",
+        "full": "Kanko",
+        "medium": "Kwan",
+        "none": "Ɛnyɛ ebiara"
+      },
+      "height": "Tenten",
+      "heightPlaceholder": "Tenten",
+      "ratios": {
+        "16:9": "16:9 Widescreen .",
+        "1:1": "1:1 ahinanan .",
+        "3:4": "3:4 Mfonini .",
+        "4:3": "4:3 Asase ho mfonini .",
+        "custom": "Amaneɛ"
+      },
+      "size": "Kɛseɛ",
+      "width": "Ntrɛmu",
+      "widthPlaceholder": "Ntrɛmu"
+    },
+    "description": "Fa wo krataa a wode kyerɛw wo krataa a wode kyerɛw wo krataa no yɛ adwuma no yɛ wo ho sɛnea wopɛ.",
+    "title": "Mfonini nhyehyɛe .",
+    "upload": {
+      "dragHint": "Twe na gyae anaa klik so na fa mfonini gu so .",
+      "invalidUrl": "Mfonini URL a enni mu anaasɛ wontumi nkɔ hɔ, yɛsrɛ sɛ sɔ mfonini foforo a ɛwɔ hɔ no hwɛ .",
+      "loadError": "antumi anhyɛ mfonini no mu .",
+      "sizeLimit": "Ɛnsɛ sɛ mfonini no kɛse boro 2MB .",
+      "timeout": "Loading timeout .",
+      "title": "Intanɛt so link .",
+      "typeLimit": "Yɛsrɛ sɛ fa mfonini fael bi gu so .",
+      "urlPlaceholder": "Hyehyɛ Mfonini Link ."
+    }
+  },
+  "previewDock": {
+    "backToDashboard": "San kɔ dashboard so .",
+    "copyResume": {
+      "error": "antumi ankyerɛw resume .",
+      "success": "Resume a wɔayɛ no yiye .",
+      "tooltip": "Copy Resume ."
+    },
+    "editPanel": {
+      "collapse": "Collapse Edit Panel no .",
+      "expand": "Trɛw Edit Panel no mu ."
+    },
+    "export": {
+      "json": "Nneɛma a wɔde kɔ amannɔne JSON .",
+      "pdf": "Export PDF .",
+      "print": "Print .",
+      "tooltip": "Export Resume ."
+    },
+    "github": "GitHub .",
+    "grammarCheck": {
+      "checking": "Nhwehwɛmu a wɔyɛ...",
+      "configureButton": "Hyehyɛ .",
+      "configurePrompt": "Yɛsrɛ wo hyehyɛ AI Model .",
+      "errorToast": "Grammar check failed, yɛsrɛ wo sɔ hwɛ bio .",
+      "idle": "AI Kasa Mmara Nhwehwɛmu ."
+    },
+    "sidePanel": {
+      "collapse": "Collapse Side Panel .",
+      "expand": "Trɛw afã panel no mu ."
+    },
+    "switchTemplate": "Sesa nsusuwso ."
+  },
+  "richEditor": {
+    "aiPolish": "AI Polish .",
+    "alignCenter": "Align mfinimfini .",
+    "alignJustify": "Ma nnyinasoɔ",
+    "alignLeft": "Hyehyɛ benkum so .",
+    "alignRight": "Fa wo ho to nifa so .",
+    "backgroundColor": "Akyi kɔla .",
+    "bold": "Akokoɔduro",
+    "bulletList": "Bullet List .",
+    "colors": {
+      "black": "Tuntum",
+      "blue": "Bunu",
+      "cyan": "Cyan .",
+      "darkGray": "Ahinasa a ɛyɛ tuntum .",
+      "gray": "Nso",
+      "green": "Ahabanmono",
+      "lightBlue": "bruu a ɛyɛ hann .",
+      "magenta": "Magenta .",
+      "orange": "Ankaa",
+      "orangeYellow": "Orange kɔkɔɔ a ɛyɛ borɔdɔma .",
+      "pink": "Penke",
+      "purple": "Purple",
+      "red": "Kɔkɔɔ",
+      "yellow": "Yɛlo",
+      "yellowGreen": "Ahaban kɔkɔɔ a ɛyɛ kɔkɔɔ ."
+    },
+    "heading1": "asɛmti 1 .",
+    "heading2": "asɛmti 2 .",
+    "heading3": "asɛmti 3 .",
+    "italic": "Italic .",
+    "orderedList": "Wɔakra list .",
+    "paragraph": "Nkyekyɛm 1.5.",
+    "redo": "Redo .",
+    "textColor": "Nsɛm a wɔakyerɛw kɔla .",
+    "underline": "Twe adwene si so .",
+    "undo": "Undo ."
+  },
+  "templates": {
+    "switchTemplate": "Sesa nsusuwso ."
+  },
+  "themeModal": {
+    "delete": {
+      "cancelText": "Twam",
+      "confirmText": "Pepa",
+      "description": "Wogye di sɛ wopɛ sɛ wopopa {title}?",
+      "title": "Wogye di sɛ wopɛ sɛ wopopa?"
+    }
+  },
+  "workbench": {
+    "backToDashboard": "",
+    "basicPanel": {
+      "avatar": "Avatar .",
+      "basicField": "Mfiasesɛm",
+      "basicFields": {
+        "birthDate": "Awo da .",
+        "email": "Email .",
+        "employementStatus": "Fa yɛ adwuma .",
+        "location": "Beaeɛ",
+        "phone": "Fon",
+        "title": "Atiti asɛm",
+        "website": "Wɛbsaet ."
+      },
+      "customField": "Amaneɛ",
+      "customFields": {
+        "addButton": "Fa custom field ka ho .",
+        "placeholders": {
+          "label": "Ahyɛnsoɔ",
+          "value": "Boɔ"
+        }
+      },
+      "fieldVisibility": {
+        "hide": "Tɛ",
+        "show": "Da no adi"
+      },
+      "githubContributions": "GitHub Ntoboa .",
+      "layout": "Align .",
+      "layoutCenter": "",
+      "layoutLeft": "",
+      "layoutRight": "",
+      "title": "Ho asɛm"
+    },
+    "educationItem": {
+      "buttons": {
+        "cancel": "Twam",
+        "delete": "Pepa",
+        "edit": "Sa mu",
+        "save": "Kora"
+      },
+      "labels": {
+        "date": "Adesua bere .",
+        "degree": "Anoɔden",
+        "description": "Nkyerɛmu",
+        "endDate": "Da a etwa to .",
+        "gpa": "GPA .",
+        "location": "Beaeɛ",
+        "major": "Titire",
+        "school": "Sukuu din .",
+        "startDate": "Da a wobefi ase ."
+      },
+      "placeholders": {
+        "date": "Hyehyɛ adesua bere nhyehyɛe .",
+        "degree": "Paw Degree .",
+        "description": "Hyehyɛ sukuu nkyerɛkyerɛmu .",
+        "gpa": "Hyehyɛ GPA .",
+        "location": "Hyehyɛ beae a ɛwɔ .",
+        "major": "Hyehyɛ Major .",
+        "school": "Hyehyɛ sukuu din ."
+      },
+      "visibility": {
+        "hide": "Tɛ",
+        "show": "Da no adi"
+      }
+    },
+    "educationPanel": {
+      "addButton": "Fa nhomasua ka ho .",
+      "defaultProject": {
+        "date": "2020.09 - 2024.06 na ɛwɔ hɔ.",
+        "degree": "Anoɔden",
+        "major": "Titire",
+        "school": "Sukuu din ."
+      },
+      "placeholders": {
+        "date": "Hyehyɛ adesua bere .",
+        "degree": "Paw Degree .",
+        "major": "Hyehyɛ Major .",
+        "school": "Hyehyɛ sukuu din ."
+      },
+      "title": "Nwomasua"
+    },
+    "experienceItem": {
+      "buttons": {
+        "cancel": "Twam",
+        "delete": "Pepa",
+        "edit": "Sa mu",
+        "save": "Kora"
+      },
+      "labels": {
+        "company": "Adwumakuw no din .",
+        "date": "Adwumayɛ Bere .",
+        "details": "Adwuma ho asɛyɛde ahorow .",
+        "position": "Gyinabea"
+      },
+      "placeholders": {
+        "company": "Hyehyɛ adwumakuw no din .",
+        "date": "s.e., 2020-mprempren .",
+        "details": "Kyerɛkyerɛ w’asɛyɛde ne nea woatumi ayɛ mu wɔ saa dwumadi yi mu .",
+        "position": "s.e., Frontend Engineer ."
+      },
+      "visibility": {
+        "hide": "Tɛ",
+        "show": "Da no adi"
+      }
+    },
+    "experiencePanel": {
+      "addButton": "Fa adwuma mu osuahu ka ho .",
+      "defaultProject": {
+        "company": "Tech adwumakuw Ltd.",
+        "date": "2020-mprempren .",
+        "details": "Asɛdeɛ a ɛwɔ core product development...",
+        "position": "Senior Frontend Engineer ."
+      },
+      "placeholders": {
+        "company": "Adwumakuw no din .",
+        "date": "Adwumayɛ Bere .",
+        "details": "Adwuma mu asɛyɛde ne nea wotumi yɛ .",
+        "position": "Adwuma ho abodin ."
+      },
+      "title": "Adwuma mu osuahu ."
+    },
+    "projectItem": {
+      "buttons": {
+        "cancel": "Twam",
+        "delete": "Pepa",
+        "edit": "Sa mu",
+        "save": "Kora"
+      },
+      "labels": {
+        "date": "Adwuma no bere .",
+        "description": "Dwumadi no ho nkyerɛkyerɛmu .",
+        "link": "Project Link .",
+        "name": "Project din .",
+        "role": "Dwumadie no dwumadie .",
+        "technologies": "Tech Stack ."
+      },
+      "placeholders": {
+        "date": "Project bere nhyehyɛe .",
+        "description": "Kyerɛkyerɛ adwuma no ho nimdeɛ ne botae ahorow mu tiawa .",
+        "link": "Project Link .",
+        "name": "Hyehyɛ adwuma no din .",
+        "role": "Wo dwumadi wɔ adwuma no mu .",
+        "technologies": "Mfiridwuma ne nnwinnade a wɔde di dwuma ."
+      },
+      "visibility": {
+        "hide": "Tɛ",
+        "show": "Da no adi"
+      }
+    },
+    "projectPanel": {
+      "addButton": "Fa adwuma no ka ho .",
+      "defaultProject": {
+        "date": "2023.01 - 2023.06 na ɛwɔ hɔ.",
+        "description": "Dwumadi no ho nkyerɛkyerɛmu .",
+        "name": "Ankorankoro adwuma .",
+        "role": "Asɛyɛde ahorow .",
+        "technologies": ""
+      },
+      "placeholders": {
+        "date": "Project bere nhyehyɛe .",
+        "description": "Kyerɛkyerɛ adwuma no ho nimdeɛ ne botae ahorow mu tiawa .",
+        "link": "Project Link .",
+        "name": "Project din .",
+        "role": "Wo dwumadie ne w’asɛdeɛ wɔ adwuma no mu .",
+        "technologies": ""
+      },
+      "title": "Project osuahu ."
+    },
+    "sidePanel": {
+      "layout": {
+        "addCustomSection": "Fa custom section ka ho .",
+        "title": "Twa kwan"
+      },
+      "mode": {
+        "centerSubtitle": {
+          "title": "Mfinimfini Nsɛmti ."
+        },
+        "title": "Mode .",
+        "useIconMode": {
+          "title": "icon mode ."
+        }
+      },
+      "spacing": {
+        "pagePadding": {
+          "title": "Kratafa a wɔde hyɛ mu ."
+        },
+        "paragraphSpacing": {
+          "title": "Nkyekyɛm ntam kwan ."
+        },
+        "sectionSpacing": {
+          "title": "Ɔfa no ntam kwan ."
+        },
+        "title": "Ntam kwan ."
+      },
+      "theme": {
+        "custom": "Amaneɛ",
+        "title": "Asɛmti Kɔla ."
+      },
+      "typography": {
+        "baseFontSize": {
+          "title": "Base font kɛse ."
+        },
+        "font": {
+          "mono": "Monospace .",
+          "sans": "Sans-Serif .",
+          "serif": "Serif .",
+          "title": "Nkyerɛwde ."
+        },
+        "headerSize": {
+          "title": "Ɔfã no ti kɛse ."
+        },
+        "lineHeight": {
+          "loose": "Mrɛ",
+          "normal": "Mfiaseɛ",
+          "relaxed": "ahomegye .",
+          "title": "Line no sorokɔ ."
+        },
+        "subheaderSize": {
+          "title": "Ɔfa ketewa no ti kɛse ."
+        },
+        "title": "Typography ."
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "ant-card": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-fetch"
+      ],
+      "env": {
+        "FETCH_BASE_URL": "YOUR_VERCEL_DOMAIN/api/mcp"
+      }
+    }
+  }
+}

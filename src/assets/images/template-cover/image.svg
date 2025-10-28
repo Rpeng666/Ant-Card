@@ -1,0 +1,26 @@
+<svg width="200" height="280" viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="imageGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fed7aa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fef3c7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="200" height="280" fill="#fff7ed" stroke="#ea580c" stroke-width="1"/>
+  <rect x="20" y="20" width="160" height="40" fill="url(#imageGrad)" rx="8"/>
+  <text x="100" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#9a3412">图片模板</text>
+  <rect x="20" y="80" width="75" height="60" fill="#fed7aa" stroke="#ea580c" stroke-width="1" rx="6"/>
+  <rect x="105" y="80" width="75" height="60" fill="#fed7aa" stroke="#ea580c" stroke-width="1" rx="6"/>
+  <!-- 图片图标 -->
+  <rect x="35" y="95" width="45" height="30" fill="#ea580c" opacity="0.3" rx="4"/>
+  <circle cx="45" cy="105" r="4" fill="#ea580c" opacity="0.7"/>
+  <polygon points="35,120 50,110 65,115 80,105 80,125 35,125" fill="#ea580c" opacity="0.5"/>
+  <rect x="120" y="95" width="45" height="30" fill="#ea580c" opacity="0.3" rx="4"/>
+  <circle cx="130" cy="105" r="4" fill="#ea580c" opacity="0.7"/>
+  <polygon points="120,120 135,110 150,115 165,105 165,125 120,125" fill="#ea580c" opacity="0.5"/>
+  <rect x="20" y="160" width="160" height="60" fill="url(#imageGrad)" rx="8"/>
+  <rect x="35" y="175" width="130" height="30" fill="#ea580c" opacity="0.3" rx="4"/>
+  <circle cx="50" cy="185" r="6" fill="#ea580c" opacity="0.7"/>
+  <polygon points="35,200 60,185 90,190 130,180 165,185 165,205 35,205" fill="#ea580c" opacity="0.5"/>
+  <rect x="20" y="240" width="160" height="20" fill="url(#imageGrad)" rx="4"/>
+  <text x="100" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9a3412">视觉内容展示</text>
+</svg>

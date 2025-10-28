@@ -1,0 +1,1014 @@
+{
+  "common": {
+    "title": "Ant Card",
+    "subtitle": "AI 驱动卡片编辑器",
+    "description": "Ant Card是一款开源的卡片编辑器，免费，隐私优先。无需注册登录，数据完全存储在本地，支持数据导出备份，确保您的卡片数据随时可用。",
+    "dashboard": "仪表盘",
+    "edit": "编辑",
+    "delete": "删除",
+    "newResume": "新建卡片",
+    "copy": "复制"
+  },
+  "home": {
+    "header": {
+      "title": "Ant Card",
+      "startButton": "开始使用",
+      "features": "功能特点",
+      "pricing": "定价",
+      "about": "关于我们",
+      "login": "登录",
+      "register": "注册",
+      "dashboard": "控制台"
+    },
+    "hero": {
+      "badge": "免费卡片创作",
+      "title": "让卡片创作变得简单而智能",
+      "subtitle": "Ant Card利用 AI 技术，帮助您快速创建专业的卡片。无需注册，免费使用，数据安全存储。",
+      "cta": "立即开始",
+      "secondary": "浏览模板"
+    },
+    "features": {
+      "title": "为什么选择Ant Card？",
+      "subtitle": "我们提供一站式卡片解决方案，让您的求职之路更加顺畅",
+      "ai": {
+        "badge": "AI 智能纠错",
+        "title": "智能识别，专业建议",
+        "description": "内置智能语法检查，自动识别不恰当的表达，提供专业的修改建议，让您的卡片更加出色。",
+        "item1": "智能润色",
+        "item1_description": "AI 自动优化文案表达，让卡片更专业",
+        "item2": "语法检查",
+        "item2_description": "自动检测并修正语法和拼写错误"
+      },
+      "storage": {
+        "badge": "本地存储",
+        "title": "数据安全，隐私优先",
+        "description": "所有卡片数据完全存储在您的本地设备中，无需担心隐私泄露。支持数据导出备份，确保您的卡片数据随时可用。",
+        "item1": "本地文件存储",
+        "item1_description": "卡片数据安全存储在您的电脑硬盘中",
+        "item2": "多种导出格式",
+        "item2_description": "支持PDF和JSON格式导出",
+        "item3": "支持数据导出备份"
+      },
+      "preview": {
+        "badge": "实时预览",
+        "title": "所见即所得",
+        "description": "边编辑边预览，实时查看卡片效果。支持多种专业模板，让您的卡片既美观又规范。快速导出PDF，随时投递卡片。",
+        "item1": "实时预览编辑效果",
+        "item2": "多种导出格式支持"
+      }
+    },
+    "news": {
+      "label": "新闻",
+      "content": " 全新的 AI 卡片优化功能已上线"
+    },
+    "cta": {
+      "title": "开启你的新职业篇章",
+      "description": "立即使用Ant Card，创建一份令人印象深刻的卡片",
+      "button": "免费开始使用"
+    },
+    "footer": {
+      "copyright": " 2025 Ant Card. 保留所有权利."
+    },
+    "changelog": "更新日志",
+    "faq": {
+      "title": "常见问题",
+      "items": [
+        {
+          "question": "使用Ant Card需要付费吗？",
+          "answer": "Ant Card目前是免费的，满足基础卡片制作需求，开源版本的功能不会变更，导出PDF功能也永远不会收费。"
+        },
+        {
+          "question": "我的卡片数据安全吗？",
+          "answer": "是的，非常安全。Ant Card采用本地存储方式，您的所有数据都保存在您自己的设备上，不存在云存储，完全保护您的隐私。"
+        },
+        {
+          "question": "支持哪些卡片格式导出？",
+          "answer": "目前支持导出PDF格式，确保您的卡片在任何设备上都能保持一致的排版效果。未来我们还将支持更多导出格式。"
+        },
+        {
+          "question": "多设备如何同步",
+          "answer": "我们提供了导出JSON配置，您可以将卡片的配置以JSON格式保存，随时随地，任何设备上都可以打开查看。"
+        },
+        {
+          "question": "自定义程度如何？",
+          "answer": "我们提供丰富的自定义操作，包括颜色、布局等，让您能够根据个人喜好和行业特点调整卡片风格。"
+        }
+      ]
+    }
+  },
+  "dashboard": {
+    "sidebar": {
+      "resumes": "我的卡片",
+      "settings": "通用设置",
+      "templates": "卡片模板",
+      "ai": "AI服务商"
+    },
+    "resumes": {
+      "created": "创建于",
+      "synced": "已备份文件夹",
+      "view": "去查看",
+      "myResume": "我的卡片",
+      "create": "新建卡片",
+      "newResume": "新建卡片",
+      "newResumeDescription": "创建一个新卡片以开始。",
+      "import": "导入 JSON 配置",
+      "untitled": "未命名卡片",
+      "importSuccess": "配置导入成功",
+      "importError": "配置导入失败，请检查文件格式",
+      "notice": {
+        "title": "注意",
+        "description": "建议在设置里中配置卡片备份文件夹，防止您的数据可能会在浏览器清除缓存后丢失",
+        "goToSettings": "前往设置"
+      }
+    },
+    "settings": {
+      "title": "设置",
+      "syncDirectory": {
+        "title": "同步目录",
+        "description": "选择一个文件夹来同步和备份您的卡片。",
+        "currentSyncFolder": "当前同步文件夹",
+        "noFolderConfigured": "尚未配置同步文件夹",
+        "changeFolder": "更改文件夹",
+        "selectFolder": "选择文件夹"
+      },
+      "sync": {
+        "title": "同步目录",
+        "description": "选择一个文件夹来同步和备份您的卡片。",
+        "select": "选择文件夹"
+      },
+      "ai": {
+        "title": "AI 配置",
+        "currentModel": "当前使用的模型",
+        "selectModel": "选择模型",
+        "getApiKey": "获取 API Key",
+        "doubao": {
+          "title": "豆包",
+          "description": "在火山引擎获取 API 密钥",
+          "apiKey": "API Key",
+          "modelId": "模型 ID"
+        },
+        "deepseek": {
+          "title": "DeepSeek",
+          "description": "在 DeepSeek 开放平台获取 API 密钥",
+          "apiKey": "API Key"
+        },
+        "openai": {
+          "title": "OpenAI",
+          "description": "在 OpenAI 或兼容 OpenAI 格式的开放平台获取 API 密钥",
+          "apiKey": "API Key",
+          "modelId": "模型 ID",
+          "apiEndpoint": "API 端点，如：https://openai.example.org/v1"
+        }
+      }
+    },
+    "templates": {
+      "title": "模板",
+      "useTemplate": "使用此模板",
+      "preview": "预览",
+      "switchTemplate": "切换模版",
+      "classic": {
+        "name": "经典模板",
+        "description": "传统简约的卡片布局，适合大多数求职场景"
+      },
+      "modern": {
+        "name": "两栏布局",
+        "description": "经典两栏，突出个人特色"
+      },
+      "leftRight": {
+        "name": "模块标题背景色",
+        "description": "模块标题背景鲜明，突出美观特色"
+      },
+      "timeline": {
+        "name": "时间轴布局",
+        "description": "时间轴风格，突出经历的时间顺序"
+      }
+    }
+  },
+  "pdfExport": {
+    "button": {
+      "export": "导出",
+      "exportPdf": "PDF(服务端)",
+      "exportJson": "JSON配置",
+      "exporting": "导出中...",
+      "exportingJson": "导出中...",
+      "print": "PDF(浏览器打印)"
+    },
+    "toast": {
+      "success": "PDF导出成功",
+      "error": "PDF导出失败",
+      "jsonSuccess": "配置导出成功",
+      "jsonError": "配置导出失败"
+    }
+  },
+  "workbench": {
+    "backToDashboard": "返回仪表盘",
+    "sidePanel": {
+      "layout": {
+        "title": "布局",
+        "addCustomSection": "添加自定义模块"
+      },
+      "theme": {
+        "title": "主题色",
+        "custom": "自定义"
+      },
+      "typography": {
+        "title": "排版",
+        "font": {
+          "title": "字体",
+          "sans": "无衬线体",
+          "serif": "衬线体",
+          "mono": "等宽体"
+        },
+        "lineHeight": {
+          "title": "行高",
+          "normal": "默认",
+          "relaxed": "适中",
+          "loose": "宽松"
+        },
+        "baseFontSize": {
+          "title": "基础字号"
+        },
+        "headerSize": {
+          "title": "模块标题字号"
+        },
+        "subheaderSize": {
+          "title": "模块项一级标题字号"
+        }
+      },
+      "spacing": {
+        "title": "间距",
+        "pagePadding": {
+          "title": "页边距"
+        },
+        "sectionSpacing": {
+          "title": "模块间距"
+        },
+        "paragraphSpacing": {
+          "title": "段落间距"
+        }
+      },
+      "mode": {
+        "title": "模式",
+        "useIconMode": {
+          "title": "图标模式"
+        },
+        "centerSubtitle": {
+          "title": "副标题居中"
+        }
+      }
+    },
+    "basicPanel": {
+      "title": "资料",
+      "basicField": "基础字段",
+      "customField": "自定义字段",
+      "githubContributions": "Github贡献",
+      "layout": "布局",
+      "layoutLeft": "居左",
+      "layoutCenter": "居中",
+      "layoutRight": "居右",
+      "avatar": "头像",
+      "customFields": {
+        "placeholders": {
+          "label": "标签",
+          "value": "值"
+        },
+        "addButton": "添加自定义字段"
+      },
+      "basicFields": {
+        "name": "姓名",
+        "title": "职位",
+        "email": "邮箱",
+        "phone": "电话",
+        "website": "个人网站",
+        "location": "地址",
+        "birthDate": "生日",
+        "employementStatus": "状态"
+      },
+      "fieldVisibility": {
+        "show": "显示",
+        "hide": "隐藏"
+      }
+    },
+    "experiencePanel": {
+      "title": "工作经历",
+      "addButton": "添加工作经历",
+      "defaultProject": {
+        "company": "某科技有限公司",
+        "position": "高级前端工程师",
+        "date": "2020-至今",
+        "details": "负责公司核心产品..."
+      },
+      "placeholders": {
+        "company": "请输入公司名称",
+        "position": "请输入职位",
+        "date": "请输入工作时间",
+        "details": "请输入工作职责和成就"
+      }
+    },
+    "experienceItem": {
+      "labels": {
+        "company": "公司名称",
+        "position": "岗位",
+        "date": "工作时间",
+        "details": "工作职责"
+      },
+      "placeholders": {
+        "company": "请输入公司名称",
+        "position": "如：前端工程师",
+        "date": "如：2020-至今",
+        "details": "描述你在这份工作中的职责和成就"
+      },
+      "buttons": {
+        "edit": "编辑",
+        "save": "保存",
+        "cancel": "取消",
+        "delete": "删除"
+      },
+      "visibility": {
+        "show": "显示",
+        "hide": "隐藏"
+      }
+    },
+    "projectPanel": {
+      "title": "项目经历",
+      "addButton": "添加项目",
+      "defaultProject": {
+        "name": "个人项目",
+        "description": "项目描述",
+        "role": "负责内容",
+        "technologies": "技术栈",
+        "date": "2023.01 - 2023.06"
+      },
+      "placeholders": {
+        "name": "项目名称",
+        "description": "简要描述项目背景和目标",
+        "role": "你在项目中的角色和职责",
+        "technologies": "使用的技术和工具",
+        "date": "项目时间范围",
+        "link": "项目链接"
+      }
+    },
+    "projectItem": {
+      "labels": {
+        "name": "项目名称",
+        "role": "项目角色",
+        "date": "项目时间",
+        "description": "项目描述",
+        "link": "项目链接"
+      },
+      "placeholders": {
+        "name": "请输入项目名称",
+        "role": "你在项目中的角色",
+        "date": "项目时间范围",
+        "description": "简要描述项目背景和目标",
+        "link": "项目链接（可选）"
+      },
+      "buttons": {
+        "edit": "编辑",
+        "save": "保存",
+        "cancel": "取消",
+        "delete": "删除"
+      },
+      "visibility": {
+        "show": "显示",
+        "hide": "隐藏"
+      }
+    },
+    "educationPanel": {
+      "title": "教育背景",
+      "addButton": "添加教育经历",
+      "defaultProject": {
+        "school": "学校名称",
+        "degree": "学历",
+        "major": "专业",
+        "date": "2020.09 - 2024.06"
+      },
+      "placeholders": {
+        "school": "请输入学校名称",
+        "degree": "请选择学历",
+        "major": "请输入专业名称",
+        "date": "请输入就读时间范围"
+      }
+    },
+    "educationItem": {
+      "labels": {
+        "school": "学校名称",
+        "degree": "学历",
+        "major": "专业",
+        "date": "就读时间",
+        "description": "学校简介",
+        "gpa": "GPA",
+        "startDate": "开始时间",
+        "endDate": "结束时间"
+      },
+      "placeholders": {
+        "school": "请输入学校名称",
+        "degree": "请选择学历",
+        "major": "请输入专业名称",
+        "date": "请输入就读时间范围",
+        "description": "请输入学校简介",
+        "gpa": "请输入GPA"
+      },
+      "buttons": {
+        "edit": "编辑",
+        "save": "保存",
+        "cancel": "取消",
+        "delete": "删除"
+      },
+      "visibility": {
+        "show": "显示",
+        "hide": "隐藏"
+      }
+    }
+  },
+  "field": {
+    "selectDate": "选择日期",
+    "enterYear": "输入年份"
+  },
+  "richEditor": {
+    "bold": "加粗",
+    "italic": "斜体",
+    "underline": "下划线",
+    "textColor": "文字颜色",
+    "backgroundColor": "背景颜色",
+    "alignLeft": "左对齐",
+    "alignCenter": "居中对齐",
+    "alignRight": "右对齐",
+    "alignJustify": "两端对齐",
+    "bulletList": "无序列表",
+    "orderedList": "有序列表",
+    "undo": "撤销",
+    "redo": "重做",
+    "aiPolish": "AI 润色",
+    "paragraph": "正文",
+    "heading1": "标题 1",
+    "heading2": "标题 2",
+    "heading3": "标题 3",
+    "colors": {
+      "black": "黑色",
+      "darkGray": "深灰",
+      "gray": "灰色",
+      "red": "红色",
+      "orange": "橙色",
+      "orangeYellow": "橙黄",
+      "yellow": "黄色",
+      "yellowGreen": "黄绿",
+      "green": "绿色",
+      "cyan": "青色",
+      "lightBlue": "浅蓝",
+      "blue": "蓝色",
+      "purple": "紫色",
+      "magenta": "紫红",
+      "pink": "粉色"
+    }
+  },
+  "iconSelector": {
+    "all": "全部",
+    "searchPlaceholder": "搜索图标...",
+    "noMatchingIcons": "未找到匹配的图标",
+    "tryOtherKeywords": "请尝试其他搜索关键词",
+    "selectOtherCategory": "请选择其他分类",
+    "categories": {
+      "personal": "个人信息",
+      "education": "教育背景",
+      "experience": "工作经验",
+      "skills": "技能",
+      "languages": "语言",
+      "projects": "项目",
+      "achievements": "成就证书",
+      "hobbies": "兴趣爱好",
+      "social": "社交媒体",
+      "others": "其他"
+    },
+    "icons": {
+      "user": "用户",
+      "email": "邮箱",
+      "phone": "电话",
+      "address": "地址",
+      "website": "网站",
+      "mobile": "手机",
+      "education": "学历",
+      "school": "学校",
+      "major": "专业",
+      "library": "图书馆",
+      "scholarship": "奖学金",
+      "work": "工作",
+      "company": "公司",
+      "office": "办公室",
+      "dateRange": "日期范围",
+      "workTime": "工作时间",
+      "programming": "编程",
+      "system": "系统",
+      "database": "数据库",
+      "terminal": "终端",
+      "techStack": "技术栈",
+      "language": "语言",
+      "speaking": "口语",
+      "communication": "交流",
+      "project": "项目",
+      "branch": "分支",
+      "release": "发布",
+      "target": "目标",
+      "trophy": "奖杯",
+      "medal": "奖牌",
+      "star": "星级",
+      "interest": "兴趣",
+      "music": "音乐",
+      "art": "艺术",
+      "photography": "摄影",
+      "linkedin": "领英",
+      "twitter": "推特",
+      "facebook": "脸书",
+      "instagram": "照片",
+      "profile": "简介",
+      "review": "审核",
+      "filter": "筛选",
+      "link": "链接",
+      "salary": "薪资",
+      "idea": "创意",
+      "send": "发送",
+      "share": "分享",
+      "settings": "设置",
+      "search": "搜索",
+      "flag": "标记",
+      "bookmark": "收藏",
+      "thumbsUp": "点赞",
+      "skill": "技能"
+    }
+  },
+  "photoConfig": {
+    "title": "头像设置",
+    "description": "自定义您的卡片头像",
+    "upload": {
+      "title": "在线链接",
+      "dragHint": "拖拽或点击上传图片",
+      "sizeLimit": "图片大小不能超过2MB",
+      "typeLimit": "请上传图片文件",
+      "urlPlaceholder": "输入图片链接",
+      "invalidUrl": "图片链接无效或无法访问，请尝试使用其他图片链接",
+      "timeout": "加载超时",
+      "loadError": "图片加载失败"
+    },
+    "config": {
+      "aspectRatio": "宽高比",
+      "size": "尺寸",
+      "width": "宽度",
+      "height": "高度",
+      "border-radius": "圆角",
+      "widthPlaceholder": "宽度",
+      "heightPlaceholder": "高度",
+      "ratios": {
+        "1:1": "1:1 正方形",
+        "4:3": "4:3 横版",
+        "3:4": "3:4 竖版",
+        "16:9": "16:9 宽屏",
+        "custom": "自定义"
+      },
+      "borderRadius": {
+        "none": "无",
+        "medium": "中等",
+        "full": "圆形",
+        "custom": "自定义",
+        "customPlaceholder": "自定义圆角大小"
+      }
+    },
+    "actions": {
+      "reset": "重置",
+      "close": "关闭",
+      "cancel": "取消",
+      "removePhoto": "删除头像"
+    }
+  },
+  "previewDock": {
+    "switchTemplate": "切换模版",
+    "grammarCheck": {
+      "idle": "AI语法纠错",
+      "checking": "检查中...",
+      "configurePrompt": "请先配置 ApiKey 和 模型Id",
+      "configureButton": "去配置",
+      "errorToast": "语法检查失败，请重试"
+    },
+    "sidePanel": {
+      "expand": "展开侧边栏",
+      "collapse": "收起侧边栏"
+    },
+    "editPanel": {
+      "expand": "展开编辑面板",
+      "collapse": "收起编辑面板"
+    },
+    "github": "GitHub",
+    "backToDashboard": "返回仪表盘",
+    "copyResume": {
+      "tooltip": "复制卡片",
+      "success": "卡片复制成功",
+      "error": "卡片复制失败"
+    },
+    "export": {
+      "tooltip": "导出卡片",
+      "pdf": "导出PDF",
+      "json": "导出JSON",
+      "print": "打印"
+    }
+  },
+  "aiPolishDialog": {
+    "title": "AI 润色",
+    "description": {
+      "polishing": "正在为您润色内容...",
+      "finished": "已经为您优化了内容，请查看效果"
+    },
+    "error": {
+      "configRequired": "请先配置 AI 模型",
+      "polishFailed": "润色失败",
+      "applied": "已应用润色内容"
+    },
+    "content": {
+      "original": "原始内容",
+      "polished": "润色后的内容"
+    },
+    "button": {
+      "regenerate": "重新生成",
+      "generating": "生成中...",
+      "apply": "应用内容"
+    }
+  },
+  "templates": {
+    "switchTemplate": "切换模板"
+  },
+  "themeModal": {
+    "delete": {
+      "title": "确定要删除吗",
+      "description": "您确定要删除{title}吗？",
+      "confirmText": "删除",
+      "cancelText": "取消"
+    }
+  },
+  "cardEditor": {
+    "sidePanel": {
+      "templateSelection": "模板选择",
+      "templateDescription": "选择卡片设计模板",
+      "layoutSettings": "布局设置",
+      "layoutDescription": "调整卡片尺寸和比例",
+      "aspectRatio": "宽高比",
+      "styleSettings": "样式设置",
+      "styleDescription": "自定义卡片外观和字体",
+      "fontFamily": "字体",
+      "fontSize": "字体大小",
+      "textAlign": "文本对齐",
+      "advancedSettings": "高级设置",
+      "advancedDescription": "更多个性化配置选项",
+      "displayOptions": "显示选项",
+      "showAuthor": "显示作者",
+      "showDate": "显示日期",
+      "showQRCode": "显示二维码",
+      "showPageNum": "显示页码",
+      "showTextCount": "显示字数统计",
+      "textProcessing": "长文本处理",
+      "enableTextSplit": "启用长文本拆分",
+      "textSplitDescription": "当内容过长时自动拆分为多个卡片",
+      "maxCharsPerCard": "每页字符数限制",
+      "characters": "字符",
+      "charLimitTip": "建议设置为 150-300 字符，确保卡片内容适中",
+      "splitMode": "拆分方式",
+      "splitByParagraph": "按段落拆分",
+      "splitBySentence": "按句子拆分",
+      "splitByCharacter": "按字符数拆分",
+      "splitModeTip": "选择合适的拆分方式以保持内容完整性",
+      "splitPreview": "拆分预览",
+      "executeSplit": "执行拆分",
+      "willSplitInto": "将拆分为",
+      "cards": "个卡片",
+      "averageLength": "平均每个卡片约",
+      "originalLength": "原文本长度:",
+      "noSplitNeeded": "当前内容无需拆分",
+      "multiCardMerge": "多卡片合并",
+      "mergeNow": "立即合并",
+      "detected": "检测到",
+      "mergeRecommendation": "关闭拆分功能后建议合并为单个卡片",
+      "mergeKeepsContent": "合并后将保留所有内容",
+      "fontOptions": {
+        "sans": "无衬线体",
+        "serif": "衬线体",
+        "mono": "等宽体"
+      },
+      "alignOptions": {
+        "left": "居左",
+        "center": "居中",
+        "right": "居右"
+      }
+    },
+    "preview": {
+      "title": "预览",
+      "totalCards": "共",
+      "dragToView": "可拖拽查看",
+      "export": {
+        "tooltip": "导出",
+        "png": "导出为 PNG",
+        "jpeg": "导出为 JPEG",
+        "svg": "导出为 SVG",
+        "pdf": "导出为 PDF",
+        "copyPng": "复制为 PNG"
+      },
+      "exportSuccess": {
+        "png": "PNG导出成功",
+        "jpeg": "JPEG导出成功",
+        "svg": "SVG导出成功",
+        "pdf": "PDF导出成功",
+        "pngBatch": "成功导出 {count} 个PNG文件",
+        "jpegBatch": "成功导出 {count} 个JPEG文件",
+        "pdfBatch": "成功导出包含 {count} 个卡片的PDF文件",
+        "copied": "已复制到剪贴板"
+      },
+      "exportError": {
+        "png": "PNG导出失败",
+        "jpeg": "JPEG导出失败",
+        "svg": "SVG导出失败",
+        "pdf": "PDF导出失败",
+        "copy": "复制失败"
+      },
+      "noCard": "请选择一个卡片进行预览"
+     }
+   },
+   "language": {
+      "switch": "切换语言",
+      "chinese": "中文",
+      "english": "English"
+    },
+    "landing": {
+      "hero": {
+        "smartCard": "智能卡片",
+        "makingTool": "制作工具",
+        "description": "轻松创建专业精美的个人卡片，支持实时编辑、多种模板和智能布局。让您的个人展示更加出色。",
+        "startMaking": "开始制作",
+        "githubRepo": "Github 仓库"
+      },
+      "about": {
+        "title": "关于",
+        "description": "Ant Card 是一款专业的个人卡片制作工具，致力于为用户提供简单易用、功能强大的卡片设计体验。我们相信每个人都应该拥有一张精美的个人展示卡片，无论是商务场合还是个人品牌建设。通过智能化的设计系统和丰富的模板库，让卡片制作变得简单而有趣。"
+      },
+      "features": {
+        "title": "强大的",
+        "coreFeatures": "核心功能",
+        "smartDesign": {
+          "title": "智能卡片设计",
+          "description": "AI驱动的智能布局系统，自动优化卡片设计，让您的个人展示更加专业美观。"
+        },
+        "realTimeEdit": {
+          "title": "实时编辑预览",
+          "description": "所见即所得的编辑体验，实时预览卡片效果，让您的创作过程更加直观高效。"
+        },
+        "diverseTemplates": {
+          "title": "多样化模板",
+          "description": "丰富的卡片模板库，涵盖商务、创意、简约等多种风格，满足不同场景需求。"
+        },
+        "featureList": {
+          "darkLight": "深色/浅色主题",
+          "dragResize": "拖拽调整大小",
+          "multiTemplate": "多种模板",
+          "realTimePreview": "实时预览",
+          "smartLayout": "智能布局",
+          "responsive": "响应式设计",
+          "oneClickExport": "一键导出",
+          "cloudSave": "云端保存",
+          "cleanBeautiful": "简洁美观"
+        }
+      },
+      "services": {
+        "title": "我们的服务",
+        "subtitle": "专注用户体验的专业服务",
+        "codeCollaboration": {
+          "title": "代码协作",
+          "description": "支持多人实时协作编辑，让团队卡片制作更加高效便捷。"
+        },
+        "projectManagement": {
+          "title": "项目管理",
+          "description": "完整的项目管理功能，从模板选择到最终导出，全程可控。"
+        },
+        "taskAutomation": {
+          "title": "智能自动化",
+          "description": "AI驱动的自动化流程，智能优化布局和内容，提升制作效率。"
+        },
+        "clientCentric": {
+          "title": "以客户为中心",
+          "subtitle": "专业贴心的服务理念",
+          "description": "我们始终将用户需求放在首位，提供最优质的卡片制作体验。"
+        }
+      },
+      "howItWorks": {
+        "title": "使用流程",
+        "subtitle": "简单四步，创建专业卡片",
+        "steps": {
+          "selectTemplate": {
+            "title": "选择模板",
+            "description": "从丰富的模板库中选择适合您风格的设计"
+          },
+          "editContent": {
+            "title": "编辑内容",
+            "description": "轻松编辑卡片内容，支持富文本和多媒体"
+          },
+          "adjustLayout": {
+            "title": "调整布局",
+            "description": "自由调整布局和样式，打造个性化卡片"
+          },
+          "exportShare": {
+            "title": "导出分享",
+            "description": "多种格式导出，轻松分享到各大平台"
+          }
+        }
+      },
+      "cta": {
+        "title": "所有创意和概念，一个界面搞定",
+        "subtitle": "专业的卡片制作工具，让您的创意完美呈现。无论是商务名片、个人介绍还是创意设计，都能轻松实现。",
+        "primaryButton": "申请演示",
+        "secondaryButton": "查看所有功能"
+      },
+      "testimonials": {
+        "title": "发现大家为什么喜爱这个平台",
+        "subtitle": "来自真实用户的评价和反馈",
+        "reviews": [
+          {
+            "name": "张三",
+            "username": "@zhangsan",
+            "comment": "这个卡片制作工具太棒了！界面简洁，功能强大，帮我快速制作了专业的名片。",
+            "rating": 5
+          },
+          {
+            "name": "李四",
+            "username": "@lisi",
+            "comment": "模板非常精美，编辑体验很好，导出质量也很高。强烈推荐！",
+            "rating": 5
+          },
+          {
+            "name": "王五",
+            "username": "@wangwu",
+            "comment": "作为设计师，我对这个工具的布局和配色非常满意。客户都很喜欢我做的卡片。",
+            "rating": 5
+          },
+          {
+            "name": "赵六",
+            "username": "@zhaoliu",
+            "comment": "操作简单，功能全面。特别是AI智能优化功能，省了我很多时间。",
+            "rating": 5
+          }
+        ]
+      },
+      "team": {
+        "title": "我们的专业团队",
+        "subtitle": "专注创新，追求卓越",
+        "description": "我们是一支充满激情的团队，致力于为用户提供最好的卡片制作体验。",
+        "members": [
+          {
+            "name": "陈明",
+            "position": "产品经理",
+            "bio": "专注于用户体验设计和产品创新"
+          },
+          {
+            "name": "李婷",
+            "position": "技术总监",
+            "bio": "负责技术架构和系统优化"
+          },
+          {
+            "name": "王强",
+            "position": "设计主管",
+            "bio": "负责视觉设计和用户体验"
+          },
+          {
+            "name": "刘芳",
+            "position": "前端开发",
+            "bio": "专注于前端开发和用户交互"
+          }
+        ]
+      },
+      "pricing": {
+        "title": "选择适合您的方案",
+        "subtitle": "灵活的定价，满足不同需求",
+        "plans": [
+          {
+            "title": "免费版",
+            "description": "适合个人用户的基础功能",
+            "buttonText": "开始使用",
+            "benefits": [
+              "5个卡片项目",
+              "基础模板库",
+              "标准导出格式",
+              "社区支持",
+              "本地存储"
+            ]
+          },
+          {
+            "title": "专业版",
+            "description": "适合专业用户的完整功能",
+            "buttonText": "升级到专业版",
+            "benefits": [
+              "无限卡片项目",
+              "高级模板库",
+              "高级导出格式",
+              "优先技术支持",
+              "云端同步",
+              "AI智能优化"
+            ],
+            "popular": true
+          },
+          {
+            "title": "企业版",
+            "description": "适合团队协作的企业方案",
+            "buttonText": "联系销售",
+            "benefits": [
+              "团队协作功能",
+              "自定义品牌",
+              "API接入",
+              "专属客服",
+              "数据安全保障",
+              "定制化服务"
+            ]
+          }
+        ],
+        "guarantee": {
+          "title": "获得无限访问权限",
+          "description": "立即升级，解锁所有高级功能"
+        },
+        "popular": "最受欢迎",
+        "monthly": "/月"
+      },
+      "faq": {
+        "title": "常见问题",
+        "subtitle": "我们整理了一些常见问题",
+        "questions": [
+          {
+            "question": "这个模板是免费的吗？",
+            "answer": "是的，这是一个完全免费的开源模板，您可以自由使用和修改。"
+          },
+          {
+            "question": "支持哪些导出格式？",
+            "answer": "目前支持PNG、JPEG、SVG、PDF等主流格式，未来还会添加更多格式支持。"
+          },
+          {
+            "question": "数据安全如何保障？",
+            "answer": "所有数据都存储在您的本地设备中，我们不会收集或存储您的任何个人信息。"
+          },
+          {
+            "question": "可以自定义模板吗？",
+            "answer": "是的，我们提供灵活的自定义功能，您可以调整颜色、字体、布局等各个方面。"
+          },
+          {
+            "question": "有技术支持吗？",
+            "answer": "我们提供社区支持，您可以通过GitHub Issues提交问题，我们会尽快回复。"
+          }
+        ],
+        "stillHaveQuestions": "还有其他问题？",
+        "contactUs": "联系我们"
+      },
+      "statistics": {
+        "users": {
+          "quantity": "2.7K+",
+          "description": "用户"
+        },
+        "subscribers": {
+          "quantity": "1.8K+",
+          "description": "订阅者"
+        },
+        "downloads": {
+          "quantity": "112",
+          "description": "下载量"
+        },
+        "products": {
+          "quantity": "4",
+          "description": "产品"
+        }
+      },
+      "footer": {
+        "followUs": "关注我们",
+        "platforms": {
+          "title": "平台支持",
+          "web": "网页版",
+          "mobile": "移动端",
+          "desktop": "桌面版"
+        },
+        "about": {
+          "title": "关于",
+          "features": "功能特性",
+          "pricing": "定价",
+          "faq": "常见问题"
+        },
+        "community": {
+          "title": "社区",
+          "youtube": "YouTube",
+          "discord": "Discord",
+          "twitch": "Twitch"
+        },
+        "socialLinks": {
+          "github": "GitHub",
+          "twitter": "Twitter",
+          "dribbble": "Dribbble"
+        },
+        "copyright": "© 2024 Ant Card Team. 保留所有权利。",
+        "poweredBy": "基于 Next.js/React 构建"
+      },
+      "navbar": {
+        "features": "功能特点",
+        "testimonials": "用户评价",
+        "pricing": "定价",
+        "faq": "常见问题",
+        "cardProject": "卡片项目"
+      }
+    }
+  }

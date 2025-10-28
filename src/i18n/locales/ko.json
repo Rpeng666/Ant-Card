@@ -1,0 +1,782 @@
+{
+  "aiPolishDialog": {
+    "button": {
+      "apply": "콘텐츠 적용",
+      "generating": "생성 중...",
+      "regenerate": "재생성"
+    },
+    "content": {
+      "original": "원본 콘텐츠",
+      "polished": "세련된 콘텐츠"
+    },
+    "description": {
+      "finished": "콘텐츠가 최적화되었습니다. 결과를 확인하세요.",
+      "polishing": "콘텐츠를 다듬는 중..."
+    },
+    "error": {
+      "applied": "폴란드어 콘텐츠 적용",
+      "configRequired": "먼저 AI 모델을 구성하세요.",
+      "polishFailed": "폴란드어 실패"
+    },
+    "title": "AI 폴란드어"
+  },
+  "cardEditor": {
+    "preview": {
+      "dragToView": "드래그하여 보기",
+      "export": {
+        "copyPng": "PNG로 복사",
+        "jpeg": "JPEG로 내보내기",
+        "pdf": "PDF로 내보내기",
+        "png": "PNG로 내보내기",
+        "svg": "SVG로 내보내기",
+        "tooltip": "내보내다"
+      },
+      "exportError": {
+        "copy": "복사 실패",
+        "jpeg": "JPEG 내보내기 실패",
+        "pdf": "PDF 내보내기 실패",
+        "png": "PNG 내보내기 실패",
+        "svg": "SVG 내보내기 실패"
+      },
+      "exportSuccess": {
+        "copied": "클립보드에 복사됨",
+        "jpeg": "JPEG 내보내기 성공",
+        "jpegBatch": "{count}개의 JPEG 파일을 성공적으로 내보냈습니다.",
+        "pdf": "PDF 내보내기 성공",
+        "pdfBatch": "{count}개의 카드가 포함된 PDF를 성공적으로 내보냈습니다.",
+        "png": "PNG 내보내기 성공",
+        "pngBatch": "{count}개의 PNG 파일을 성공적으로 내보냈습니다.",
+        "svg": "SVG 내보내기 성공"
+      },
+      "noCard": "미리 볼 카드를 선택하세요.",
+      "title": "시사",
+      "totalCards": "총"
+    },
+    "sidePanel": {
+      "advancedDescription": "더 많은 개인화 옵션",
+      "advancedSettings": "고급 설정",
+      "alignOptions": {
+        "center": "센터",
+        "left": "왼쪽",
+        "right": "오른쪽"
+      },
+      "aspectRatio": "종횡비",
+      "averageLength": "대략 카드당 평균",
+      "cards": "카드",
+      "charLimitTip": "적절한 카드 콘텐츠를 보장하려면 150~300자를 권장합니다.",
+      "characters": "문자",
+      "detected": "감지됨",
+      "displayOptions": "표시 옵션",
+      "enableTextSplit": "텍스트 분할 활성화",
+      "executeSplit": "분할 실행",
+      "fontFamily": "글꼴군",
+      "fontOptions": {
+        "mono": "고정 폭",
+        "sans": "산세리프체",
+        "serif": "가는 장식 선"
+      },
+      "fontSize": "글꼴 크기",
+      "layoutDescription": "카드 크기 및 비율 조정",
+      "layoutSettings": "레이아웃 설정",
+      "maxCharsPerCard": "카드당 글자 수 제한",
+      "mergeKeepsContent": "병합 후에도 모든 콘텐츠가 유지됩니다.",
+      "mergeNow": "지금 병합",
+      "mergeRecommendation": "분할을 비활성화한 후 단일 카드로 병합하는 것이 좋습니다.",
+      "multiCardMerge": "다중 카드 병합",
+      "noSplitNeeded": "현재 콘텐츠는 분할이 필요하지 않습니다.",
+      "originalLength": "원본 텍스트 길이:",
+      "showAuthor": "작성자 표시",
+      "showDate": "날짜 표시",
+      "showPageNum": "페이지 번호 표시",
+      "showQRCode": "QR 코드 표시",
+      "showTextCount": "텍스트 수 표시",
+      "splitByCharacter": "문자 수로 분할",
+      "splitByParagraph": "단락별로 나누기",
+      "splitBySentence": "문장별로 나누기",
+      "splitMode": "분할 모드",
+      "splitModeTip": "콘텐츠 무결성을 유지하려면 적절한 분할 모드를 선택하세요.",
+      "splitPreview": "분할 미리보기",
+      "styleDescription": "카드 모양 및 글꼴 사용자 정의",
+      "styleSettings": "스타일 설정",
+      "templateDescription": "카드 디자인 템플릿 선택",
+      "templateSelection": "템플릿 선택",
+      "textAlign": "텍스트 정렬",
+      "textProcessing": "긴 텍스트 처리",
+      "textSplitDescription": "콘텐츠가 너무 길면 자동으로 여러 카드로 분할",
+      "willSplitInto": "로 분할됩니다"
+    }
+  },
+  "common": {
+    "copy": "복사",
+    "dashboard": "계기반",
+    "delete": "삭제",
+    "description": "Ant Card는 개인 정보 보호를 최우선으로 하는 무료 오픈 소스 이력서 편집기입니다. \n등록이 필요하지 않으며 모든 데이터가 로컬에 저장되고 데이터 백업 및 내보내기가 지원되므로 이력서 데이터를 항상 사용할 수 있습니다.",
+    "edit": "편집하다",
+    "newResume": "새로운 이력서",
+    "subtitle": "AI 기반 이력서 편집기",
+    "title": "개미 카드"
+  },
+  "dashboard": {
+    "resumes": {
+      "create": "이력서 작성",
+      "created": "생성 날짜",
+      "import": "JSON 구성 가져오기",
+      "importError": "가져오기에 실패했습니다. 파일 형식을 확인하세요.",
+      "importSuccess": "구성을 성공적으로 가져왔습니다.",
+      "myResume": "내 이력서",
+      "newResume": "새로운 이력서",
+      "newResumeDescription": "시작하려면 새 이력서를 작성하세요.",
+      "notice": {
+        "description": "브라우저 캐시가 지워질 때 데이터가 손실되는 것을 방지하려면 설정에서 이력서 백업 폴더를 구성하는 것이 좋습니다.",
+        "goToSettings": "설정으로 이동",
+        "title": "주목"
+      },
+      "synced": "동기화된 파일",
+      "untitled": "제목 없는 이력서",
+      "view": "보다"
+    },
+    "settings": {
+      "ai": {
+        "currentModel": "현재 모델",
+        "deepseek": {
+          "apiKey": "DeepSeek API 키",
+          "description": "DeepSeek 플랫폼에서 API 키 받기",
+          "title": "DeepSeek"
+        },
+        "doubao": {
+          "apiKey": "두바오 API 키",
+          "description": "Volcengine에서 API 키 받기",
+          "modelId": "모델 ID",
+          "title": "두바오"
+        },
+        "getApiKey": "API 키 받기",
+        "openai": {
+          "apiEndpoint": "API 엔드포인트, 예: https://openai.example.org/v1",
+          "apiKey": "OpenAI API 키",
+          "description": "OpenAI 또는 OpenAI 형식과 호환되는 개방형 플랫폼에서 API 키를 얻습니다.",
+          "modelId": "모델 ID",
+          "title": "오픈AI"
+        },
+        "selectModel": "모델 선택",
+        "title": "AI 구성"
+      },
+      "sync": {
+        "description": "이력서를 동기화하고 백업할 폴더를 선택하세요.",
+        "select": "폴더 선택",
+        "title": "디렉터리 동기화"
+      },
+      "syncDirectory": {
+        "changeFolder": "폴더 변경",
+        "currentSyncFolder": "현재 동기화 폴더",
+        "description": "이력서를 동기화하고 백업할 폴더를 선택하세요.",
+        "noFolderConfigured": "구성된 폴더가 없습니다.",
+        "selectFolder": "폴더 선택",
+        "title": "디렉터리 동기화"
+      },
+      "title": "설정"
+    },
+    "sidebar": {
+      "ai": "AI 구성",
+      "resumes": "이력서",
+      "settings": "설정",
+      "templates": "템플릿"
+    },
+    "templates": {
+      "classic": {
+        "description": "대부분의 작업 응용 분야에 적합한 전통적이고 미니멀한 레이아웃",
+        "name": "권위 있는"
+      },
+      "leftRight": {
+        "description": "배경색이 있는 독특한 섹션 제목",
+        "name": "섹션 제목 배경"
+      },
+      "modern": {
+        "description": "개인 특성을 강조하는 클래식한 2열 레이아웃",
+        "name": "2열"
+      },
+      "preview": "시사",
+      "switchTemplate": "템플릿 전환",
+      "timeline": {
+        "description": "경험의 연대순을 강조하는 타임라인 스타일",
+        "name": "타임라인 레이아웃"
+      },
+      "title": "템플릿",
+      "useTemplate": "템플릿 사용"
+    }
+  },
+  "field": {
+    "enterYear": "연도를 입력하세요",
+    "selectDate": "날짜 선택"
+  },
+  "home": {
+    "changelog": "변경 내역",
+    "cta": {
+      "button": "무료로 사용 시작",
+      "description": "지금 Ant Card를 사용하여 인상적인 이력서를 작성해 보세요.",
+      "title": "새로운 경력 장을 시작하세요"
+    },
+    "faq": {
+      "items[0]": {
+        "answer": "Ant Card는 현재 무료이며 기본적인 이력서 작성 요구 사항을 충족합니다. \n오픈 소스 버전의 기능은 변경되지 않으며 PDF 내보내기 기능은 항상 무료입니다.",
+        "question": "앤트카드는 무료로 사용할 수 있나요?"
+      },
+      "items[1]": {
+        "answer": "예, 매우 안전합니다. \nAnt Card는 로컬 저장소를 사용합니다. 즉, 모든 데이터가 클라우드 저장소 없이 귀하의 장치에 저장되어 완벽한 개인 정보 보호가 보장됩니다.",
+        "question": "내 이력서 데이터는 안전한가요?"
+      },
+      "items[2]": {
+        "answer": "현재 PDF 내보내기를 지원하므로 이력서가 모든 장치에서 일관된 형식을 유지할 수 있습니다. \n앞으로 더 많은 내보내기 형식을 지원할 계획입니다.",
+        "question": "어떤 내보내기 형식이 지원되나요?"
+      },
+      "items[3]": {
+        "answer": "JSON 구성 내보내기 기능을 제공하므로 이력서 설정을 JSON 형식으로 저장할 수 있으며 언제 어디서나 모든 장치에서 액세스할 수 있습니다.",
+        "question": "여러 장치에서 어떻게 동기화할 수 있나요?"
+      },
+      "items[4]": {
+        "answer": "우리는 색상, 레이아웃 등을 포함한 풍부한 사용자 정의 옵션을 제공하므로 개인 취향과 업계 요구 사항에 따라 이력서 스타일을 조정할 수 있습니다.",
+        "question": "얼마나 사용자 정의가 가능합니까?"
+      },
+      "title": "자주 묻는 질문"
+    },
+    "features": {
+      "ai": {
+        "badge": "AI 스마트체크",
+        "description": "내장된 스마트 문법 검사는 부적절한 표현을 자동으로 식별하고 전문적인 수정 제안을 제공하여 이력서를 더욱 돋보이게 만듭니다.",
+        "item1": "지능형 향상",
+        "item1_description": "AI가 자동으로 콘텐츠 표현을 최적화하여 이력서를 더욱 전문적으로 만들어줍니다.",
+        "item2": "문법 점검",
+        "item2_description": "문법 및 철자 오류를 자동으로 감지하고 수정합니다.",
+        "title": "스마트 감지, 전문적인 조언"
+      },
+      "preview": {
+        "badge": "실시간 미리보기",
+        "description": "",
+        "item1": "편집 효과의 실시간 미리보기",
+        "item2": "다양한 내보내기 형식 지원",
+        "title": "당신이 보는 것은 당신이 얻는 것입니다"
+      },
+      "storage": {
+        "badge": "로컬 저장소",
+        "description": "모든 이력서 데이터는 로컬에 완전히 저장되므로 개인 정보 유출에 대해 걱정할 필요가 없습니다. \n데이터 내보내기 백업을 지원하여 이력서 데이터를 항상 사용할 수 있도록 하세요.",
+        "item1": "로컬 파일 저장소",
+        "item1_description": "컴퓨터의 하드 드라이브에 안전하게 저장된 데이터를 재개하세요",
+        "item2": "다양한 내보내기 형식",
+        "item2_description": "PDF 및 JSON 형식 내보내기 지원",
+        "item3": "데이터 내보내기 백업 지원",
+        "title": "데이터 보안, 개인 정보 보호 우선"
+      },
+      "subtitle": "우리는 귀하의 구직 여정을 더욱 원활하게 만들어주는 올인원 이력서 솔루션을 제공합니다.",
+      "title": "앤트 카드를 선택하는 이유는 무엇입니까?"
+    },
+    "footer": {
+      "copyright": "2025 앤트 카드. \n모든 권리 보유."
+    },
+    "header": {
+      "about": "에 대한",
+      "dashboard": "계기반",
+      "features": "특징",
+      "login": "로그인",
+      "pricing": "가격",
+      "register": "등록하다",
+      "startButton": "시작하기",
+      "title": "개미 카드"
+    },
+    "hero": {
+      "badge": "스마트 이력서 작성",
+      "cta": "시작하기",
+      "secondary": "템플릿 찾아보기",
+      "subtitle": "Ant Card는 AI 기술을 사용하여 전문적인 이력서를 빠르게 작성할 수 있도록 도와줍니다. \n등록이 필요 없고 무료로 사용할 수 있으며 안전한 데이터 저장이 가능합니다.",
+      "title": "이력서 작성을 간단하고 스마트하게 만드세요"
+    },
+    "news": {
+      "content": "새로운 AI 이력서 강화 기능이 출시되었습니다",
+      "label": "소식"
+    }
+  },
+  "iconSelector": {
+    "all": "모두",
+    "categories": {
+      "achievements": "업적",
+      "education": "교육",
+      "experience": "업무 경험",
+      "hobbies": "취미",
+      "languages": "언어",
+      "others": "기타",
+      "personal": "개인정보",
+      "projects": "프로젝트",
+      "skills": "기술",
+      "social": "소셜 미디어"
+    },
+    "icons": {
+      "address": "주소",
+      "art": "미술",
+      "bookmark": "서표",
+      "branch": "나뭇가지",
+      "communication": "의사소통",
+      "company": "회사",
+      "database": "데이터 베이스",
+      "dateRange": "기간",
+      "education": "교육",
+      "email": "이메일",
+      "facebook": "페이스북",
+      "filter": "필터",
+      "flag": "깃발",
+      "idea": "아이디어",
+      "instagram": "인스타그램",
+      "interest": "관심",
+      "language": "언어",
+      "library": "도서관",
+      "link": "링크",
+      "linkedin": "링크드인",
+      "major": "주요한",
+      "medal": "메달",
+      "mobile": "이동하는",
+      "music": "음악",
+      "office": "사무실",
+      "phone": "핸드폰",
+      "photography": "사진술",
+      "profile": "윤곽",
+      "programming": "프로그램 작성",
+      "project": "프로젝트",
+      "release": "풀어 주다",
+      "review": "검토",
+      "salary": "샐러리",
+      "scholarship": "장학금",
+      "school": "학교",
+      "search": "찾다",
+      "send": "보내다",
+      "settings": "설정",
+      "share": "공유하다",
+      "skill": "기능",
+      "speaking": "말하기",
+      "star": "별",
+      "system": "체계",
+      "target": "목표",
+      "techStack": "기술 스택",
+      "terminal": "단말기",
+      "thumbsUp": "엄지손가락",
+      "trophy": "트로피",
+      "twitter": "지저귀다",
+      "user": "사용자",
+      "website": "웹사이트",
+      "work": "일하다",
+      "workTime": "근무 시간"
+    },
+    "noMatchingIcons": "일치하는 아이콘이 없습니다.",
+    "searchPlaceholder": "아이콘 검색...",
+    "selectOtherCategory": "다른 카테고리를 선택해 주세요",
+    "tryOtherKeywords": "다른 검색 키워드를 사용해 보세요"
+  },
+  "landing": {
+    "about": {
+      "description": "Ant Card는 사용자에게 사용하기 쉽고 강력한 카드 디자인 경험을 제공하기 위한 전문 개인 카드 제작 도구입니다. \n우리는 비즈니스 행사든 개인 브랜딩이든 모든 사람이 아름다운 개인 쇼케이스 카드를 가지고 있어야 한다고 믿습니다. \n지능형 디자인 시스템과 풍부한 템플릿 라이브러리를 통해 카드 제작이 더욱 간편해지고 재미있어집니다.",
+      "title": "에 대한"
+    },
+    "features": {
+      "coreFeatures": "핵심 기능",
+      "diverseTemplates": {
+        "description": "다양한 시나리오 요구 사항을 충족하기 위해 비즈니스, 크리에이티브, 미니멀리스트 및 기타 스타일을 다루는 리치 카드 템플릿 라이브러리입니다.",
+        "title": "다양한 템플릿"
+      },
+      "featureList": {
+        "cleanBeautiful": "깨끗한",
+        "cloudSave": "클라우드 저장",
+        "darkLight": "어두운/밝은 테마",
+        "dragResize": "드래그하여 크기 조정",
+        "multiTemplate": "여러 템플릿",
+        "oneClickExport": "원클릭 내보내기",
+        "realTimePreview": "실시간 미리보기",
+        "responsive": "반응형 디자인",
+        "smartLayout": "스마트 레이아웃"
+      },
+      "realTimeEdit": {
+        "description": "실시간 카드 효과 미리보기가 포함된 WYSIWYG 편집 환경을 통해 창의적인 프로세스를 더욱 직관적이고 효율적으로 만들 수 있습니다.",
+        "title": "실시간 편집 미리보기"
+      },
+      "smartDesign": {
+        "description": "카드 디자인을 자동으로 최적화하는 AI 기반 지능형 레이아웃 시스템으로 개인 프레젠테이션을 더욱 전문적이고 아름답게 만들어줍니다.",
+        "title": "스마트 카드 디자인"
+      },
+      "title": "강한"
+    },
+    "hero": {
+      "description": "실시간 편집, 다양한 템플릿, 스마트 레이아웃을 통해 전문적이고 아름다운 개인 카드를 쉽게 만들 수 있습니다. \n개인 프레젠테이션을 돋보이게 만드세요.",
+      "githubRepo": "Github 저장소",
+      "makingTool": "창조 도구",
+      "smartCard": "스마트 카드",
+      "startMaking": "만들기 시작"
+    },
+    "navbar": {
+      "cardProject": "카드 프로젝트",
+      "faq": "FAQ",
+      "features": "특징",
+      "pricing": "가격",
+      "testimonials": "사용후기"
+    }
+  },
+  "language": {
+    "chinese": "중국어",
+    "english": "영어",
+    "switch": "언어 전환"
+  },
+  "pdfExport": {
+    "button": {
+      "export": "내보내다",
+      "exportJson": "JSON 구성 내보내기",
+      "exportPdf": "PDF 내보내기(서버)",
+      "exporting": "내보내는 중...",
+      "exportingJson": "내보내는 중...",
+      "print": "브라우저 인쇄"
+    },
+    "toast": {
+      "error": "PDF 내보내기 실패",
+      "jsonError": "구성 내보내기 실패",
+      "jsonSuccess": "구성을 성공적으로 내보냈습니다.",
+      "success": "PDF를 성공적으로 내보냈습니다."
+    }
+  },
+  "photoConfig": {
+    "actions": {
+      "cancel": "취소",
+      "close": "닫다",
+      "removePhoto": "사진 삭제",
+      "reset": "다시 놓기"
+    },
+    "config": {
+      "aspectRatio": "종횡비",
+      "border-radius": "테두리 반경",
+      "borderRadius": {
+        "custom": "관습",
+        "customPlaceholder": "맞춤 테두리 반경",
+        "full": "원",
+        "medium": "중간",
+        "none": "없음"
+      },
+      "height": "키",
+      "heightPlaceholder": "키",
+      "ratios": {
+        "16:9": "16:9 와이드스크린",
+        "1:1": "1:1 정사각형",
+        "3:4": "3:4 세로",
+        "4:3": "4:3 풍경",
+        "custom": "관습"
+      },
+      "size": "크기",
+      "width": "너비",
+      "widthPlaceholder": "너비"
+    },
+    "description": "이력서 사진을 맞춤 설정하세요",
+    "title": "사진 설정",
+    "upload": {
+      "dragHint": "드래그 앤 드롭하거나 클릭하여 이미지를 업로드하세요.",
+      "invalidUrl": "이미지 URL이 잘못되었거나 액세스할 수 없습니다. 다른 이미지 링크를 시도해 보세요.",
+      "loadError": "이미지를 로드하지 못했습니다.",
+      "sizeLimit": "이미지 크기는 2MB를 초과할 수 없습니다.",
+      "timeout": "로딩 시간 초과",
+      "title": "온라인 링크",
+      "typeLimit": "이미지 파일을 업로드해주세요",
+      "urlPlaceholder": "이미지 링크 입력"
+    }
+  },
+  "previewDock": {
+    "backToDashboard": "대시보드로 돌아가기",
+    "copyResume": {
+      "error": "이력서를 복사하지 못했습니다.",
+      "success": "이력서가 복사되었습니다.",
+      "tooltip": "이력서 복사"
+    },
+    "editPanel": {
+      "collapse": "편집 패널 접기",
+      "expand": "편집 패널 확장"
+    },
+    "export": {
+      "json": "JSON 내보내기",
+      "pdf": "PDF 내보내기",
+      "print": "인쇄",
+      "tooltip": "이력서 내보내기"
+    },
+    "github": "GitHub",
+    "grammarCheck": {
+      "checking": "확인 중...",
+      "configureButton": "구성",
+      "configurePrompt": "AI 모델을 구성해 주세요",
+      "errorToast": "문법 검사에 실패했습니다. 다시 시도해 주세요.",
+      "idle": "AI 문법 체크"
+    },
+    "sidePanel": {
+      "collapse": "측면 패널 접기",
+      "expand": "측면 패널 확장"
+    },
+    "switchTemplate": "템플릿 전환"
+  },
+  "richEditor": {
+    "aiPolish": "AI 폴란드어",
+    "alignCenter": "중심 정렬",
+    "alignJustify": "신이 옳다고 하다",
+    "alignLeft": "왼쪽 정렬",
+    "alignRight": "오른쪽 정렬",
+    "backgroundColor": "배경색",
+    "bold": "용감한",
+    "bulletList": "글머리 기호 목록",
+    "colors": {
+      "black": "검은색",
+      "blue": "파란색",
+      "cyan": "청록색",
+      "darkGray": "다크 그레이",
+      "gray": "회색",
+      "green": "녹색",
+      "lightBlue": "라이트 블루",
+      "magenta": "마젠타",
+      "orange": "주황색",
+      "orangeYellow": "주황색 노란색",
+      "pink": "분홍색",
+      "purple": "보라",
+      "red": "빨간색",
+      "yellow": "노란색",
+      "yellowGreen": "황록색"
+    },
+    "heading1": "제목 1",
+    "heading2": "제목 2",
+    "heading3": "제목 3",
+    "italic": "이탤릭체",
+    "orderedList": "정렬된 목록",
+    "paragraph": "절",
+    "redo": "다시 하다",
+    "textColor": "텍스트 색상",
+    "underline": "밑줄",
+    "undo": "끄르다"
+  },
+  "templates": {
+    "switchTemplate": "템플릿 전환"
+  },
+  "themeModal": {
+    "delete": {
+      "cancelText": "취소",
+      "confirmText": "삭제",
+      "description": "{제목}을 삭제하시겠습니까?",
+      "title": "삭제하시겠습니까?"
+    }
+  },
+  "workbench": {
+    "backToDashboard": "",
+    "basicPanel": {
+      "avatar": "화신",
+      "basicField": "기초적인",
+      "basicFields": {
+        "birthDate": "생년월일",
+        "email": "이메일",
+        "employementStatus": "고용",
+        "location": "위치",
+        "name": "이름",
+        "phone": "핸드폰",
+        "title": "제목",
+        "website": "웹사이트"
+      },
+      "customField": "관습",
+      "customFields": {
+        "addButton": "사용자 정의 필드 추가",
+        "placeholders": {
+          "label": "상표",
+          "value": "값"
+        }
+      },
+      "fieldVisibility": {
+        "hide": "숨다",
+        "show": "보여주다"
+      },
+      "githubContributions": "GitHub 기여",
+      "layout": "맞추다",
+      "layoutCenter": "",
+      "layoutLeft": "",
+      "layoutRight": "",
+      "title": "윤곽"
+    },
+    "educationItem": {
+      "buttons": {
+        "cancel": "취소",
+        "delete": "삭제",
+        "edit": "편집하다",
+        "save": "구하다"
+      },
+      "labels": {
+        "date": "학습기간",
+        "degree": "도",
+        "description": "설명",
+        "endDate": "종료일",
+        "gpa": "평점",
+        "location": "위치",
+        "major": "주요한",
+        "school": "학교 이름",
+        "startDate": "시작일"
+      },
+      "placeholders": {
+        "date": "학습 시간 범위를 입력하세요.",
+        "degree": "학위 선택",
+        "description": "학교 설명을 입력하세요",
+        "gpa": "GPA를 입력하세요",
+        "location": "위치 입력",
+        "major": "전공을 입력하세요",
+        "school": "학교 이름을 입력하세요"
+      },
+      "visibility": {
+        "hide": "숨다",
+        "show": "보여주다"
+      }
+    },
+    "educationPanel": {
+      "addButton": "교육 추가",
+      "defaultProject": {
+        "date": "2020.09 - 2024.06",
+        "degree": "도",
+        "major": "주요한",
+        "school": "학교 이름"
+      },
+      "placeholders": {
+        "date": "학습기간 입력",
+        "degree": "학위 선택",
+        "major": "전공을 입력하세요",
+        "school": "학교 이름을 입력하세요"
+      },
+      "title": "교육"
+    },
+    "experienceItem": {
+      "buttons": {
+        "cancel": "취소",
+        "delete": "삭제",
+        "edit": "편집하다",
+        "save": "구하다"
+      },
+      "labels": {
+        "company": "회사명",
+        "date": "고용기간",
+        "details": "직무 책임",
+        "position": "위치"
+      },
+      "placeholders": {
+        "company": "회사명을 입력하세요",
+        "date": "예: 2020-현재",
+        "details": "이 역할에 대한 귀하의 책임과 성과를 설명하세요.",
+        "position": "예: 프론트엔드 엔지니어"
+      },
+      "visibility": {
+        "hide": "숨다",
+        "show": "보여주다"
+      }
+    },
+    "experiencePanel": {
+      "addButton": "업무 경험 추가",
+      "defaultProject": {
+        "company": "테크컴퍼니(주)",
+        "date": "2020-현재",
+        "details": "핵심 제품 개발을 담당하고 있습니다.",
+        "position": "수석 프론트엔드 엔지니어"
+      },
+      "placeholders": {
+        "company": "회사 이름",
+        "date": "고용기간",
+        "details": "직무 책임 및 성과",
+        "position": "직위"
+      },
+      "title": "업무 경험"
+    },
+    "projectItem": {
+      "buttons": {
+        "cancel": "취소",
+        "delete": "삭제",
+        "edit": "편집하다",
+        "save": "구하다"
+      },
+      "labels": {
+        "date": "사업기간",
+        "description": "프로젝트 설명",
+        "link": "프로젝트 링크",
+        "name": "프로젝트 이름",
+        "role": "프로젝트 역할",
+        "technologies": "기술 스택"
+      },
+      "placeholders": {
+        "date": "프로젝트 기간",
+        "description": "프로젝트 배경과 목표를 간략하게 설명하세요.",
+        "link": "프로젝트 링크",
+        "name": "프로젝트 이름을 입력하세요",
+        "role": "프로젝트에서 귀하의 역할",
+        "technologies": "사용된 기술 및 도구"
+      },
+      "visibility": {
+        "hide": "숨다",
+        "show": "보여주다"
+      }
+    },
+    "projectPanel": {
+      "addButton": "프로젝트 추가",
+      "defaultProject": {
+        "date": "2023.01 - 2023.06",
+        "description": "프로젝트 설명",
+        "name": "개인 프로젝트",
+        "role": "책임",
+        "technologies": ""
+      },
+      "placeholders": {
+        "date": "프로젝트 기간",
+        "description": "프로젝트 배경과 목표를 간략하게 설명하세요.",
+        "link": "프로젝트 링크",
+        "name": "프로젝트 이름",
+        "role": "프로젝트에서 귀하의 역할과 책임",
+        "technologies": ""
+      },
+      "title": "프로젝트 경험"
+    },
+    "sidePanel": {
+      "layout": {
+        "addCustomSection": "사용자 정의 섹션 추가",
+        "title": "공들여 나열한 것"
+      },
+      "mode": {
+        "centerSubtitle": {
+          "title": "센터 자막"
+        },
+        "title": "방법",
+        "useIconMode": {
+          "title": "아이콘 모드"
+        }
+      },
+      "spacing": {
+        "paragraphSpacing": {
+          "title": "단락 간격"
+        },
+        "sectionSpacing": {
+          "title": "섹션 간격"
+        },
+        "title": "간격"
+      },
+      "theme": {
+        "custom": "관습",
+        "title": "테마 색상"
+      },
+      "typography": {
+        "baseFontSize": {
+          "title": "기본 글꼴 크기"
+        },
+        "font": {
+          "mono": "고정 폭",
+          "sans": "산세리프체",
+          "serif": "가는 장식 선",
+          "title": "세례반"
+        },
+        "headerSize": {
+          "title": "섹션 헤더 크기"
+        },
+        "lineHeight": {
+          "loose": "헐렁한",
+          "normal": "기본",
+          "relaxed": "편안한",
+          "title": "라인 높이"
+        },
+        "subheaderSize": {
+          "title": "하위 섹션 헤더 크기"
+        },
+        "title": "타이포그래피"
+      }
+    }
+  }
+}

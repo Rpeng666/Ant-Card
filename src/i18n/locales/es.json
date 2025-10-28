@@ -1,0 +1,784 @@
+{
+  "aiPolishDialog": {
+    "button": {
+      "apply": "Aplicar contenido",
+      "generating": "Generando...",
+      "regenerate": "Regenerado"
+    },
+    "content": {
+      "original": "Contenido original",
+      "polished": "Contenido pulido"
+    },
+    "description": {
+      "finished": "El contenido ha sido optimizado, por favor comprueba el resultado.",
+      "polishing": "Puliendo tu contenido..."
+    },
+    "error": {
+      "applied": "Contenido polaco aplicado.",
+      "configRequired": "Primero configure el modelo de IA",
+      "polishFailed": "polaco falló"
+    },
+    "title": "AI polaco"
+  },
+  "cardEditor": {
+    "preview": {
+      "dragToView": "Arrastrar para ver",
+      "export": {
+        "copyPng": "Copiar como PNG",
+        "jpeg": "Exportar como JPEG",
+        "pdf": "Exportar como PDF",
+        "png": "Exportar como PNG",
+        "svg": "Exportar como SVG",
+        "tooltip": "Exportar"
+      },
+      "exportError": {
+        "copy": "Copia fallida",
+        "jpeg": "La exportación JPEG falló",
+        "pdf": "La exportación de PDF falló",
+        "png": "Error al exportar PNG",
+        "svg": "La exportación SVG falló"
+      },
+      "exportSuccess": {
+        "copied": "Copiado al portapapeles",
+        "jpeg": "Exportación JPEG exitosa",
+        "jpegBatch": "{count} archivos JPEG exportados correctamente",
+        "pdf": "Exportación de PDF exitosa",
+        "pdfBatch": "PDF exportado correctamente con {count} tarjetas",
+        "png": "Exportación PNG exitosa",
+        "pngBatch": "{count} archivos PNG exportados correctamente",
+        "svg": "Exportación SVG exitosa"
+      },
+      "noCard": "Seleccione una tarjeta para obtener una vista previa",
+      "title": "Avance",
+      "totalCards": "Total"
+    },
+    "sidePanel": {
+      "advancedDescription": "Más opciones de personalización",
+      "advancedSettings": "Configuración avanzada",
+      "alignOptions": {
+        "center": "Centro",
+        "left": "Izquierda",
+        "right": "Bien"
+      },
+      "aspectRatio": "Relación de aspecto",
+      "averageLength": "Promedio por tarjeta aproximadamente",
+      "cards": "tarjetas",
+      "charLimitTip": "Se recomiendan entre 150 y 300 caracteres para garantizar el contenido adecuado de la tarjeta.",
+      "characters": "personajes",
+      "detected": "Detectado",
+      "displayOptions": "Opciones de visualización",
+      "enableTextSplit": "Habilitar división de texto",
+      "executeSplit": "Ejecutar división",
+      "fontFamily": "Familia de fuentes",
+      "fontOptions": {
+        "mono": "monoespacio",
+        "sans": "Sin serifa",
+        "serif": "Serifa"
+      },
+      "fontSize": "Tamaño de fuente",
+      "layoutDescription": "Ajustar el tamaño y la proporción de la tarjeta",
+      "layoutSettings": "Configuración de diseño",
+      "maxCharsPerCard": "Límite de caracteres por tarjeta",
+      "mergeKeepsContent": "Todo el contenido se conservará después de la fusión.",
+      "mergeNow": "Fusionar ahora",
+      "mergeRecommendation": "Recomendar fusionar en una sola tarjeta después de deshabilitar la división",
+      "multiCardMerge": "Fusión de varias tarjetas",
+      "noSplitNeeded": "El contenido actual no necesita ser dividido",
+      "originalLength": "Longitud del texto original:",
+      "showAuthor": "Mostrar autor",
+      "showDate": "Mostrar fecha",
+      "showPageNum": "Mostrar número de página",
+      "showQRCode": "Mostrar código QR",
+      "showTextCount": "Mostrar recuento de texto",
+      "splitByCharacter": "Dividir por número de caracteres",
+      "splitByParagraph": "Dividir por párrafo",
+      "splitBySentence": "Dividido por oración",
+      "splitMode": "Modo dividido",
+      "splitModeTip": "Elija el modo de división apropiado para mantener la integridad del contenido",
+      "splitPreview": "Vista previa dividida",
+      "styleDescription": "Personaliza la apariencia y la fuente de la tarjeta",
+      "styleSettings": "Configuración de estilo",
+      "templateDescription": "Elija la plantilla de diseño de tarjeta",
+      "templateSelection": "Selección de plantilla",
+      "textAlign": "Alineación de texto",
+      "textProcessing": "Procesamiento de textos largos",
+      "textSplitDescription": "Dividir automáticamente en varias tarjetas cuando el contenido es demasiado largo",
+      "willSplitInto": "se dividirá en"
+    }
+  },
+  "common": {
+    "dashboard": "Panel",
+    "delete": "Borrar",
+    "description": "Ant Card es un editor de currículums de código abierto, gratuito y que prioriza la privacidad. \nNo es necesario registrarse, todos los datos se almacenan localmente, admite copia de seguridad y exportación de datos, lo que garantiza que los datos de su currículum estén siempre disponibles.",
+    "edit": "Editar",
+    "newResume": "Nuevo currículum",
+    "subtitle": "Editor de currículum impulsado por IA",
+    "title": "Tarjeta de hormiga"
+  },
+  "dashboard": {
+    "resumes": {
+      "create": "Crear currículum",
+      "created": "Creado en",
+      "import": "Importar configuración JSON",
+      "importError": "La importación falló, verifique el formato del archivo",
+      "importSuccess": "Configuración importada exitosamente",
+      "myResume": "Mis currículums",
+      "newResume": "Nuevo currículum",
+      "newResumeDescription": "Cree un nuevo currículum para comenzar.",
+      "notice": {
+        "description": "Se recomienda configurar una carpeta de respaldo de currículum en la configuración para evitar que sus datos se pierdan cuando se borre el caché del navegador.",
+        "goToSettings": "Ir a configuración",
+        "title": "Atención"
+      },
+      "synced": "Archivos sincronizados",
+      "untitled": "Currículum sin título",
+      "view": "Vista"
+    },
+    "settings": {
+      "ai": {
+        "currentModel": "Modelo actual",
+        "deepseek": {
+          "apiKey": "Clave API de DeepSeek",
+          "description": "Obtenga la clave API de la plataforma DeepSeek",
+          "title": "búsqueda profunda"
+        },
+        "doubao": {
+          "apiKey": "Clave API de Doubao",
+          "description": "Obtenga la clave API de Volcengine",
+          "modelId": "ID del modelo",
+          "title": "Doubao"
+        },
+        "getApiKey": "Obtener clave API",
+        "openai": {
+          "apiEndpoint": "Punto final API, ejemplo: https://openai.example.org/v1",
+          "apiKey": "Clave API de OpenAI",
+          "description": "Obtenga la clave API en OpenAI o en una plataforma abierta compatible con el formato OpenAI",
+          "modelId": "ID del modelo",
+          "title": "AbiertoAI"
+        },
+        "selectModel": "Seleccionar modelo",
+        "title": "Configuración de IA"
+      },
+      "sync": {
+        "description": "Elija una carpeta para sincronizar y hacer una copia de seguridad de sus currículums.",
+        "select": "Seleccionar carpeta",
+        "title": "Directorio de sincronización"
+      },
+      "syncDirectory": {
+        "changeFolder": "Cambiar carpeta",
+        "currentSyncFolder": "Carpeta de sincronización actual",
+        "description": "Elija una carpeta para sincronizar y hacer una copia de seguridad de sus currículums.",
+        "noFolderConfigured": "Ninguna carpeta configurada",
+        "selectFolder": "Seleccionar carpeta",
+        "title": "Directorio de sincronización"
+      },
+      "title": "Ajustes"
+    },
+    "sidebar": {
+      "ai": "Configuración de IA",
+      "resumes": "CV",
+      "settings": "Ajustes",
+      "templates": "Plantillas"
+    },
+    "templates": {
+      "classic": {
+        "description": "Diseño tradicional y minimalista, adecuado para la mayoría de las aplicaciones laborales.",
+        "name": "Clásico"
+      },
+      "leftRight": {
+        "description": "Títulos de sección distintivos con color de fondo.",
+        "name": "Fondo del título de la sección"
+      },
+      "modern": {
+        "description": "Diseño clásico de dos columnas, destacando las características personales.",
+        "name": "Dos columnas"
+      },
+      "preview": "Avance",
+      "switchTemplate": "Cambiar plantilla",
+      "timeline": {
+        "description": "Estilo de línea de tiempo, enfatizando el orden cronológico de las experiencias.",
+        "name": "Diseño de línea de tiempo"
+      },
+      "title": "Plantillas",
+      "useTemplate": "Usar plantilla"
+    }
+  },
+  "field": {
+    "enterYear": "Introduzca el año",
+    "selectDate": "Seleccionar fecha"
+  },
+  "home": {
+    "changelog": "Registro de cambios",
+    "cta": {
+      "button": "Comience a usar gratis",
+      "description": "Comience a usar Ant Card ahora para crear un currículum impresionante",
+      "title": "Comience su nuevo capítulo profesional"
+    },
+    "faq": {
+      "items[0]": {
+        "answer": "Actualmente, Ant Card es gratuito y satisface las necesidades básicas de creación de currículums. \nLas funciones de la versión de código abierto permanecerán sin cambios y la función de exportación de PDF siempre será gratuita.",
+        "question": "¿La Ant Card es de uso gratuito?"
+      },
+      "items[1]": {
+        "answer": "Sí, muy seguro. \nAnt Card utiliza almacenamiento local, lo que significa que todos sus datos se almacenan en su propio dispositivo sin almacenamiento en la nube, lo que garantiza una protección completa de la privacidad.",
+        "question": "¿Están seguros los datos de mi currículum?"
+      },
+      "items[2]": {
+        "answer": "Actualmente admitimos la exportación de PDF, lo que garantiza que su currículum mantenga un formato consistente en cualquier dispositivo. \nPlaneamos admitir más formatos de exportación en el futuro.",
+        "question": "¿Qué formatos de exportación son compatibles?"
+      },
+      "items[3]": {
+        "answer": "Proporcionamos exportación de configuración JSON, lo que le permite guardar la configuración de su currículum en formato JSON, accesible en cualquier momento, en cualquier lugar y en cualquier dispositivo.",
+        "question": "¿Cómo puedo sincronizar entre dispositivos?"
+      },
+      "items[4]": {
+        "answer": "Ofrecemos amplias opciones de personalización, incluidos colores, diseños y más, lo que le permite ajustar el estilo de su currículum según sus preferencias personales y los requisitos de la industria.",
+        "question": "¿Qué tan personalizable es?"
+      },
+      "title": "Preguntas frecuentes"
+    },
+    "features": {
+      "ai": {
+        "badge": "Comprobación inteligente de IA",
+        "description": "La revisión gramatical inteligente incorporada identifica automáticamente expresiones inapropiadas, proporciona sugerencias de modificación profesionales, lo que hace que su currículum sea más sobresaliente.",
+        "item1": "Mejora inteligente",
+        "item1_description": "La IA optimiza automáticamente la expresión del contenido, haciendo que su currículum sea más profesional",
+        "item2": "revisión gramatical",
+        "item2_description": "Detecta y corrige automáticamente errores gramaticales y ortográficos.",
+        "title": "Detección inteligente, asesoramiento profesional"
+      },
+      "preview": {
+        "badge": "Vista previa en tiempo real",
+        "description": "",
+        "item1": "Vista previa en tiempo real de los efectos de edición.",
+        "item2": "Soporte de múltiples formatos de exportación",
+        "title": "Lo que ves es lo que obtienes"
+      },
+      "storage": {
+        "badge": "Almacenamiento local",
+        "description": "Todos los datos del currículum se almacenan completamente localmente, no hay necesidad de preocuparse por las filtraciones de privacidad. \nAdmite copia de seguridad de exportación de datos, asegúrate de que los datos de tu currículum estén siempre disponibles.",
+        "item1": "Almacenamiento de archivos locales",
+        "item1_description": "Reanudar los datos almacenados de forma segura en el disco duro de su computadora",
+        "item2": "Múltiples formatos de exportación",
+        "item2_description": "Admite exportación en formato PDF y JSON",
+        "item3": "Admite copia de seguridad de exportación de datos",
+        "title": "Seguridad de datos, privacidad primero"
+      },
+      "subtitle": "Proporcionamos una solución de currículum todo en uno para que su viaje de búsqueda de empleo sea más sencillo",
+      "title": "¿Por qué elegir Ant Card?"
+    },
+    "footer": {
+      "copyright": "Tarjeta Hormiga 2025. \nReservados todos los derechos."
+    },
+    "header": {
+      "about": "Acerca de",
+      "dashboard": "Panel",
+      "features": "Características",
+      "login": "Acceso",
+      "pricing": "Precios",
+      "register": "Registro",
+      "startButton": "Empezar",
+      "title": "Tarjeta de hormiga"
+    },
+    "hero": {
+      "badge": "Creación de currículum inteligente",
+      "cta": "Empezar",
+      "secondary": "Explorar plantillas",
+      "subtitle": "Ant Card utiliza tecnología de inteligencia artificial para ayudarlo a crear rápidamente currículums profesionales. \nNo es necesario registrarse, de uso gratuito y con almacenamiento seguro de datos.",
+      "title": "Haga que la creación de currículums sea simple e inteligente"
+    },
+    "news": {
+      "content": "La nueva función de mejora de currículum de IA está disponible",
+      "label": "Noticias"
+    }
+  },
+  "iconSelector": {
+    "all": "Todo",
+    "categories": {
+      "achievements": "Logros",
+      "education": "Educación",
+      "experience": "Experiencia laboral",
+      "hobbies": "Pasatiempos",
+      "languages": "Idiomas",
+      "others": "Otros",
+      "personal": "Información personal",
+      "projects": "Proyectos",
+      "skills": "Habilidades",
+      "social": "Redes Sociales"
+    },
+    "icons": {
+      "address": "DIRECCIÓN",
+      "art": "Arte",
+      "bookmark": "Marcador",
+      "branch": "Rama",
+      "communication": "Comunicación",
+      "company": "Compañía",
+      "database": "Base de datos",
+      "dateRange": "Rango de fechas",
+      "education": "Educación",
+      "email": "Correo electrónico",
+      "facebook": "Facebook",
+      "filter": "Filtrar",
+      "flag": "Bandera",
+      "idea": "Idea",
+      "instagram": "Instagram",
+      "interest": "Interés",
+      "language": "Idioma",
+      "library": "Biblioteca",
+      "link": "Enlace",
+      "linkedin": "LinkedIn",
+      "major": "Importante",
+      "medal": "Medalla",
+      "mobile": "Móvil",
+      "music": "Música",
+      "office": "Oficina",
+      "phone": "Teléfono",
+      "photography": "Fotografía",
+      "profile": "Perfil",
+      "programming": "Programación",
+      "project": "Proyecto",
+      "release": "Liberar",
+      "review": "Revisar",
+      "salary": "Salario",
+      "scholarship": "Beca",
+      "school": "Escuela",
+      "search": "Buscar",
+      "send": "Enviar",
+      "settings": "Ajustes",
+      "share": "Compartir",
+      "skill": "Habilidad",
+      "speaking": "Discurso",
+      "star": "Estrella",
+      "system": "Sistema",
+      "target": "Objetivo",
+      "techStack": "Pila de tecnología",
+      "terminal": "Terminal",
+      "thumbsUp": "Pulgares hacia arriba",
+      "trophy": "Trofeo",
+      "twitter": "Gorjeo",
+      "user": "Usuario",
+      "website": "Sitio web",
+      "work": "Trabajar",
+      "workTime": "tiempo de trabajo"
+    },
+    "noMatchingIcons": "No se encontraron iconos coincidentes",
+    "searchPlaceholder": "Iconos de búsqueda...",
+    "selectOtherCategory": "Por favor seleccione otra categoría",
+    "tryOtherKeywords": "Pruebe con otras palabras clave de búsqueda"
+  },
+  "landing": {
+    "about": {
+      "description": "Ant Card es una herramienta profesional de creación de tarjetas personales dedicada a brindar a los usuarios una experiencia de diseño de tarjetas potente y fácil de usar. \nCreemos que todo el mundo debería tener una bonita tarjeta de presentación personal, ya sea para ocasiones de negocios o para su marca personal. \nA través de sistemas de diseño inteligentes y ricas bibliotecas de plantillas, la creación de tarjetas se vuelve simple y divertida.",
+      "title": "Acerca de"
+    },
+    "features": {
+      "coreFeatures": "Características principales",
+      "diverseTemplates": {
+        "description": "Biblioteca de plantillas de tarjetas enriquecidas que cubren estilos empresariales, creativos, minimalistas y otros estilos para satisfacer las necesidades de diferentes escenarios.",
+        "title": "Plantillas diversas"
+      },
+      "featureList": {
+        "cleanBeautiful": "Limpio",
+        "cloudSave": "Guardar en la nube",
+        "darkLight": "Tema oscuro/claro",
+        "dragResize": "Arrastrar para cambiar el tamaño",
+        "multiTemplate": "Múltiples plantillas",
+        "oneClickExport": "Exportar con un clic",
+        "realTimePreview": "Vista previa en tiempo real",
+        "responsive": "Diseño Responsivo",
+        "smartLayout": "Diseño inteligente"
+      },
+      "realTimeEdit": {
+        "description": "Experiencia de edición WYSIWYG con vista previa de efectos de tarjeta en tiempo real, lo que hace que su proceso creativo sea más intuitivo y eficiente.",
+        "title": "Vista previa de edición en tiempo real"
+      },
+      "smartDesign": {
+        "description": "Sistema de diseño inteligente impulsado por IA que optimiza automáticamente el diseño de la tarjeta, haciendo que su presentación personal sea más profesional y hermosa.",
+        "title": "Diseño de tarjetas inteligentes"
+      },
+      "title": "Poderoso"
+    },
+    "hero": {
+      "description": "Cree fácilmente tarjetas personales hermosas y profesionales con edición en tiempo real, múltiples plantillas y diseños inteligentes. \nHaga que su presentación personal sea sobresaliente.",
+      "githubRepo": "Repositorio Github",
+      "makingTool": "Herramienta de creación",
+      "smartCard": "Tarjeta inteligente",
+      "startMaking": "Empezar a crear"
+    },
+    "navbar": {
+      "cardProject": "Proyecto de tarjeta",
+      "faq": "Preguntas frecuentes",
+      "features": "Características",
+      "pricing": "Precios",
+      "testimonials": "Testimonios"
+    }
+  },
+  "language": {
+    "chinese": "中文",
+    "english": "Inglés",
+    "switch": "Cambiar idioma"
+  },
+  "pdfExport": {
+    "button": {
+      "export": "Exportar",
+      "exportJson": "Exportar configuración JSON",
+      "exportPdf": "Exportar PDF (Servidor)",
+      "exporting": "Exportador...",
+      "exportingJson": "Exportador...",
+      "print": "Impresión del navegador"
+    },
+    "toast": {
+      "error": "La exportación de PDF falló",
+      "jsonError": "Error al exportar la configuración",
+      "jsonSuccess": "Configuración exportada exitosamente",
+      "success": "PDF exportado correctamente"
+    }
+  },
+  "photoConfig": {
+    "actions": {
+      "cancel": "Cancelar",
+      "close": "Cerca",
+      "removePhoto": "Eliminar foto",
+      "reset": "Reiniciar"
+    },
+    "config": {
+      "aspectRatio": "Relación de aspecto",
+      "border-radius": "Radio del borde",
+      "borderRadius": {
+        "custom": "Costumbre",
+        "customPlaceholder": "Radio de borde personalizado",
+        "full": "Círculo",
+        "medium": "Medio",
+        "none": "Ninguno"
+      },
+      "height": "Altura",
+      "heightPlaceholder": "Altura",
+      "ratios": {
+        "16:9": "Pantalla panorámica 16:9",
+        "1:1": "Cuadrado 1:1",
+        "3:4": "Retrato 3:4",
+        "4:3": "4:3 Paisaje",
+        "custom": "Costumbre"
+      },
+      "size": "Tamaño",
+      "width": "Ancho",
+      "widthPlaceholder": "Ancho"
+    },
+    "description": "Personaliza la foto de tu currículum",
+    "title": "Configuración de fotos",
+    "upload": {
+      "dragHint": "Arrastra y suelta o haz clic para cargar la imagen.",
+      "invalidUrl": "URL de imagen no válida o inaccesible; intente con otro enlace de imagen",
+      "loadError": "No se pudo cargar la imagen",
+      "sizeLimit": "El tamaño de la imagen no debe exceder los 2 MB.",
+      "timeout": "Tiempo de espera de carga",
+      "title": "Enlace en línea",
+      "typeLimit": "Por favor sube un archivo de imagen",
+      "urlPlaceholder": "Ingrese el enlace de la imagen"
+    }
+  },
+  "previewDock": {
+    "backToDashboard": "Volver al panel",
+    "copyResume": {
+      "error": "No se pudo copiar el currículum",
+      "success": "Currículum copiado exitosamente",
+      "tooltip": "Copiar currículum"
+    },
+    "editPanel": {
+      "collapse": "Contraer panel de edición",
+      "expand": "Expandir el panel de edición"
+    },
+    "export": {
+      "json": "Exportar JSON",
+      "pdf": "Exportar PDF",
+      "print": "Imprimir",
+      "tooltip": "Exportar currículum"
+    },
+    "github": "GitHub",
+    "grammarCheck": {
+      "checking": "De cheques...",
+      "configureButton": "Configurar",
+      "configurePrompt": "Por favor configure el modelo AI",
+      "errorToast": "Error en la revisión gramatical, inténtelo de nuevo",
+      "idle": "Revisión gramatical de IA"
+    },
+    "sidePanel": {
+      "collapse": "Contraer panel lateral",
+      "expand": "Expandir panel lateral"
+    },
+    "switchTemplate": "Cambiar plantilla"
+  },
+  "richEditor": {
+    "aiPolish": "AI polaco",
+    "alignCenter": "Alinear al centro",
+    "alignJustify": "Justificar",
+    "alignLeft": "Alinear a la izquierda",
+    "alignRight": "Alinear a la derecha",
+    "backgroundColor": "Color de fondo",
+    "bold": "Atrevido",
+    "bulletList": "Lista de viñetas",
+    "colors": {
+      "black": "Negro",
+      "blue": "Azul",
+      "cyan": "cian",
+      "darkGray": "Gris oscuro",
+      "gray": "Gris",
+      "green": "Verde",
+      "lightBlue": "Azul claro",
+      "magenta": "Magenta",
+      "orange": "Naranja",
+      "orangeYellow": "amarillo anaranjado",
+      "pink": "Rosa",
+      "purple": "Púrpura",
+      "red": "Rojo",
+      "yellow": "Amarillo",
+      "yellowGreen": "amarillo verde"
+    },
+    "heading1": "Título 1",
+    "heading2": "Título 2",
+    "heading3": "Título 3",
+    "italic": "Itálico",
+    "orderedList": "Lista ordenada",
+    "paragraph": "Párrafo",
+    "redo": "Rehacer",
+    "textColor": "Color del texto",
+    "underline": "Subrayar",
+    "undo": "Deshacer"
+  },
+  "templates": {
+    "switchTemplate": "Cambiar plantilla"
+  },
+  "themeModal": {
+    "delete": {
+      "cancelText": "Cancelar",
+      "confirmText": "Borrar",
+      "description": "¿Estás seguro de que deseas eliminar {título}?",
+      "title": "¿Estás seguro de que deseas eliminar?"
+    }
+  },
+  "workbench": {
+    "backToDashboard": "",
+    "basicPanel": {
+      "avatar": "Avatar",
+      "basicField": "Básico",
+      "basicFields": {
+        "birthDate": "Fecha de nacimiento",
+        "email": "Correo electrónico",
+        "employementStatus": "Emplear",
+        "location": "Ubicación",
+        "name": "Nombre",
+        "phone": "Teléfono",
+        "title": "Título",
+        "website": "Sitio web"
+      },
+      "customField": "Costumbre",
+      "customFields": {
+        "addButton": "Agregar campo personalizado",
+        "placeholders": {
+          "label": "Etiqueta",
+          "value": "Valor"
+        }
+      },
+      "fieldVisibility": {
+        "hide": "Esconder",
+        "show": "Espectáculo"
+      },
+      "githubContributions": "Contribuciones de GitHub",
+      "layout": "Alinear",
+      "layoutCenter": "",
+      "layoutLeft": "",
+      "layoutRight": "",
+      "title": "Perfil"
+    },
+    "educationItem": {
+      "buttons": {
+        "cancel": "Cancelar",
+        "delete": "Borrar",
+        "edit": "Editar",
+        "save": "Ahorrar"
+      },
+      "labels": {
+        "date": "Período de estudio",
+        "degree": "Grado",
+        "description": "Descripción",
+        "endDate": "Fecha de finalización",
+        "gpa": "GPA",
+        "location": "Ubicación",
+        "major": "Importante",
+        "school": "Nombre de la escuela",
+        "startDate": "Fecha de inicio"
+      },
+      "placeholders": {
+        "date": "Ingrese el rango de tiempo de estudio",
+        "degree": "Seleccionar grado",
+        "description": "Ingrese la descripción de la escuela",
+        "gpa": "Ingrese el promedio general",
+        "location": "Introduce la ubicación",
+        "major": "Ingrese mayor",
+        "school": "Ingrese el nombre de la escuela"
+      },
+      "visibility": {
+        "hide": "Esconder",
+        "show": "Espectáculo"
+      }
+    },
+    "educationPanel": {
+      "addButton": "Agregar educación",
+      "defaultProject": {
+        "date": "2020.09 - 2024.06",
+        "degree": "Grado",
+        "major": "Importante",
+        "school": "Nombre de la escuela"
+      },
+      "placeholders": {
+        "date": "Ingresar periodo de estudio",
+        "degree": "Seleccionar grado",
+        "major": "Ingrese mayor",
+        "school": "Ingrese el nombre de la escuela"
+      },
+      "title": "Educación"
+    },
+    "experienceItem": {
+      "buttons": {
+        "cancel": "Cancelar",
+        "delete": "Borrar",
+        "edit": "Editar",
+        "save": "Ahorrar"
+      },
+      "labels": {
+        "company": "nombre de empresa",
+        "date": "Período de empleo",
+        "details": "Responsabilidades laborales",
+        "position": "Posición"
+      },
+      "placeholders": {
+        "company": "Introduzca el nombre de la empresa",
+        "date": "por ejemplo, 2020-presente",
+        "details": "Describe tus responsabilidades y logros en este rol.",
+        "position": "por ejemplo, ingeniero frontend"
+      },
+      "visibility": {
+        "hide": "Esconder",
+        "show": "Espectáculo"
+      }
+    },
+    "experiencePanel": {
+      "addButton": "Agregar experiencia laboral",
+      "defaultProject": {
+        "company": "Compañía tecnológica Ltd.",
+        "date": "2020-presente",
+        "details": "Responsable del desarrollo de productos principales...",
+        "position": "Ingeniero Frontend Senior"
+      },
+      "placeholders": {
+        "company": "nombre de empresa",
+        "date": "periodo de empleo",
+        "details": "responsabilidades y logros laborales",
+        "position": "título profesional"
+      },
+      "title": "Experiencia laboral"
+    },
+    "projectItem": {
+      "buttons": {
+        "cancel": "Cancelar",
+        "delete": "Borrar",
+        "edit": "Editar",
+        "save": "Ahorrar"
+      },
+      "labels": {
+        "date": "Período del proyecto",
+        "description": "Descripción del proyecto",
+        "link": "Enlace del proyecto",
+        "name": "Nombre del proyecto",
+        "role": "Rol del proyecto",
+        "technologies": "Pila de tecnología"
+      },
+      "placeholders": {
+        "date": "Rango de tiempo del proyecto",
+        "description": "Describa brevemente los antecedentes y objetivos del proyecto.",
+        "link": "Enlace del proyecto",
+        "name": "Introduzca el nombre del proyecto",
+        "role": "Tu papel en el proyecto",
+        "technologies": "Tecnologías y herramientas utilizadas."
+      },
+      "visibility": {
+        "hide": "Esconder",
+        "show": "Espectáculo"
+      }
+    },
+    "projectPanel": {
+      "addButton": "Agregar proyecto",
+      "defaultProject": {
+        "date": "2023.01 - 2023.06",
+        "description": "Descripción del proyecto",
+        "name": "Proyecto personal",
+        "role": "Responsabilidades",
+        "technologies": ""
+      },
+      "placeholders": {
+        "date": "Rango de tiempo del proyecto",
+        "description": "Describa brevemente los antecedentes y objetivos del proyecto.",
+        "link": "Enlace del proyecto",
+        "name": "Nombre del proyecto",
+        "role": "Su rol y responsabilidades en el proyecto.",
+        "technologies": ""
+      },
+      "title": "Experiencia en proyectos"
+    },
+    "sidePanel": {
+      "layout": {
+        "addCustomSection": "Agregar sección personalizada",
+        "title": "Disposición"
+      },
+      "mode": {
+        "centerSubtitle": {
+          "title": "Subtítulo central"
+        },
+        "title": "Modo",
+        "useIconMode": {
+          "title": "Modo de icono"
+        }
+      },
+      "spacing": {
+        "pagePadding": {
+          "title": "Relleno de página"
+        },
+        "paragraphSpacing": {
+          "title": "Espaciado de párrafos"
+        },
+        "sectionSpacing": {
+          "title": "Espaciado de secciones"
+        },
+        "title": "Espaciado"
+      },
+      "theme": {
+        "custom": "Costumbre",
+        "title": "Color del tema"
+      },
+      "typography": {
+        "baseFontSize": {
+          "title": "Tamaño de fuente base"
+        },
+        "font": {
+          "mono": "monoespacio",
+          "sans": "Sans-serif",
+          "serif": "Serifa",
+          "title": "Fuente"
+        },
+        "headerSize": {
+          "title": "Tamaño del encabezado de sección"
+        },
+        "lineHeight": {
+          "loose": "Perder",
+          "normal": "Por defecto",
+          "relaxed": "Relajado",
+          "title": "Altura de línea"
+        },
+        "subheaderSize": {
+          "title": "Tamaño del encabezado de la subsección"
+        },
+        "title": "Tipografía"
+      }
+    }
+  }
+}

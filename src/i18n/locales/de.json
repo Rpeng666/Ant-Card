@@ -1,0 +1,785 @@
+{
+  "aiPolishDialog": {
+    "button": {
+      "apply": "Inhalte anwenden",
+      "generating": "Generieren...",
+      "regenerate": "Regenerieren"
+    },
+    "content": {
+      "original": "Originalinhalt",
+      "polished": "Polierter Inhalt"
+    },
+    "description": {
+      "finished": "Der Inhalt wurde optimiert. Bitte überprüfen Sie das Ergebnis",
+      "polishing": "Polieren Sie Ihre Inhalte..."
+    },
+    "error": {
+      "applied": "Polnische Inhalte angewendet",
+      "configRequired": "Bitte konfigurieren Sie zuerst das AI-Modell",
+      "polishFailed": "Polnisch ist gescheitert"
+    },
+    "title": "AI-Polnisch"
+  },
+  "cardEditor": {
+    "preview": {
+      "dragToView": "Zum Anzeigen ziehen",
+      "export": {
+        "copyPng": "Als PNG kopieren",
+        "jpeg": "Als JPEG exportieren",
+        "pdf": "Als PDF exportieren",
+        "png": "Als PNG exportieren",
+        "svg": "Als SVG exportieren",
+        "tooltip": "Export"
+      },
+      "exportError": {
+        "copy": "Das Kopieren ist fehlgeschlagen",
+        "jpeg": "Der JPEG-Export ist fehlgeschlagen",
+        "pdf": "Der PDF-Export ist fehlgeschlagen",
+        "png": "Der PNG-Export ist fehlgeschlagen",
+        "svg": "Der SVG-Export ist fehlgeschlagen"
+      },
+      "exportSuccess": {
+        "copied": "In die Zwischenablage kopiert",
+        "jpeg": "JPEG-Export erfolgreich",
+        "jpegBatch": "{count} JPEG-Dateien erfolgreich exportiert",
+        "pdf": "PDF-Export erfolgreich",
+        "pdfBatch": "PDF mit {count} Karten erfolgreich exportiert",
+        "png": "PNG-Export erfolgreich",
+        "pngBatch": "{count} PNG-Dateien erfolgreich exportiert",
+        "svg": "SVG-Export erfolgreich"
+      },
+      "noCard": "Bitte wählen Sie eine Karte zur Vorschau aus",
+      "title": "Vorschau",
+      "totalCards": "Gesamt"
+    },
+    "sidePanel": {
+      "advancedDescription": "Weitere Personalisierungsoptionen",
+      "advancedSettings": "Erweiterte Einstellungen",
+      "alignOptions": {
+        "center": "Center",
+        "left": "Links",
+        "right": "Rechts"
+      },
+      "aspectRatio": "Seitenverhältnis",
+      "averageLength": "Durchschnittlich pro Karte ungefähr",
+      "cards": "Karten",
+      "charLimitTip": "Empfohlen werden 150–300 Zeichen, um einen angemessenen Karteninhalt sicherzustellen",
+      "characters": "Charaktere",
+      "detected": "Erkannt",
+      "displayOptions": "Anzeigeoptionen",
+      "enableTextSplit": "Aktivieren Sie die Textaufteilung",
+      "executeSplit": "Split ausführen",
+      "fontFamily": "Schriftfamilie",
+      "fontOptions": {
+        "mono": "Monospace",
+        "sans": "Ohne Serifen",
+        "serif": "Serife"
+      },
+      "fontSize": "Schriftgröße",
+      "layoutDescription": "Passen Sie die Kartengröße und das Seitenverhältnis an",
+      "layoutSettings": "Layouteinstellungen",
+      "maxCharsPerCard": "Zeichenlimit pro Karte",
+      "mergeKeepsContent": "Alle Inhalte bleiben nach dem Zusammenführen erhalten",
+      "mergeNow": "Jetzt zusammenführen",
+      "mergeRecommendation": "Empfehlen Sie die Zusammenführung zu einer einzelnen Karte, nachdem Sie die Aufteilung deaktiviert haben",
+      "multiCardMerge": "Zusammenführung mehrerer Karten",
+      "noSplitNeeded": "Der aktuelle Inhalt muss nicht aufgeteilt werden",
+      "originalLength": "Originaltextlänge:",
+      "showAuthor": "Autor anzeigen",
+      "showDate": "Datum anzeigen",
+      "showPageNum": "Seitenzahl anzeigen",
+      "showQRCode": "QR-Code anzeigen",
+      "showTextCount": "Textanzahl anzeigen",
+      "splitByCharacter": "Aufgeteilt nach Zeichenanzahl",
+      "splitByParagraph": "Nach Absatz aufteilen",
+      "splitBySentence": "Nach Satz aufgeteilt",
+      "splitMode": "Split-Modus",
+      "splitModeTip": "Wählen Sie den geeigneten Split-Modus, um die Inhaltsintegrität zu wahren",
+      "splitPreview": "Geteilte Vorschau",
+      "styleDescription": "Passen Sie das Erscheinungsbild und die Schriftart der Karte an",
+      "styleSettings": "Stileinstellungen",
+      "templateDescription": "Wählen Sie eine Kartendesignvorlage",
+      "templateSelection": "Vorlagenauswahl",
+      "textAlign": "Textausrichtung",
+      "textProcessing": "Langtextverarbeitung",
+      "textSplitDescription": "Automatische Aufteilung in mehrere Karten, wenn der Inhalt zu lang ist",
+      "willSplitInto": "Wird sich aufteilen"
+    }
+  },
+  "common": {
+    "copy": "Kopie",
+    "dashboard": "Armaturenbrett",
+    "delete": "Löschen",
+    "description": "Ant Card ist ein Open-Source-Lebenslauf-Editor, kostenlos, Datenschutz steht an erster Stelle. \nKeine Registrierung erforderlich, alle Daten werden lokal gespeichert, Datensicherung und -export werden unterstützt, sodass Ihre Lebenslaufdaten immer verfügbar sind.",
+    "edit": "Bearbeiten",
+    "newResume": "Neuer Lebenslauf",
+    "subtitle": "KI-gesteuerter Lebenslauf-Editor",
+    "title": "Ameisenkarte"
+  },
+  "dashboard": {
+    "resumes": {
+      "create": "Lebenslauf erstellen",
+      "created": "Erstellt am",
+      "import": "JSON-Konfiguration importieren",
+      "importError": "Der Import ist fehlgeschlagen. Bitte überprüfen Sie das Dateiformat",
+      "importSuccess": "Konfiguration erfolgreich importiert",
+      "myResume": "Meine Lebensläufe",
+      "newResume": "Neuer Lebenslauf",
+      "newResumeDescription": "Erstellen Sie zunächst einen neuen Lebenslauf.",
+      "notice": {
+        "description": "Es wird empfohlen, in den Einstellungen einen Lebenslauf-Backup-Ordner zu konfigurieren, um zu verhindern, dass Ihre Daten verloren gehen, wenn der Browser-Cache geleert wird",
+        "goToSettings": "Gehen Sie zu Einstellungen",
+        "title": "Aufmerksamkeit"
+      },
+      "synced": "Synchronisierte Dateien",
+      "untitled": "Lebenslauf ohne Titel",
+      "view": "Sicht"
+    },
+    "settings": {
+      "ai": {
+        "currentModel": "Aktuelles Modell",
+        "deepseek": {
+          "apiKey": "DeepSeek-API-Schlüssel",
+          "description": "Holen Sie sich den API-Schlüssel von der DeepSeek-Plattform",
+          "title": "DeepSeek"
+        },
+        "doubao": {
+          "apiKey": "Doubao-API-Schlüssel",
+          "description": "Holen Sie sich den API-Schlüssel von Volcengine",
+          "modelId": "Modell-ID",
+          "title": "Doubao"
+        },
+        "getApiKey": "Holen Sie sich den API-Schlüssel",
+        "openai": {
+          "apiEndpoint": "API-Endpunkt, Beispiel: https://openai.example.org/v1",
+          "apiKey": "OpenAI-API-Schlüssel",
+          "description": "Erhalten Sie den API-Schlüssel bei OpenAI oder einer offenen Plattform, die mit dem OpenAI-Format kompatibel ist",
+          "modelId": "Modell-ID",
+          "title": "OpenAI"
+        },
+        "selectModel": "Wählen Sie Modell aus",
+        "title": "KI-Konfiguration"
+      },
+      "sync": {
+        "description": "Wählen Sie einen Ordner zum Synchronisieren und Sichern Ihrer Lebensläufe.",
+        "select": "Wählen Sie Ordner aus",
+        "title": "Verzeichnis synchronisieren"
+      },
+      "syncDirectory": {
+        "changeFolder": "Ordner ändern",
+        "currentSyncFolder": "Aktueller Synchronisierungsordner",
+        "description": "Wählen Sie einen Ordner zum Synchronisieren und Sichern Ihrer Lebensläufe.",
+        "noFolderConfigured": "Kein Ordner konfiguriert",
+        "selectFolder": "Wählen Sie Ordner aus",
+        "title": "Verzeichnis synchronisieren"
+      },
+      "title": "Einstellungen"
+    },
+    "sidebar": {
+      "ai": "AI-Konfiguration",
+      "resumes": "Lebensläufe",
+      "settings": "Einstellungen",
+      "templates": "Vorlagen"
+    },
+    "templates": {
+      "classic": {
+        "description": "Traditionelles und minimalistisches Layout, geeignet für die meisten Bewerbungen",
+        "name": "Klassiker"
+      },
+      "leftRight": {
+        "description": "Markante Abschnittstitel mit Hintergrundfarbe",
+        "name": "Hintergrund des Abschnittstitels"
+      },
+      "modern": {
+        "description": "Klassisches zweispaltiges Layout, das persönliche Merkmale hervorhebt",
+        "name": "Zweispaltig"
+      },
+      "preview": "Vorschau",
+      "switchTemplate": "Vorlage wechseln",
+      "timeline": {
+        "description": "Zeitleistenstil, der die chronologische Reihenfolge der Erlebnisse betont",
+        "name": "Timeline-Layout"
+      },
+      "title": "Vorlagen",
+      "useTemplate": "Vorlage verwenden"
+    }
+  },
+  "field": {
+    "enterYear": "Geben Sie das Jahr ein",
+    "selectDate": "Wählen Sie Datum aus"
+  },
+  "home": {
+    "changelog": "Änderungsprotokoll",
+    "cta": {
+      "button": "Beginnen Sie mit der kostenlosen Nutzung",
+      "description": "Beginnen Sie jetzt mit der Verwendung von Ant Card, um einen beeindruckenden Lebenslauf zu erstellen",
+      "title": "Beginnen Sie Ihr neues Karrierekapitel"
+    },
+    "faq": {
+      "items[0]": {
+        "answer": "Ant Card ist derzeit kostenlos und erfüllt grundlegende Anforderungen an die Erstellung von Lebensläufen. \nDie Funktionen der Open-Source-Version bleiben unverändert und die PDF-Exportfunktion ist immer kostenlos.",
+        "question": "Ist die Nutzung der Ant Card kostenlos?"
+      },
+      "items[1]": {
+        "answer": "Ja, sehr sicher. \nAnt Card verwendet lokalen Speicher, was bedeutet, dass alle Ihre Daten auf Ihrem eigenen Gerät ohne Cloud-Speicher gespeichert werden, wodurch ein vollständiger Schutz der Privatsphäre gewährleistet ist.",
+        "question": "Sind meine Lebenslaufdaten sicher?"
+      },
+      "items[2]": {
+        "answer": "Wir unterstützen derzeit den PDF-Export und stellen so sicher, dass Ihr Lebenslauf auf jedem Gerät eine einheitliche Formatierung behält. \nWir planen, in Zukunft weitere Exportformate zu unterstützen.",
+        "question": "Welche Exportformate werden unterstützt?"
+      },
+      "items[3]": {
+        "answer": "Wir bieten einen JSON-Konfigurationsexport, der es Ihnen ermöglicht, Ihre Lebenslaufeinstellungen im JSON-Format zu speichern, sodass Sie jederzeit, überall und auf jedem Gerät darauf zugreifen können.",
+        "question": "Wie kann ich geräteübergreifend synchronisieren?"
+      },
+      "items[4]": {
+        "answer": "Wir bieten umfangreiche Anpassungsoptionen, darunter Farben, Layouts und mehr, sodass Sie den Stil Ihres Lebenslaufs an Ihre persönlichen Vorlieben und Branchenanforderungen anpassen können.",
+        "question": "Wie anpassbar ist es?"
+      },
+      "title": "Häufig gestellte Fragen"
+    },
+    "features": {
+      "ai": {
+        "badge": "AI Smart Check",
+        "description": "Die integrierte intelligente Grammatikprüfung erkennt automatisch unangemessene Ausdrücke, bietet professionelle Änderungsvorschläge und macht Ihren Lebenslauf noch herausragender.",
+        "item1": "Intelligente Erweiterung",
+        "item1_description": "KI optimiert automatisch den Ausdruck von Inhalten und macht Ihren Lebenslauf professioneller",
+        "item2": "Grammatikprüfung",
+        "item2_description": "Erkennt und korrigiert automatisch Grammatik- und Rechtschreibfehler",
+        "title": "Intelligente Erkennung, professionelle Beratung"
+      },
+      "preview": {
+        "badge": "Echtzeitvorschau",
+        "description": "",
+        "item1": "Echtzeitvorschau der Bearbeitungseffekte",
+        "item2": "Unterstützung mehrerer Exportformate",
+        "title": "Was Sie sehen, ist das, was Sie bekommen"
+      },
+      "storage": {
+        "badge": "Lokaler Speicher",
+        "description": "Alle Lebenslaufdaten werden vollständig lokal gespeichert, sodass Sie sich keine Sorgen über Datenschutzlecks machen müssen. \nUnterstützen Sie die Sicherung des Datenexports und stellen Sie sicher, dass Ihre Lebenslaufdaten immer verfügbar sind.",
+        "item1": "Lokale Dateispeicherung",
+        "item1_description": "Sicher auf der Festplatte Ihres Computers gespeicherte Lebenslaufdaten",
+        "item2": "Mehrere Exportformate",
+        "item2_description": "Unterstützt den Export im PDF- und JSON-Format",
+        "item3": "Unterstützt Datenexportsicherung",
+        "title": "Datensicherheit, Datenschutz an erster Stelle"
+      },
+      "subtitle": "Wir bieten eine All-in-one-Lebenslauflösung, um Ihre Jobsuche reibungsloser zu gestalten",
+      "title": "Warum Ameisenkarte wählen?"
+    },
+    "footer": {
+      "copyright": "Ameisenkarte 2025. \nAlle Rechte vorbehalten."
+    },
+    "header": {
+      "about": "Um",
+      "dashboard": "Armaturenbrett",
+      "features": "Merkmale",
+      "login": "Login",
+      "pricing": "Preise",
+      "register": "Registrieren",
+      "startButton": "Legen Sie los",
+      "title": "Ameisenkarte"
+    },
+    "hero": {
+      "badge": "Intelligente Lebenslauferstellung",
+      "cta": "Legen Sie los",
+      "secondary": "Durchsuchen Sie Vorlagen",
+      "subtitle": "Ant Card nutzt KI-Technologie, um Ihnen bei der schnellen Erstellung professioneller Lebensläufe zu helfen. \nKeine Registrierung erforderlich, kostenlose Nutzung, mit sicherer Datenspeicherung.",
+      "title": "Machen Sie die Erstellung von Lebensläufen einfach und intelligent"
+    },
+    "news": {
+      "content": "Die neue KI-Funktion zur Verbesserung des Lebenslaufs ist live",
+      "label": "Nachricht"
+    }
+  },
+  "iconSelector": {
+    "all": "Alle",
+    "categories": {
+      "achievements": "Erfolge",
+      "education": "Ausbildung",
+      "experience": "Berufserfahrung",
+      "hobbies": "Hobbys",
+      "languages": "Sprachen",
+      "others": "Andere",
+      "personal": "Persönliche Informationen",
+      "projects": "Projekte",
+      "skills": "Fähigkeiten",
+      "social": "Soziale Medien"
+    },
+    "icons": {
+      "address": "Adresse",
+      "art": "Kunst",
+      "bookmark": "Lesezeichen",
+      "branch": "Zweig",
+      "communication": "Kommunikation",
+      "company": "Unternehmen",
+      "database": "Datenbank",
+      "dateRange": "Datumsbereich",
+      "education": "Ausbildung",
+      "email": "E-Mail",
+      "facebook": "Facebook",
+      "filter": "Filter",
+      "flag": "Flagge",
+      "idea": "Idee",
+      "instagram": "Instagram",
+      "interest": "Interesse",
+      "language": "Sprache",
+      "library": "Bibliothek",
+      "link": "Link",
+      "linkedin": "LinkedIn",
+      "major": "Wesentlich",
+      "medal": "Medaille",
+      "mobile": "Mobile",
+      "music": "Musik",
+      "office": "Büro",
+      "phone": "Telefon",
+      "photography": "Fotografie",
+      "profile": "Profil",
+      "programming": "Programmierung",
+      "project": "Projekt",
+      "release": "Freigeben",
+      "review": "Rezension",
+      "salary": "Gehalt",
+      "scholarship": "Stipendium",
+      "school": "Schule",
+      "search": "Suchen",
+      "send": "Schicken",
+      "settings": "Einstellungen",
+      "share": "Aktie",
+      "skill": "Fähigkeit",
+      "speaking": "Apropos",
+      "star": "Stern",
+      "system": "System",
+      "target": "Ziel",
+      "techStack": "Tech-Stack",
+      "terminal": "Terminal",
+      "thumbsUp": "Daumen hoch",
+      "trophy": "Trophäe",
+      "twitter": "Twitter",
+      "user": "Benutzer",
+      "website": "Webseite",
+      "work": "Arbeiten",
+      "workTime": "Arbeitszeit"
+    },
+    "noMatchingIcons": "Keine passenden Symbole gefunden",
+    "searchPlaceholder": "Suchsymbole...",
+    "selectOtherCategory": "Bitte wählen Sie eine andere Kategorie aus",
+    "tryOtherKeywords": "Bitte versuchen Sie es mit anderen Suchbegriffen"
+  },
+  "landing": {
+    "about": {
+      "description": "Ant Card ist ein professionelles Tool zur Erstellung persönlicher Karten, das Benutzern ein benutzerfreundliches und leistungsstarkes Kartendesign-Erlebnis bietet. \nWir glauben, dass jeder eine schöne persönliche Visitenkarte haben sollte, sei es für geschäftliche Anlässe oder für persönliches Branding. \nDurch intelligente Designsysteme und umfangreiche Vorlagenbibliotheken wird die Kartenerstellung einfach und macht Spaß.",
+      "title": "Um"
+    },
+    "features": {
+      "coreFeatures": "Kernfunktionen",
+      "diverseTemplates": {
+        "description": "Umfangreiche Kartenvorlagenbibliothek, die geschäftliche, kreative, minimalistische und andere Stile abdeckt, um unterschiedlichen Szenarioanforderungen gerecht zu werden.",
+        "title": "Verschiedene Vorlagen"
+      },
+      "featureList": {
+        "cleanBeautiful": "Sauber",
+        "cloudSave": "Cloud-Speicherung",
+        "darkLight": "Dunkel/Hell-Thema",
+        "dragResize": "Zum Ändern der Größe ziehen",
+        "multiTemplate": "Mehrere Vorlagen",
+        "oneClickExport": "Exportieren mit einem Klick",
+        "realTimePreview": "Echtzeitvorschau",
+        "responsive": "Responsives Design",
+        "smartLayout": "Intelligentes Layout"
+      },
+      "realTimeEdit": {
+        "description": "WYSIWYG-Bearbeitungserlebnis mit Karteneffektvorschau in Echtzeit, wodurch Ihr kreativer Prozess intuitiver und effizienter wird.",
+        "title": "Bearbeitungsvorschau in Echtzeit"
+      },
+      "smartDesign": {
+        "description": "KI-gesteuertes intelligentes Layoutsystem, das das Kartendesign automatisch optimiert und Ihre persönliche Präsentation professioneller und schöner macht.",
+        "title": "Smartcard-Design"
+      },
+      "title": "Kraftvoll"
+    },
+    "hero": {
+      "description": "Erstellen Sie ganz einfach professionelle und schöne persönliche Karten mit Echtzeitbearbeitung, mehreren Vorlagen und intelligenten Layouts. \nMachen Sie Ihre persönliche Präsentation zu etwas Besonderem.",
+      "githubRepo": "Github-Repository",
+      "makingTool": "Erstellungstool",
+      "smartCard": "Smartcard",
+      "startMaking": "Beginnen Sie mit der Erstellung"
+    },
+    "navbar": {
+      "cardProject": "Kartenprojekt",
+      "faq": "FAQ",
+      "features": "Merkmale",
+      "pricing": "Preise",
+      "testimonials": "Erfahrungsberichte"
+    }
+  },
+  "language": {
+    "chinese": "中文",
+    "english": "Englisch",
+    "switch": "Sprache wechseln"
+  },
+  "pdfExport": {
+    "button": {
+      "export": "Export",
+      "exportJson": "JSON-Konfiguration exportieren",
+      "exportPdf": "PDF exportieren (Server)",
+      "exporting": "Exportieren...",
+      "exportingJson": "Exportieren...",
+      "print": "Browserdruck"
+    },
+    "toast": {
+      "error": "Der PDF-Export ist fehlgeschlagen",
+      "jsonError": "Konfigurationsexport fehlgeschlagen",
+      "jsonSuccess": "Konfiguration erfolgreich exportiert",
+      "success": "PDF erfolgreich exportiert"
+    }
+  },
+  "photoConfig": {
+    "actions": {
+      "cancel": "Stornieren",
+      "close": "Schließen",
+      "removePhoto": "Foto entfernen",
+      "reset": "Zurücksetzen"
+    },
+    "config": {
+      "aspectRatio": "Seitenverhältnis",
+      "border-radius": "Grenzradius",
+      "borderRadius": {
+        "custom": "Brauch",
+        "customPlaceholder": "Benutzerdefinierter Randradius",
+        "full": "Kreis",
+        "medium": "Medium",
+        "none": "Keiner"
+      },
+      "height": "Höhe",
+      "heightPlaceholder": "Höhe",
+      "ratios": {
+        "16:9": "16:9 Breitbild",
+        "1:1": "1:1 Quadrat",
+        "3:4": "3:4 Porträt",
+        "4:3": "4:3 Landschaft",
+        "custom": "Brauch"
+      },
+      "size": "Größe",
+      "width": "Breite",
+      "widthPlaceholder": "Breite"
+    },
+    "description": "Passen Sie Ihr Lebenslauffoto an",
+    "title": "Fotoeinstellungen",
+    "upload": {
+      "dragHint": "Ziehen Sie das Bild per Drag-and-Drop oder klicken Sie darauf, um es hochzuladen",
+      "invalidUrl": "Ungültige Bild-URL oder nicht zugänglich. Bitte versuchen Sie es mit einem anderen Bildlink",
+      "loadError": "Bild konnte nicht geladen werden",
+      "sizeLimit": "Die Bildgröße darf 2 MB nicht überschreiten",
+      "timeout": "Zeitüberschreitung beim Laden",
+      "title": "Online-Link",
+      "typeLimit": "Bitte laden Sie eine Bilddatei hoch",
+      "urlPlaceholder": "Bildlink eingeben"
+    }
+  },
+  "previewDock": {
+    "backToDashboard": "Zurück zum Dashboard",
+    "copyResume": {
+      "error": "Lebenslauf konnte nicht kopiert werden",
+      "success": "Lebenslauf erfolgreich kopiert",
+      "tooltip": "Lebenslauf kopieren"
+    },
+    "editPanel": {
+      "collapse": "Bearbeitungsfeld ausblenden",
+      "expand": "Erweitern Sie den Bearbeitungsbereich"
+    },
+    "export": {
+      "json": "JSON exportieren",
+      "pdf": "PDF exportieren",
+      "print": "Drucken",
+      "tooltip": "Lebenslauf exportieren"
+    },
+    "github": "GitHub",
+    "grammarCheck": {
+      "checking": "Überprüfung...",
+      "configureButton": "Konfigurieren",
+      "configurePrompt": "Bitte konfigurieren Sie das AI-Modell",
+      "errorToast": "Die Grammatikprüfung ist fehlgeschlagen. Bitte versuchen Sie es erneut",
+      "idle": "KI-Grammatikprüfung"
+    },
+    "sidePanel": {
+      "collapse": "Seitenwand einklappen",
+      "expand": "Erweitern Sie den Seitenbereich"
+    },
+    "switchTemplate": "Vorlage wechseln"
+  },
+  "richEditor": {
+    "aiPolish": "AI-Polnisch",
+    "alignCenter": "Mitte ausrichten",
+    "alignJustify": "Rechtfertigen",
+    "alignLeft": "Links ausrichten",
+    "alignRight": "Rechts ausrichten",
+    "backgroundColor": "Hintergrundfarbe",
+    "bold": "Deutlich",
+    "bulletList": "Aufzählungsliste",
+    "colors": {
+      "black": "Schwarz",
+      "blue": "Blau",
+      "cyan": "Cyan",
+      "darkGray": "Dunkelgrau",
+      "gray": "Grau",
+      "green": "Grün",
+      "lightBlue": "Hellblau",
+      "magenta": "Magenta",
+      "orange": "Orange",
+      "orangeYellow": "Orangegelb",
+      "pink": "Rosa",
+      "purple": "Lila",
+      "red": "Rot",
+      "yellow": "Gelb",
+      "yellowGreen": "Gelbgrün"
+    },
+    "heading1": "Überschrift 1",
+    "heading2": "Überschrift 2",
+    "heading3": "Überschrift 3",
+    "italic": "Kursiv",
+    "orderedList": "Geordnete Liste",
+    "paragraph": "Absatz",
+    "redo": "Wiederholen",
+    "textColor": "Textfarbe",
+    "underline": "Unterstreichen",
+    "undo": "Rückgängig machen"
+  },
+  "templates": {
+    "switchTemplate": "Vorlage wechseln"
+  },
+  "themeModal": {
+    "delete": {
+      "cancelText": "Stornieren",
+      "confirmText": "Löschen",
+      "description": "Sind Sie sicher, dass Sie {title} löschen möchten?",
+      "title": "Möchten Sie wirklich löschen?"
+    }
+  },
+  "workbench": {
+    "backToDashboard": "",
+    "basicPanel": {
+      "avatar": "Avatar",
+      "basicField": "Basic",
+      "basicFields": {
+        "birthDate": "Geburtsdatum",
+        "email": "E-Mail",
+        "employementStatus": "Beschäftigen",
+        "location": "Standort",
+        "name": "Name",
+        "phone": "Telefon",
+        "title": "Titel",
+        "website": "Webseite"
+      },
+      "customField": "Brauch",
+      "customFields": {
+        "addButton": "Benutzerdefiniertes Feld hinzufügen",
+        "placeholders": {
+          "label": "Etikett",
+          "value": "Wert"
+        }
+      },
+      "fieldVisibility": {
+        "hide": "Verstecken",
+        "show": "Zeigen"
+      },
+      "githubContributions": "GitHub-Beiträge",
+      "layout": "Ausrichten",
+      "layoutCenter": "",
+      "layoutLeft": "",
+      "layoutRight": "",
+      "title": "Profil"
+    },
+    "educationItem": {
+      "buttons": {
+        "cancel": "Stornieren",
+        "delete": "Löschen",
+        "edit": "Bearbeiten",
+        "save": "Speichern"
+      },
+      "labels": {
+        "date": "Studienzeit",
+        "degree": "Grad",
+        "description": "Beschreibung",
+        "endDate": "Enddatum",
+        "gpa": "Notendurchschnitt",
+        "location": "Standort",
+        "major": "Wesentlich",
+        "school": "Schulname",
+        "startDate": "Startdatum"
+      },
+      "placeholders": {
+        "date": "Geben Sie den Lernzeitbereich ein",
+        "degree": "Abschluss auswählen",
+        "description": "Geben Sie eine Schulbeschreibung ein",
+        "gpa": "Geben Sie GPA ein",
+        "location": "Geben Sie den Standort ein",
+        "major": "Geben Sie Hauptfach ein",
+        "school": "Geben Sie den Schulnamen ein"
+      },
+      "visibility": {
+        "hide": "Verstecken",
+        "show": "Zeigen"
+      }
+    },
+    "educationPanel": {
+      "addButton": "Bildung hinzufügen",
+      "defaultProject": {
+        "date": "2020.09 - 2024.06",
+        "degree": "Grad",
+        "major": "Wesentlich",
+        "school": "Schulname"
+      },
+      "placeholders": {
+        "date": "Studienzeitraum eingeben",
+        "degree": "Abschluss auswählen",
+        "major": "Geben Sie Hauptfach ein",
+        "school": "Geben Sie den Schulnamen ein"
+      },
+      "title": "Ausbildung"
+    },
+    "experienceItem": {
+      "buttons": {
+        "cancel": "Stornieren",
+        "delete": "Löschen",
+        "edit": "Bearbeiten",
+        "save": "Speichern"
+      },
+      "labels": {
+        "company": "Name der Firma",
+        "date": "Beschäftigungsdauer",
+        "details": "Aufgabenbereiche",
+        "position": "Position"
+      },
+      "placeholders": {
+        "company": "Geben Sie den Firmennamen ein",
+        "date": "z. B. 2020-heute",
+        "details": "Beschreiben Sie Ihre Verantwortlichkeiten und Erfolge in dieser Rolle",
+        "position": "z. B. Frontend-Ingenieur"
+      },
+      "visibility": {
+        "hide": "Verstecken",
+        "show": "Zeigen"
+      }
+    },
+    "experiencePanel": {
+      "addButton": "Fügen Sie Berufserfahrung hinzu",
+      "defaultProject": {
+        "company": "Tech Company Ltd.",
+        "date": "2020-heute",
+        "details": "Verantwortlich für die Kernproduktentwicklung...",
+        "position": "Leitender Frontend-Ingenieur"
+      },
+      "placeholders": {
+        "company": "Name der Firma",
+        "date": "Beschäftigungszeitraum",
+        "details": "berufliche Verantwortung und Erfolge",
+        "position": "Berufsbezeichnung"
+      },
+      "title": "Berufserfahrung"
+    },
+    "projectItem": {
+      "buttons": {
+        "cancel": "Stornieren",
+        "delete": "Löschen",
+        "edit": "Bearbeiten",
+        "save": "Speichern"
+      },
+      "labels": {
+        "date": "Projektzeitraum",
+        "description": "Projektbeschreibung",
+        "link": "Projektlink",
+        "name": "Projektname",
+        "role": "Projektrolle",
+        "technologies": "Tech-Stack"
+      },
+      "placeholders": {
+        "date": "Projektzeitraum",
+        "description": "Beschreiben Sie kurz den Hintergrund und die Ziele des Projekts",
+        "link": "Projektlink",
+        "name": "Geben Sie den Projektnamen ein",
+        "role": "Ihre Rolle im Projekt",
+        "technologies": "Verwendete Technologien und Tools"
+      },
+      "visibility": {
+        "hide": "Verstecken",
+        "show": "Zeigen"
+      }
+    },
+    "projectPanel": {
+      "addButton": "Projekt hinzufügen",
+      "defaultProject": {
+        "date": "2023.01 - 2023.06",
+        "description": "Projektbeschreibung",
+        "name": "Persönliches Projekt",
+        "role": "Verantwortlichkeiten",
+        "technologies": ""
+      },
+      "placeholders": {
+        "date": "Projektzeitraum",
+        "description": "Beschreiben Sie kurz den Hintergrund und die Ziele des Projekts",
+        "link": "Projektlink",
+        "name": "Projektname",
+        "role": "Ihre Rolle und Verantwortlichkeiten im Projekt",
+        "technologies": ""
+      },
+      "title": "Projekterfahrung"
+    },
+    "sidePanel": {
+      "layout": {
+        "addCustomSection": "Benutzerdefinierten Abschnitt hinzufügen",
+        "title": "Layout"
+      },
+      "mode": {
+        "centerSubtitle": {
+          "title": "Untertitel in der Mitte"
+        },
+        "title": "Modus",
+        "useIconMode": {
+          "title": "Symbolmodus"
+        }
+      },
+      "spacing": {
+        "pagePadding": {
+          "title": "Seitenauffüllung"
+        },
+        "paragraphSpacing": {
+          "title": "Absatzabstand"
+        },
+        "sectionSpacing": {
+          "title": "Abschnittsabstand"
+        },
+        "title": "Abstand"
+      },
+      "theme": {
+        "custom": "Brauch",
+        "title": "Themenfarbe"
+      },
+      "typography": {
+        "baseFontSize": {
+          "title": "Basisschriftgröße"
+        },
+        "font": {
+          "mono": "Monospace",
+          "sans": "Sans-Serif",
+          "serif": "Serife",
+          "title": "Schriftart"
+        },
+        "headerSize": {
+          "title": "Größe der Abschnittsüberschrift"
+        },
+        "lineHeight": {
+          "loose": "Lose",
+          "normal": "Standard",
+          "relaxed": "Entspannt",
+          "title": "Zeilenhöhe"
+        },
+        "subheaderSize": {
+          "title": "Größe der Unterabschnittsüberschrift"
+        },
+        "title": "Typografie"
+      }
+    }
+  }
+}

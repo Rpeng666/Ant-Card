@@ -1,0 +1,35 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 渐变背景 -->
+  <defs>
+    <linearGradient id="darkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="200" height="200" fill="url(#darkGradient)" rx="24"/>
+
+  <!-- 星星装饰 -->
+  <circle cx="40" cy="40" r="1.5" fill="#f1f5f9" opacity="0.8"/>
+  <circle cx="160" cy="30" r="1" fill="#f1f5f9" opacity="0.6"/>
+  <circle cx="120" cy="50" r="1" fill="#f1f5f9" opacity="0.7"/>
+  <circle cx="60" cy="150" r="1.5" fill="#f1f5f9" opacity="0.8"/>
+  <circle cx="170" cy="140" r="1" fill="#f1f5f9" opacity="0.6"/>
+  <circle cx="100" cy="170" r="1" fill="#f1f5f9" opacity="0.7"/>
+
+  <!-- 标题 -->
+  <rect x="60" y="70" width="80" height="8" rx="4" fill="#e2e8f0"/>
+
+  <!-- 内容行 1 -->
+  <rect x="50" y="95" width="100" height="6" rx="3" fill="#cbd5e1"/>
+
+  <!-- 内容行 2 -->
+  <rect x="55" y="110" width="90" height="6" rx="3" fill="#cbd5e1"/>
+
+  <!-- 内容行 3 -->
+  <rect x="60" y="125" width="80" height="6" rx="3" fill="#cbd5e1"/>
+
+  <!-- 作者 -->
+  <rect x="90" y="150" width="50" height="6" rx="3" fill="#94a3b8"/>
+</svg>

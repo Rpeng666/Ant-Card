@@ -1,0 +1,32 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 书籍背景 -->
+  <rect width="200" height="200" fill="#f9f4e8"/>
+
+  <!-- 装订线效果 -->
+  <rect x="40" y="20" width="2" height="160" fill="#d4c8b0"/>
+
+  <!-- 页边距 -->
+  <rect x="50" y="30" width="130" height="140" fill="none" stroke="#e6dcc8" stroke-width="1"/>
+
+  <!-- 标题 -->
+  <rect x="60" y="40" width="80" height="8" rx="2" fill="#8b7d6b"/>
+
+  <!-- 内容行 1 -->
+  <rect x="60" y="60" width="100" height="6" rx="2" fill="#5d5347"/>
+
+  <!-- 内容行 2 -->
+  <rect x="60" y="75" width="90" height="6" rx="2" fill="#5d5347"/>
+
+  <!-- 内容行 3 -->
+  <rect x="60" y="90" width="110" height="6" rx="2" fill="#5d5347"/>
+
+  <!-- 引用线 -->
+  <rect x="55" y="110" width="3" height="20" fill="#8b7d6b"/>
+
+  <!-- 引用内容 -->
+  <rect x="65" y="115" width="80" height="6" rx="2" fill="#5d5347"/>
+  <rect x="65" y="125" width="60" height="4" rx="2" fill="#8b7d6b"/>
+
+  <!-- 页码 -->
+  <rect x="150" y="160" width="20" height="6" rx="2" fill="#8b7d6b"/>
+</svg>

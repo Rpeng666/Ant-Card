@@ -1,0 +1,40 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 白色背景 -->
+  <rect width="200" height="200" fill="white"/>
+
+  <!-- 文档轮廓 -->
+  <rect x="40" y="30" width="120" height="140" rx="4" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+
+  <!-- 顶部阴影 -->
+  <rect x="40" y="30" width="120" height="8" fill="#f1f5f9"/>
+
+  <!-- 标题行 -->
+  <rect x="55" y="50" width="60" height="6" rx="3" fill="#94a3b8"/>
+
+  <!-- 内容行 1 -->
+  <rect x="55" y="65" width="90" height="4" rx="2" fill="#cbd5e1"/>
+
+  <!-- 内容行 2 -->
+  <rect x="55" y="75" width="80" height="4" rx="2" fill="#cbd5e1"/>
+
+  <!-- 内容行 3 -->
+  <rect x="55" y="85" width="90" height="4" rx="2" fill="#cbd5e1"/>
+
+  <!-- 分隔线 -->
+  <rect x="55" y="95" width="40" height="1" rx="0.5" fill="#e2e8f0"/>
+
+  <!-- 列表项 1 -->
+  <circle cx="58" cy="110" r="2" fill="#94a3b8"/>
+  <rect x="65" y="108" width="60" height="4" rx="2" fill="#cbd5e1"/>
+
+  <!-- 列表项 2 -->
+  <circle cx="58" cy="120" r="2" fill="#94a3b8"/>
+  <rect x="65" y="118" width="50" height="4" rx="2" fill="#cbd5e1"/>
+
+  <!-- 列表项 3 -->
+  <circle cx="58" cy="130" r="2" fill="#94a3b8"/>
+  <rect x="65" y="128" width="55" height="4" rx="2" fill="#cbd5e1"/>
+
+  <!-- 底部装饰线 -->
+  <rect x="55" y="145" width="30" height="2" rx="1" fill="#f59e0b"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg width="200" height="280" viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="280" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="20" y="20" width="160" height="40" fill="#f3f4f6" rx="4"/>
+  <text x="100" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#374151">默认模板</text>
+  <rect x="20" y="80" width="160" height="20" fill="#e5e7eb" rx="2"/>
+  <rect x="20" y="110" width="120" height="15" fill="#e5e7eb" rx="2"/>
+  <rect x="20" y="135" width="140" height="15" fill="#e5e7eb" rx="2"/>
+  <rect x="20" y="160" width="100" height="15" fill="#e5e7eb" rx="2"/>
+  <rect x="20" y="200" width="160" height="20" fill="#f3f4f6" rx="2"/>
+  <rect x="20" y="230" width="80" height="15" fill="#e5e7eb" rx="2"/>
+  <rect x="110" y="230" width="70" height="15" fill="#e5e7eb" rx="2"/>
+</svg>
