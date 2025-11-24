@@ -86,6 +86,26 @@
       "copyright": " 2025 Ant Card. 保留所有权利."
     },
     "changelog": "更新日志",
+    "coverMaker": {
+      "title": "封面制作",
+      "subtitle": "为您的博客、社交媒体等创建精美的封面图片",
+      "comingSoon": "即将推出",
+      "comingSoonDescription": "我们正在努力为您开发强大的封面创作工具，敬请期待！",
+      "features": {
+        "customDesign": {
+          "title": "自定义设计",
+          "description": "使用高级编辑工具个性化封面的每个方面"
+        },
+        "templates": {
+          "title": "丰富模板",
+          "description": "从数十种专业模板中选择，适用于各种场合"
+        },
+        "export": {
+          "title": "轻松导出",
+          "description": "以多种格式高质量导出您的封面作品"
+        }
+      }
+    },
     "faq": {
       "title": "常见问题",
       "items": [

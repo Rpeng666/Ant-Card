@@ -42,6 +42,12 @@ export interface CoverMakerState {
   textY: number;
   watermarkX: number;
   watermarkY: number;
+  squareImageUrl: string | null;
+  squareSize: number;
+  iconX: number;
+  iconY: number;
+  iconColor: string;
+  iconBgSize: number;
 }
 
 const loadedImages = new Map();
@@ -89,7 +95,13 @@ export const useCoverMaker = (defaultConfig: any) => {
     textX: 500, // 初始在中心
     textY: 250,
     watermarkX: -20, // 右下角偏移
-    watermarkY: -20
+    watermarkY: -20,
+    squareImageUrl: null,
+    squareSize: 300,
+    iconX: 500, // 初始在中心
+    iconY: 250,
+    iconColor: '#ffffff',
+    iconBgSize: 10
   });
 
   // Initialize offscreen canvases - dependent on canvas dimensions
@@ -239,21 +251,32 @@ export const useCoverMaker = (defaultConfig: any) => {
     const { squareCanvas, squareCtx } = offscreenCanvases;
     squareCtx.clearRect(0, 0, state.canvasWidth, state.canvasHeight);
 
-    // 绘制所有图标
-    const drawIcon = (icon: IconItem) => {
+    // 绘制单个方形图片/图标
+    if (state.squareImageUrl) {
       const img = new Image();
       img.onload = () => {
-        const totalSize = icon.size;
-        const borderWidth = 20;
+        const totalSize = state.squareSize;
+        const borderWidth = state.iconBgSize;
         const size = totalSize - 2 * borderWidth;
-        const x = icon.x - totalSize / 2;
-        const y = icon.y - totalSize / 2;
+        const x = state.iconX - totalSize / 2;
+        const y = state.iconY - totalSize / 2;
 
         const tempCanvas = document.createElement('canvas');
         tempCanvas.width = totalSize;
         tempCanvas.height = totalSize;
         const tempCtx = tempCanvas.getContext('2d');
         if (!tempCtx) return;
+
+        // 绘制背景圆
+        if (borderWidth > 0) {
+          tempCtx.save();
+          tempCtx.beginPath();
+          tempCtx.arc(totalSize / 2, totalSize / 2, totalSize / 2, 0, Math.PI * 2);
+          tempCtx.closePath();
+          tempCtx.fillStyle = state.iconColor;
+          tempCtx.fill();
+          tempCtx.restore();
+        }
 
         // 创建圆形遮罩
         tempCtx.save();
@@ -284,13 +307,13 @@ export const useCoverMaker = (defaultConfig: any) => {
 
         // 应用阴影和旋转
         squareCtx.save();
-        squareCtx.shadowColor = icon.shadowColor;
-        squareCtx.shadowBlur = icon.shadowBlur;
-        squareCtx.shadowOffsetX = icon.shadowOffsetX;
-        squareCtx.shadowOffsetY = icon.shadowOffsetY;
+        squareCtx.shadowColor = state.shadowColor;
+        squareCtx.shadowBlur = state.shadowBlur;
+        squareCtx.shadowOffsetX = state.shadowOffsetX;
+        squareCtx.shadowOffsetY = state.shadowOffsetY;
 
         squareCtx.translate(x + totalSize / 2, y + totalSize / 2);
-        squareCtx.rotate((icon.rotation * Math.PI) / 180);
+        squareCtx.rotate((state.rotation * Math.PI) / 180);
         squareCtx.translate(-(x + totalSize / 2), -(y + totalSize / 2));
 
         squareCtx.drawImage(tempCanvas, x, y, totalSize, totalSize);
@@ -302,15 +325,11 @@ export const useCoverMaker = (defaultConfig: any) => {
         console.error('Failed to load icon image');
         composeCanvases();
       };
-      img.src = icon.imageUrl;
-    };
-
-    if (state.icons.length > 0) {
-      state.icons.forEach(drawIcon);
+      img.src = state.squareImageUrl;
     } else {
       composeCanvases();
     }
-  }, [state.icons, offscreenCanvases, composeCanvases]);
+  }, [state.squareImageUrl, state.squareSize, state.iconX, state.iconY, state.iconBgSize, state.iconColor, state.shadowColor, state.shadowBlur, state.shadowOffsetX, state.shadowOffsetY, state.rotation, offscreenCanvases, composeCanvases]);
 
   const drawText = useCallback(() => {
     if (!offscreenCanvases) return;
@@ -582,25 +601,18 @@ export const useCoverMaker = (defaultConfig: any) => {
     };
   }, [state.canvasWidth, state.canvasHeight]);
 
-  // Check if point is within any icon bounds and return the icon ID
-  const isPointInIcon = useCallback((x: number, y: number): string | null => {
-    if (state.icons.length === 0) return null;
+  // Check if point is within icon bounds
+  const isPointInIcon = useCallback((x: number, y: number): boolean => {
+    if (!state.squareImageUrl) return false;
 
-    // Check from top to bottom (last drawn is on top)
-    for (let i = state.icons.length - 1; i >= 0; i--) {
-      const icon = state.icons[i];
-      const halfSize = icon.size / 2;
+    const halfSize = state.squareSize / 2;
+    const inIconBounds = x >= state.iconX - halfSize &&
+                        x <= state.iconX + halfSize &&
+                        y >= state.iconY - halfSize &&
+                        y <= state.iconY + halfSize;
 
-      if (x >= icon.x - halfSize &&
-          x <= icon.x + halfSize &&
-          y >= icon.y - halfSize &&
-          y <= icon.y + halfSize) {
-        return icon.id;
-      }
-    }
-
-    return null;
-  }, [state.icons]);
+    return inIconBounds;
+  }, [state.squareImageUrl, state.squareSize, state.iconX, state.iconY]);
 
   // Add a new icon
   const addIcon = useCallback((imageUrl: string, x?: number, y?: number) => {

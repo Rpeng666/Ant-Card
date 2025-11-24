@@ -80,6 +80,26 @@
       "copyright": " 2025 Ant Card. All rights reserved."
     },
     "changelog": "Changelog",
+    "coverMaker": {
+      "title": "Cover Maker",
+      "subtitle": "Create beautiful cover images for your blog, social media and more",
+      "comingSoon": "Coming Soon",
+      "comingSoonDescription": "We're working hard to bring you powerful cover creation tools. Stay tuned!",
+      "features": {
+        "customDesign": {
+          "title": "Custom Design",
+          "description": "Personalize every aspect of your cover with advanced editing tools"
+        },
+        "templates": {
+          "title": "Rich Templates",
+          "description": "Choose from dozens of professional templates for various occasions"
+        },
+        "export": {
+          "title": "Easy Export",
+          "description": "Export your cover works in high quality with multiple formats"
+        }
+      }
+    },
     "cta": {
       "title": "Start Your New Career Chapter",
       "description": "Start using Ant Card now to create an impressive resume",

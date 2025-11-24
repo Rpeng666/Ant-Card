@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic";
+
 // resolve image proxy
 export async function GET(request: NextRequest) {
   try {
