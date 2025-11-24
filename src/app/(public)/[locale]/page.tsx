@@ -1,16 +1,14 @@
 import { Navbar } from "@/components/landing/Navbar";
 import { Hero } from "@/components/landing/Hero";
-import { Sponsors } from "@/components/landing/Sponsors";
-import { About } from "@/components/landing/About";
-import { HowItWorks } from "@/components/landing/HowItWorks";
+import { Challenges } from "@/components/landing/Challenges";
+import { Solutions } from "@/components/landing/Solutions";
+import { Benefits } from "@/components/landing/Benefits";
+import { SocialProof } from "@/components/landing/SocialProof";
 import { Features } from "@/components/landing/Features";
-import { Services } from "@/components/landing/Services";
-import { Cta } from "@/components/landing/Cta";
-import { Testimonials } from "@/components/landing/Testimonials";
-import { Team } from "@/components/landing/Team";
-import { Pricing } from "@/components/landing/Pricing";
-import { Newsletter } from "@/components/landing/Newsletter";
+import { Partnership } from "@/components/landing/Partnership";
+import { UseCases } from "@/components/landing/UseCases";
 import { FAQ } from "@/components/landing/FAQ";
+import { GetStarted } from "@/components/landing/GetStarted";
 import { Footer } from "@/components/landing/Footer";
 import { ScrollToTop } from "@/components/landing/ScrollToTop";
 
@@ -19,16 +17,15 @@ export default function LandingPage() {
     <>
       <Navbar />
       <Hero />
-      <Sponsors />
-      <About />
-      <HowItWorks />
+      <Challenges />
+      <Solutions />
+      <Benefits />
+      <SocialProof />
       <Features />
-      <Services />
-      <Cta />
-      <Testimonials />
-      <Team />
-      <Newsletter />
+      <Partnership />
+      <UseCases />
       <FAQ />
+      <GetStarted />
       <Footer />
       <ScrollToTop />
     </>

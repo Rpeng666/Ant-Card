@@ -34,11 +34,27 @@ export const Navbar = () => {
 
   const routeList: RouteProps[] = [
     {
-      href: "#features",
+      href: "#solutions",
       label: t("features"),
     },
     {
-      href: "#testimonials",
+      href: `/templates`,
+      label: t("templates"),
+    },
+    {
+      href: `/cover-maker`,
+      label: t("coverMaker"),
+    },
+    {
+      href: `/blog`,
+      label: t("blog"),
+    },
+    {
+      href: `/pricing`,
+      label: t("pricing"),
+    },
+    {
+      href: "#benefits",
       label: t("testimonials"),
     },
     {
@@ -109,7 +125,6 @@ export const Navbar = () => {
                   ))}
                   <div className="flex gap-2 mt-4">
                     <LanguageSwitch />
-                    <ModeToggle />
                   </div>
                 </nav>
               </SheetContent>
@@ -119,17 +134,6 @@ export const Navbar = () => {
           <div className="hidden md:flex gap-2">
             <LanguageSwitch />
 
-            <a
-              rel="noreferrer noopener"
-              href="https://github.com/rpeng666/ant-card"
-              target="_blank"
-              className={`border ${buttonVariants({ variant: "secondary" })}`}
-            >
-              <GitHubLogoIcon className="mr-2 w-5 h-5" />
-              Github
-            </a>
-
-            <ModeToggle />
           </div>
         </NavigationMenuList>
       </NavigationMenu>

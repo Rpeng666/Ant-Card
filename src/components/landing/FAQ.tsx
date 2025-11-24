@@ -1,17 +1,20 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { Badge } from "./ui/badge";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Link from "next/link";
 
 interface FAQProps {
   question: string;
   answer: string;
   value: string;
+  relatedLinks?: string;
 }
 
 export const FAQ = () => {
@@ -21,27 +24,41 @@ export const FAQ = () => {
     question: faq.question,
     answer: faq.answer,
     value: `item-${index + 1}`,
+    relatedLinks: faq.relatedLinks,
   }));
 
   return (
     <section
       id="faq"
-      className="container py-24 sm:py-32"
+      className="container py-24 sm:py-32 space-y-12"
     >
-      <h2 className="text-3xl md:text-4xl font-bold mb-4">
-        {t("title")}
-      </h2>
+      <div className="text-center space-y-6 max-w-4xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold">
+          {t("title")}
+        </h2>
 
-      <p className="text-xl text-muted-foreground mb-8">
-        {t("subtitle")}
-      </p>
+        <p className="text-xl text-muted-foreground">
+          {t("subtitle")}
+        </p>
+
+        {/* Quick Links */}
+        <div className="flex flex-wrap justify-center gap-3">
+          {t.raw("quickLinks").map((link: any, index: number) => (
+            <Link key={index} href={link.href || link.anchor}>
+              <Badge variant="outline" className="hover:bg-primary hover:text-primary-foreground cursor-pointer">
+                {link.text}
+              </Badge>
+            </Link>
+          ))}
+        </div>
+      </div>
 
       <Accordion
         type="single"
         collapsible
-        className="w-full AccordionRoot"
+        className="w-full AccordionRoot max-w-4xl mx-auto"
       >
-        {FAQList.map(({ question, answer, value }: FAQProps) => (
+        {FAQList.map(({ question, answer, value, relatedLinks }: FAQProps) => (
           <AccordionItem
             key={value}
             value={value}
@@ -50,21 +67,22 @@ export const FAQ = () => {
               {question}
             </AccordionTrigger>
 
-            <AccordionContent>{answer}</AccordionContent>
+            <AccordionContent className="space-y-4">
+              <p className="text-muted-foreground leading-relaxed">
+                {answer}
+              </p>
+              {relatedLinks && (
+                <div className="pt-2 border-t">
+                  <p className="text-sm font-medium mb-2">Related Links:</p>
+                  <Link href={relatedLinks.match(/\(([^)]+)\)/)[1]} className="text-primary hover:underline text-sm">
+                    {relatedLinks.replace(/\[([^\]]+)\]\([^)]+\)/, '$1')}
+                  </Link>
+                </div>
+              )}
+            </AccordionContent>
           </AccordionItem>
         ))}
       </Accordion>
-
-      <h3 className="font-medium mt-4">
-        {t("stillHaveQuestions")}{" "}
-        <a
-          rel="noreferrer noopener"
-          href="#"
-          className="text-primary transition-all border-primary hover:border-b-2"
-        >
-          {t("contactUs")}
-        </a>
-      </h3>
     </section>
   );
 };

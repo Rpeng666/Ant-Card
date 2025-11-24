@@ -1,22 +1,27 @@
 "use client";
 
 import { useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useCardStore } from "@/store/useCardStore";
 import { Loader2 } from "lucide-react";
 import { useLocale } from "next-intl";
+
 export default function CardEditorPage() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const locale = useLocale();
   const { createCard } = useCardStore();
 
   useEffect(() => {
+    // 获取 URL 中的 template 参数
+    const templateId = searchParams.get("template");
+
     // 自动创建新卡片并跳转到编辑器
-    const newCardId = createCard();
+    const newCardId = createCard(templateId || undefined);
     if (newCardId) {
       router.replace(`/${locale}/app/card-editor/${newCardId}`);
     }
-  }, [createCard, router, locale]);
+  }, [createCard, router, locale, searchParams]);
 
   return (
     <div className="flex items-center justify-center min-h-screen">

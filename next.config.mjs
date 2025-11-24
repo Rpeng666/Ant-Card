@@ -1,6 +1,5 @@
 import createNextIntlPlugin from "next-intl/plugin";
-import path from "path";
-import { fileURLToPath } from "url";
+import { createMDX } from 'fumadocs-mdx/next';
 
 const withNextIntl = createNextIntlPlugin();
 
@@ -12,4 +11,10 @@ const config = {
   output: "standalone",
 };
 
-export default withNextIntl(config);
+
+const withMDX = createMDX({
+  // customise the config file path
+  // configPath: "source.config.ts"
+});
+
+export default withMDX(withNextIntl(config));

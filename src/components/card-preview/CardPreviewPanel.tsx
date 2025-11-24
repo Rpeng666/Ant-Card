@@ -6,8 +6,8 @@ import { cn } from "@/lib/utils";
 import { Card } from "@/components/ui/card";
 import { QRCodeSVG } from "qrcode.react";
 import { ASPECT_RATIOS } from "@/config";
-import { 
-  Download, 
+import {
+  Download,
   ChevronDown,
   FileImage,
   FileType,
@@ -29,54 +29,12 @@ import {
 } from "@/components/ui/tooltip";
 import { toast } from "sonner";
 import { ResizableCard } from "./ResizableCard";
-import MinimalistTemplate from "./MinimalistTemplate";
-import DocumentTemplate from "./DocumentTemplate";
-import MemoTemplate from "./MemoTemplate";
-import QuoteTemplate from "./QuoteTemplate";
-import BookExcerptTemplate from "./BookExcerptTemplate";
-import BentoTemplate from "./BentoTemplate";
-import DarkDayTemplate from "./DarkDayTemplate";
-import FrameTemplate from "./FrameTemplate";
-import HandwrittenTemplate from "./HandwrittenTemplate";
+import { TEMPLATE_COMPONENTS } from "./registry";
 import { useTranslations } from "next-intl";
-import { getFontColorForGradient } from "@/lib/gradientConfig";
+import { useCardTheme } from "@/hooks/useCardTheme";
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeHighlight from 'rehype-highlight';
-
-// 获取卡片背景样式
-const getCardBackground = (style: any) => {
-  const backgroundType = style.backgroundType || 'solid';
-
-  switch (backgroundType) {
-    case 'gradient':
-      // 渐变背景通过CSS类处理
-      return 'transparent';
-    case 'image':
-      // 图片背景通过backgroundImage处理
-      return style.containerBg || "#ffffff";
-    default:
-      return style.containerBg || "#ffffff";
-  }
-};
-
-
-// 获取卡片文字颜色
-const getCardTextColor = (style: any) => {
-  const backgroundType = style.backgroundType || 'solid';
-
-  switch (backgroundType) {
-    case 'gradient':
-      // 渐变背景使用预设的最佳文字颜色
-      return style.gradientClass ? getFontColorForGradient(style.gradientClass) : '#333333';
-    case 'image':
-      // 图片背景使用白色文字以确保对比度
-      return '#ffffff';
-    default:
-      // 纯色背景使用用户设置的颜色
-      return style.color || '#000000';
-  }
-};
 
 interface CardPreviewPanelProps {
   sidePanelCollapsed?: boolean;
@@ -94,6 +52,7 @@ export const CardPreviewPanel = ({
   toggleEditPanel,
 }: CardPreviewPanelProps) => {
   const { activeCard, activeCardId, setSelectedEditField, updateCardStyle } = useCardStore();
+  const { getCardBackground, getCardTextColor } = useCardTheme();
   const tPreview = useTranslations("cardEditor.preview");
   const previewRef = useRef<HTMLDivElement>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -107,24 +66,24 @@ export const CardPreviewPanel = ({
   // 处理拖拽开始
   const handleMouseDown = (e: React.MouseEvent) => {
     if (!scrollContainerRef.current) return;
-    
+
     setIsDragging(true);
     setDragStart({ x: e.clientX, y: e.clientY });
     setScrollStart({
       x: scrollContainerRef.current.scrollLeft,
       y: scrollContainerRef.current.scrollTop
     });
-    
+
     e.preventDefault();
   };
 
   // 处理拖拽移动
   const handleMouseMove = (e: React.MouseEvent) => {
     if (!isDragging || !scrollContainerRef.current) return;
-    
+
     const deltaX = e.clientX - dragStart.x;
     const deltaY = e.clientY - dragStart.y;
-    
+
     scrollContainerRef.current.scrollLeft = scrollStart.x - deltaX;
     scrollContainerRef.current.scrollTop = scrollStart.y - deltaY;
   };
@@ -146,7 +105,7 @@ export const CardPreviewPanel = ({
       if (!element) return;
 
       const html2canvas = (await import('html2canvas')).default;
-      
+
       if (allCards.length > 1) {
         for (let i = 0; i < allCards.length; i++) {
           const canvas = await html2canvas(element, {
@@ -162,12 +121,12 @@ export const CardPreviewPanel = ({
           link.download = fileName;
           link.href = canvas.toDataURL('image/png');
           link.click();
-          
+
           if (i < allCards.length - 1) {
             await new Promise(resolve => setTimeout(resolve, 500));
           }
         }
-        
+
         toast.success(tPreview("exportSuccess.pngBatch", { count: allCards.length }));
       } else {
         const canvas = await html2canvas(element, {
@@ -181,7 +140,7 @@ export const CardPreviewPanel = ({
         link.download = 'card.png';
         link.href = canvas.toDataURL('image/png');
         link.click();
-        
+
         toast.success(tPreview("exportSuccess.png"));
       }
     } catch (error) {
@@ -197,7 +156,7 @@ export const CardPreviewPanel = ({
       if (!element) return;
 
       const html2canvas = (await import('html2canvas')).default;
-      
+
       if (allCards.length > 1) {
         for (let i = 0; i < allCards.length; i++) {
           const canvas = await html2canvas(element, {
@@ -213,12 +172,12 @@ export const CardPreviewPanel = ({
           link.download = fileName;
           link.href = canvas.toDataURL('image/jpeg', 0.9);
           link.click();
-          
+
           if (i < allCards.length - 1) {
             await new Promise(resolve => setTimeout(resolve, 500));
           }
         }
-        
+
         toast.success(tPreview("exportSuccess.jpegBatch", { count: allCards.length }));
       } else {
         const canvas = await html2canvas(element, {
@@ -232,7 +191,7 @@ export const CardPreviewPanel = ({
         link.download = 'card.jpg';
         link.href = canvas.toDataURL('image/jpeg', 0.9);
         link.click();
-        
+
         toast.success(tPreview("exportSuccess.jpeg"));
       }
     } catch (error) {
@@ -264,7 +223,7 @@ export const CardPreviewPanel = ({
       link.href = url;
       link.click();
       URL.revokeObjectURL(url);
-      
+
       toast.success(tPreview("exportSuccess.svg"));
     } catch (error) {
       console.error('SVG导出失败:', error);
@@ -308,7 +267,7 @@ export const CardPreviewPanel = ({
 
       const html2canvas = (await import('html2canvas')).default;
       const jsPDF = (await import('jspdf')).jsPDF;
-      
+
       if (allCards.length > 1) {
         const pdf = new jsPDF({
           orientation: 'portrait',
@@ -338,7 +297,7 @@ export const CardPreviewPanel = ({
         const cardTitle = allCards[0].form.title || '卡片';
         const fileName = `${cardTitle.replace(/[^\w\s-]/g, '')}_合集.pdf`;
         pdf.save(fileName);
-        
+
         toast.success(tPreview("exportSuccess.pdfBatch", { count: allCards.length }));
       } else {
         const canvas = await html2canvas(element, {
@@ -393,10 +352,10 @@ export const CardPreviewPanel = ({
 
   // 根据选择的宽高比计算实际尺寸
   const selectedRatio = ASPECT_RATIOS.find(ratio => ratio.id === style.aspectRatio) || ASPECT_RATIOS[0];
-  
+
   let cardWidth = style.width || selectedRatio.width;
   let cardHeight = style.height;
-  
+
   if (!cardHeight) {
     if (style.aspectRatio && style.aspectRatio !== "custom") {
       cardHeight = selectedRatio.height || (cardWidth / selectedRatio.ratio);
@@ -431,260 +390,136 @@ export const CardPreviewPanel = ({
           height: cardHeight ? `${cardHeight + 48}px` : 'auto',
         }}
       >
-        {activeCard?.currentTemplate === "document" ? (
-          <ResizableCard
-            width={cardWidth}
-            height={cardHeight}
-            onResize={handleCardResize}
-          >
-            <DocumentTemplate
-              date={card.form.date}
-              title={card.form.title}
-              content={card.form.content}
-              author={card.form.author}
-              qrCode={card.form.qrCode}
-              qrCodeTitle={card.form.qrCodeTitle}
-              qrCodeText={card.form.qrCodeText}
-              showIcon={card.switchConfig.showIcon}
-              showDate={card.switchConfig.showDate}
-              showTitle={card.switchConfig.showTitle}
-              showContent={card.switchConfig.showContent}
-              showAuthor={card.switchConfig.showAuthor}
-              showQRCode={card.switchConfig.showQRCode}
-              showPageNum={card.switchConfig.showPageNum}
-              pagination={card.form.pagination}
-              icon={card.form.icon}
-            />
-          </ResizableCard>
-        ) : activeCard?.currentTemplate === "memo" ? (
-          <ResizableCard
-            width={cardWidth}
-            height={cardHeight}
-            onResize={handleCardResize}
-          >
-            <MemoTemplate
-              date={card.form.date}
-              title={card.form.title}
-              content={card.form.content}
-              author={card.form.author}
-              icon={card.form.icon}
-              showIcon={card.switchConfig.showIcon}
-              showDate={card.switchConfig.showDate}
-              showTitle={card.switchConfig.showTitle}
-              showContent={card.switchConfig.showContent}
-              showAuthor={card.switchConfig.showAuthor}
-            />
-          </ResizableCard>
-        ) : activeCard?.currentTemplate === "quote" ? (
-          <ResizableCard
-            width={cardWidth}
-            height={cardHeight}
-            onResize={handleCardResize}
-          >
-            <QuoteTemplate
-              date={card.form.date}
-              title={card.form.title}
-              content={card.form.content}
-              author={card.form.author}
-              icon={card.form.icon}
-              showIcon={card.switchConfig.showIcon}
-              showDate={card.switchConfig.showDate}
-              showTitle={card.switchConfig.showTitle}
-              showContent={card.switchConfig.showContent}
-              showAuthor={card.switchConfig.showAuthor}
-            />
-          </ResizableCard>
-        ) : activeCard?.currentTemplate === "book-excerpt" ? (
-          <ResizableCard
-            width={cardWidth}
-            height={cardHeight}
-            onResize={handleCardResize}
-          >
-            <BookExcerptTemplate
-              date={card.form.date}
-              title={card.form.title}
-              content={card.form.content}
-              author={card.form.author}
-              icon={card.form.icon}
-              showIcon={card.switchConfig.showIcon}
-              showDate={card.switchConfig.showDate}
-              showTitle={card.switchConfig.showTitle}
-              showContent={card.switchConfig.showContent}
-              showAuthor={card.switchConfig.showAuthor}
-              showPageNum={card.switchConfig.showPageNum}
-              pagination={card.form.pagination}
-            />
-          </ResizableCard>
-        ) : activeCard?.currentTemplate === "bento" ? (
-          <ResizableCard
-            width={cardWidth}
-            height={cardHeight}
-            onResize={handleCardResize}
-          >
-            <BentoTemplate
-              date={card.form.date}
-              title={card.form.title}
-              content={card.form.content}
-              author={card.form.author}
-              icon={card.form.icon}
-              showIcon={card.switchConfig.showIcon}
-              showDate={card.switchConfig.showDate}
-              showTitle={card.switchConfig.showTitle}
-              showContent={card.switchConfig.showContent}
-              showAuthor={card.switchConfig.showAuthor}
-            />
-          </ResizableCard>
-        ) : activeCard?.currentTemplate === "dark-day" ? (
-          <ResizableCard
-            width={cardWidth}
-            height={cardHeight}
-            onResize={handleCardResize}
-          >
-            <DarkDayTemplate
-              date={card.form.date}
-              title={card.form.title}
-              content={card.form.content}
-              author={card.form.author}
-              icon={card.form.icon}
-              showIcon={card.switchConfig.showIcon}
-              showDate={card.switchConfig.showDate}
-              showTitle={card.switchConfig.showTitle}
-              showContent={card.switchConfig.showContent}
-              showAuthor={card.switchConfig.showAuthor}
-            />
-          </ResizableCard>
-        ) : activeCard?.currentTemplate === "frame" ? (
-          <ResizableCard
-            width={cardWidth}
-            height={cardHeight}
-            onResize={handleCardResize}
-          >
-            <FrameTemplate
-              date={card.form.date}
-              title={card.form.title}
-              content={card.form.content}
-              author={card.form.author}
-              icon={card.form.icon}
-              showIcon={card.switchConfig.showIcon}
-              showDate={card.switchConfig.showDate}
-              showTitle={card.switchConfig.showTitle}
-              showContent={card.switchConfig.showContent}
-              showAuthor={card.switchConfig.showAuthor}
-            />
-          </ResizableCard>
-        ) : activeCard?.currentTemplate === "handwritten" ? (
-          <ResizableCard
-            width={cardWidth}
-            height={cardHeight}
-            onResize={handleCardResize}
-          >
-            <HandwrittenTemplate
-              date={card.form.date}
-              title={card.form.title}
-              content={card.form.content}
-              author={card.form.author}
-              icon={card.form.icon}
-              showIcon={card.switchConfig.showIcon}
-              showDate={card.switchConfig.showDate}
-              showTitle={card.switchConfig.showTitle}
-              showContent={card.switchConfig.showContent}
-              showAuthor={card.switchConfig.showAuthor}
-            />
-          </ResizableCard>
-        ) : (
-          <ResizableCard
-            width={cardWidth}
-            height={cardHeight}
-            onResize={handleCardResize}
-          >
-            <Card
-              className="relative overflow-hidden transition-all duration-300 w-full h-full shadow-2xl"
-              style={{
-                padding: card.style.padding || "32px",
-                borderRadius: card.style.borderRadius || "16px",
-                textAlign: card.style.align as "left" | "center" | "right",
-                fontFamily: card.style.font,
-                fontSize: `${card.style.fontScale}em`,
-                background: getCardBackground(card.style),
-                color: getCardTextColor(card.style),
-                opacity: card.style.opacity || 1,
-              }}
-            >
-              {/* 渐变背景层 */}
-              {card.style.backgroundType === 'gradient' && card.style.gradientClass && (
-                <div
-                  className={cn(
-                    "absolute inset-0 pointer-events-none",
-                    card.style.gradientClass
-                  )}
-                  style={{ zIndex: 0 }}
-                />
-              )}
+        {(() => {
+          const TemplateComponent = activeCard?.currentTemplate ? TEMPLATE_COMPONENTS[activeCard.currentTemplate] : null;
 
-              {/* 图片背景层 */}
-              {card.style.backgroundType === 'image' && card.style.backgroundImage && (
-                <>
+          if (TemplateComponent) {
+            return (
+              <ResizableCard
+                width={cardWidth}
+                height={cardHeight}
+                onResize={handleCardResize}
+              >
+                <TemplateComponent
+                  date={card.form.date}
+                  title={card.form.title}
+                  content={card.form.content}
+                  author={card.form.author}
+                  icon={card.form.icon}
+                  qrCode={card.form.qrCode}
+                  qrCodeTitle={card.form.qrCodeTitle}
+                  qrCodeText={card.form.qrCodeText}
+                  pagination={card.form.pagination}
+                  showIcon={card.switchConfig.showIcon}
+                  showDate={card.switchConfig.showDate}
+                  showTitle={card.switchConfig.showTitle}
+                  showContent={card.switchConfig.showContent}
+                  showAuthor={card.switchConfig.showAuthor}
+                  showQRCode={card.switchConfig.showQRCode}
+                  showPageNum={card.switchConfig.showPageNum}
+                  data={card.form}
+                  style={card.style}
+                  config={card.switchConfig}
+                />
+              </ResizableCard>
+            );
+          }
+
+          return (
+            <ResizableCard
+              width={cardWidth}
+              height={cardHeight}
+              onResize={handleCardResize}
+            >
+              <Card
+                className="relative overflow-hidden transition-all duration-300 w-full h-full shadow-2xl"
+                style={{
+                  padding: card.style.padding || "32px",
+                  borderRadius: card.style.borderRadius || "16px",
+                  textAlign: card.style.align as "left" | "center" | "right",
+                  fontFamily: card.style.font,
+                  fontSize: `${card.style.fontScale}em`,
+                  background: getCardBackground(card.style),
+                  color: getCardTextColor(card.style),
+                  opacity: card.style.opacity || 1,
+                }}
+              >
+                {/* 渐变背景层 */}
+                {card.style.backgroundType === 'gradient' && card.style.gradientClass && (
                   <div
-                    className="absolute inset-0 pointer-events-none"
-                    style={{
-                      zIndex: 0,
-                      backgroundImage: `url(${card.style.backgroundImage})`,
-                      backgroundSize: card.style.backgroundSize || 'cover',
-                      backgroundPosition: card.style.backgroundPosition || 'center',
-                      backgroundRepeat: 'no-repeat'
-                    }}
+                    className={cn(
+                      "absolute inset-0 pointer-events-none",
+                      card.style.gradientClass
+                    )}
+                    style={{ zIndex: 0 }}
                   />
-                  {/* 图片背景半透明遮罩，提高文字可读性 */}
-                  <div
-                    className="absolute inset-0 pointer-events-none bg-black/30"
-                    style={{ zIndex: 1 }}
-                  />
-                </>
-              )}
-              <div className="space-y-4 relative z-20">
-                {card.switchConfig.showTitle && (
-                  <h2 
-                    className="font-bold text-2xl break-words cursor-pointer hover:opacity-80 transition-opacity"
-                    onClick={() => setSelectedEditField('title')}
-                  >
-                    {card.form.title}
-                  </h2>
                 )}
-                {card.switchConfig.showContent && (
-                  <div
-                    className="cursor-pointer hover:opacity-80 transition-opacity markdown-content"
-                    onClick={() => setSelectedEditField('content')}
-                  >
-                    <ReactMarkdown
-                      remarkPlugins={[remarkGfm]}
-                      rehypePlugins={[rehypeHighlight]}
-                    >
-                      {card.form.content}
-                    </ReactMarkdown>
-                  </div>
-                )}
-                {card.switchConfig.showAuthor && (
-                  <div 
-                    className="text-sm opacity-70 cursor-pointer hover:opacity-80 transition-opacity"
-                    onClick={() => setSelectedEditField('author')}
-                  >
-                    — {card.form.author}
-                  </div>
-                )}
-                {card.switchConfig.showQRCode && card.form.qrCode && (
-                  <div className="flex justify-center mt-4">
-                    <QRCodeSVG
-                      value={card.form.qrCode}
-                      size={64}
-                      bgColor="transparent"
-                      fgColor="#374151"
+
+                {/* 图片背景层 */}
+                {card.style.backgroundType === 'image' && card.style.backgroundImage && (
+                  <>
+                    <div
+                      className="absolute inset-0 pointer-events-none"
+                      style={{
+                        zIndex: 0,
+                        backgroundImage: `url(${card.style.backgroundImage})`,
+                        backgroundSize: card.style.backgroundSize || 'cover',
+                        backgroundPosition: card.style.backgroundPosition || 'center',
+                        backgroundRepeat: 'no-repeat'
+                      }}
                     />
-                  </div>
+                    {/* 图片背景半透明遮罩，提高文字可读性 */}
+                    <div
+                      className="absolute inset-0 pointer-events-none bg-black/30"
+                      style={{ zIndex: 1 }}
+                    />
+                  </>
                 )}
-              </div>
-            </Card>
-          </ResizableCard>
-        )}
+                <div className="space-y-4 relative z-20">
+                  {card.switchConfig.showTitle && (
+                    <h2
+                      className="font-bold text-2xl break-words cursor-pointer hover:opacity-80 transition-opacity"
+                      onClick={() => setSelectedEditField('title')}
+                    >
+                      {card.form.title}
+                    </h2>
+                  )}
+                  {card.switchConfig.showContent && (
+                    <div
+                      className="cursor-pointer hover:opacity-80 transition-opacity markdown-content"
+                      onClick={() => setSelectedEditField('content')}
+                    >
+                      <ReactMarkdown
+                        remarkPlugins={[remarkGfm]}
+                        rehypePlugins={[rehypeHighlight]}
+                      >
+                        {card.form.content}
+                      </ReactMarkdown>
+                    </div>
+                  )}
+                  {card.switchConfig.showAuthor && (
+                    <div
+                      className="text-sm opacity-70 cursor-pointer hover:opacity-80 transition-opacity"
+                      onClick={() => setSelectedEditField('author')}
+                    >
+                      — {card.form.author}
+                    </div>
+                  )}
+                  {card.switchConfig.showQRCode && card.form.qrCode && (
+                    <div className="flex justify-center mt-4">
+                      <QRCodeSVG
+                        value={card.form.qrCode}
+                        size={64}
+                        bgColor="transparent"
+                        fgColor="#374151"
+                      />
+                    </div>
+                  )}
+                </div>
+              </Card>
+            </ResizableCard>
+          );
+        })()}
       </div>
     </motion.div>
   );
@@ -701,7 +536,7 @@ export const CardPreviewPanel = ({
           <h2 className="text-lg font-semibold text-gray-900 dark:text-neutral-100">
             {tPreview("title")}
           </h2>
-          
+
           {hasMultipleCards && (
             <div className="flex items-center gap-2 px-3 py-1 bg-blue-50 dark:bg-blue-950/20 rounded-lg border border-blue-200 dark:border-blue-800">
               <span className="text-sm font-medium text-blue-900 dark:text-blue-100">
@@ -763,7 +598,7 @@ export const CardPreviewPanel = ({
       </div>
 
       {/* 预览区域 */}
-      <div 
+      <div
         ref={scrollContainerRef}
         className={cn(
           "flex-1 overflow-auto",
@@ -784,7 +619,7 @@ export const CardPreviewPanel = ({
             display: none;
           }
         `}</style>
-        
+
         <div className={cn(
           "flex items-center justify-center p-8",
           hasMultipleCards ? "flex-row gap-8 min-w-max" : "min-h-full"

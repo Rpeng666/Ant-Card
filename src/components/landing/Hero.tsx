@@ -11,35 +11,33 @@ export const Hero = () => {
 
   return (
     <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
-      <div className="text-center lg:text-start space-y-6">
-        <main className="text-5xl md:text-6xl font-bold">
-          <h1 className="inline">
-            <span className="inline bg-gradient-to-r from-[#F596D3]  to-[#D247BF] text-transparent bg-clip-text">
-              Ant Card
-            </span>{" "}
-          </h1>{" "}
-          <h2 className="inline">
-            <span className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
-              {t("smartCard")}
-            </span>{" "}
-            {t("makingTool")}
-          </h2>
-        </main>
+      <div className="text-center space-y-8 max-w-4xl mx-auto">
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+          <span className="inline bg-gradient-to-r from-[#F596D3] to-[#D247BF] text-transparent bg-clip-text">
+            {t("title")}
+          </span>
+        </h1>
 
-        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
+        <h2 className="text-2xl md:text-3xl font-semibold text-muted-foreground">
+          {t("subtitle")}
+        </h2>
+
+        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto">
           {t("description")}
         </p>
 
-        <div className="space-y-4 md:space-y-0 md:space-x-4">
+        <div className="space-y-4 md:space-y-0 md:space-x-4 flex flex-col md:flex-row justify-center gap-4">
           <Link href={`/${locale}/app/card-editor`}>
-            <Button className="w-full md:w-1/3">{t("startMaking")}</Button>
+            <Button className="w-full md:w-auto px-8 py-3 text-lg">
+              {t("startMaking")}
+            </Button>
           </Link>
 
           <a
             rel="noreferrer noopener"
             href="https://github.com/rpeng666/ant-card"
             target="_blank"
-            className={`w-full md:w-1/3 ${buttonVariants({
+            className={`w-full md:w-auto px-8 py-3 text-lg ${buttonVariants({
               variant: "outline",
             })}`}
           >

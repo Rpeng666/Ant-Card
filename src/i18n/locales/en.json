@@ -1,8 +1,24 @@
 {
+  "Metadata": {
+    "title": "Ant Card | Markdown Card Generator | Create Stunning Md2Card Instantly"
+  },
+  "BlogPage": {
+    "title": "Ant Card Blog",
+    "description": "Tips, tutorials, and insights about creating stunning Md2Cards with Ant Card. Learn from experts and transform your content creation workflow.",
+    "categories": {
+      "all": "All"
+    },
+    "nested": {
+      "categories": {
+        "all": "All"
+      }
+    }
+  },
   "common": {
-    "title": "Ant Card",
-    "subtitle": "AI Driven Resume Editor",
-    "description": "Ant Card is an open source resume editor, free, privacy-first. No registration required, all data stored locally, support data backup and export, ensuring your resume data is always available.",
+    "title": "Ant Card | Markdown Card Generator | Create Stunning Md2Card Instantly",
+    "subtitle": "AI Driven Card Editor",
+    "description": "Ant Card is an intelligent Markdown card generator that converts text into beautiful Md2Cards. With multiple templates, platform-ready sizes, long text splitting.",
+    "keywords": "Ant Card, Markdown card generator, Md2Card, card2 card, mdcard, xiaohongshu card maker, social media card creator, Instagram card design, visual content generator",
     "dashboard": "Dashboard",
     "edit": "Edit",
     "delete": "Delete",
@@ -732,11 +748,115 @@
     },
     "landing": {
       "hero": {
-        "smartCard": "Smart Card",
-        "makingTool": "Creation Tool",
-        "description": "Easily create professional and beautiful personal cards with real-time editing, multiple templates, and smart layouts. Make your personal presentation outstanding.",
-        "startMaking": "Start Creating",
+        "title": "Turn Your Markdown Into Stunning Md2Cards Instantly",
+        "subtitle": "Ant Card Markdown Card Generator",
+        "description": "Transform your plain text into beautiful, shareable cards in seconds. No design skills needed - just type and see the magic happen.",
+        "startMaking": "👉 Try Ant Card Now",
         "githubRepo": "Github Repository"
+      },
+      "challenges": {
+        "title": "Do You Struggle With These Content Challenges?",
+        "subtitle": "You're not alone. Thousands of content creators face these daily obstacles that slow down their workflow and reduce productivity. But what if there was a solution that could transform how you create, format, and share visual content?",
+        "solution": "Ant Card addresses all these challenges with intelligent automation and professional design tools, helping you create stunning Md2Cards in minutes instead of hours. Our Markdown card generator transforms how you approach visual content creation.",
+        "plainText": {
+          "title": "Plain text lacks visual appeal?",
+          "description": "Transform boring text into eye-catching visual content that captures attention and drives engagement across all platforms."
+        },
+        "platforms": {
+          "title": "Multiple platforms and styles are hard to adapt?",
+          "description": "One card design that works everywhere - social media, blogs, presentations. Stop recreating content for different platforms."
+        },
+        "splitting": {
+          "title": "Splitting and formatting long content is tedious?",
+          "description": "Automatically split long content into perfectly formatted cards with smart algorithms that maintain context and readability."
+        },
+        "exporting": {
+          "title": "Exporting multiple images and batch processing is complicated?",
+          "description": "One-click batch export for all your content needs. Generate dozens of professional cards in multiple formats simultaneously."
+        }
+      },
+      "solutions": {
+        "title": "How Ant Card Solves Your Problems",
+        "subtitle": "Transform your content creation workflow with intelligent tools designed for modern creators",
+        "realTimeRendering": {
+          "title": "🪄 Markdown to Md2Card in Real-time",
+          "description": "See exactly how your Md2Cards will look as you type with our advanced Markdown card generator. Ant Card's real-time rendering saves time and ensures perfect formatting for every Md2Card you create. Perfect for live presentations and instant content creation.",
+          "useCases": "Ideal for educators, presenters, and content creators who need immediate visual feedback for their card creation tool workflow",
+          "relatedLinks": "See our [use cases](#use-cases) for real-time creation examples"
+        },
+        "templates": {
+          "title": "🎨 Professional Card Templates for Social Media",
+          "description": "Design professional-looking Md2Cards effortlessly with our extensive template library. From business cards to social media posts, every template in this card creation tool is optimized for maximum engagement. Ant Card makes template selection intuitive.",
+          "useCases": "Perfect for marketers, designers, and professionals who need consistent branding across all their Md2Cards"
+        },
+        "smartSplitting": {
+          "title": "🧩 AI-Powered Long Text to Multiple Cards",
+          "description": "Automatically generate multiple Md2Cards with proper layout when your content exceeds optimal length. Our AI ensures logical breaks and maintains visual coherence across all generated cards. This Markdown card generator feature makes long-form content manageable.",
+          "useCases": "Essential for blog post series, educational content, and detailed product descriptions using Ant Card's intelligent card creation tool"
+        },
+        "batchCreation": {
+          "title": "⚡ Batch Create Md2Cards for Social Media",
+          "description": "Save time and reuse across platforms with our powerful batch processing system. Create dozens of Md2Cards in minutes and export them in multiple formats simultaneously. Ant Card's batch creation feature is the ultimate Markdown card generator for efficiency.",
+          "useCases": "Game-changing for social media managers, content agencies, and enterprise teams who need bulk card creation tools",
+          "relatedLinks": "Learn more about our [pricing plans](#pricing) for batch creation features"
+        },
+        "md2cardSupport": {
+          "title": "🌈 Universal Md2Card Format for All Platforms",
+          "description": "Compatible with most platforms for seamless sharing. The Md2Card format ensures your content maintains perfect formatting whether shared on social media, embedded in websites, or used in presentations. Ant Card's universal format makes sharing effortless.",
+          "useCases": "Perfect for cross-platform content distribution and maintaining brand consistency with your Md2Cards"
+        },
+        "chromeExtension": {
+          "title": "🧭 Browser Extension for Instant Card Creation",
+          "description": "Use Ant Card directly in your browser without installing software. Our lightweight extension integrates seamlessly with your workflow, allowing Md2Card creation from any webpage with just one click. The ultimate card creation tool for convenience.",
+          "useCases": "Ideal for remote workers, digital nomads, and anyone who needs quick Markdown to Md2Card conversion on the go"
+        }
+      },
+      "benefits": {
+        "title": "Why Creators Choose Ant Card",
+        "subtitle": "Save up to 80% of formatting time",
+        "description": "Make content visually appealing and engaging with tools trusted by over 50,000 creators worldwide",
+        "features": [
+          "One-click generation for social media-ready cards",
+          "Supports Markdown, Md2Card, and plain text input",
+          "Used by professionals in 120+ countries",
+          "4.8/5 star rating from 10,000+ reviews"
+        ],
+        "testimonials": [
+          "Ant Card transformed my content creation workflow. What used to take hours now takes minutes!",
+          "The best Markdown card generator I've used. The export quality is exceptional.",
+          "As a social media manager, this tool saves me 10+ hours per week. Absolutely essential!"
+        ]
+      },
+      "socialProof": {
+        "title": "Trusted by Creators Worldwide",
+        "subtitle": "Join thousands of professionals who've transformed their content creation",
+        "stats": {
+          "users": {
+            "number": "50,000+",
+            "label": "Active Creators"
+          },
+          "cards": {
+            "number": "2M+",
+            "label": "Cards Created"
+          },
+          "countries": {
+            "number": "120+",
+            "label": "Countries"
+          },
+          "rating": {
+            "number": "4.8/5",
+            "label": "User Rating"
+          }
+        },
+        "platforms": {
+          "title": "Featured On",
+          "list": [
+            "Product Hunt",
+            "GitHub Trending",
+            "Indie Hackers",
+            "Hacker News"
+          ]
+        }
       },
       "about": {
         "title": "About",
@@ -823,27 +943,27 @@
         "subtitle": "Reviews and feedback from real users",
         "reviews": [
           {
-            "name": "John Doe",
-            "username": "@johndoe",
-            "comment": "This card creation tool is awesome! Clean interface, powerful features, helped me quickly create professional business cards.",
+            "name": "Alex Chen",
+            "username": "@alexchen_design",
+            "comment": "Ant Card revolutionized my social media content creation. The Markdown to Md2Card conversion is instant and perfect!",
             "rating": 5
           },
           {
-            "name": "Jane Smith",
-            "username": "@janesmith",
-            "comment": "The templates are very beautiful, editing experience is great, and export quality is excellent. Highly recommend!",
+            "name": "Maria Rodriguez",
+            "username": "@mariarodriguez_mm",
+            "comment": "As a content marketer, this Markdown card generator saves me 15+ hours weekly. Batch export feature is a game changer!",
             "rating": 5
           },
           {
-            "name": "Mike Johnson",
-            "username": "@mikejohnson",
-            "comment": "As a designer, I'm very satisfied with the layout and color scheme of this tool. Clients love the cards I made.",
+            "name": "David Park",
+            "username": "@davidpark_tech",
+            "comment": "The AI-powered text splitting and real-time preview features make creating professional cards effortless. Highly recommend!",
             "rating": 5
           },
           {
-            "name": "Sarah Wilson",
-            "username": "@sarahwilson",
-            "comment": "Simple operation, comprehensive features. Especially the AI smart optimization feature saved me a lot of time.",
+            "name": "Sarah Thompson",
+            "username": "@sarahthompson_creates",
+            "comment": "Perfect tool for turning blog content into shareable visual cards. The Md2Card format works across all platforms!",
             "rating": 5
           }
         ]
@@ -854,105 +974,144 @@
         "description": "We are a passionate team dedicated to providing users with the best card creation experience.",
         "members": [
           {
-            "name": "Emma Smith",
-            "position": "Product Manager",
-            "bio": "Focused on user experience design and product innovation"
+            "name": "Sophia Martinez",
+            "position": "Head of Product",
+            "bio": "Leading the vision for intuitive Markdown card creation tools"
           },
           {
-            "name": "David Chen",
-            "position": "Technical Director",
-            "bio": "Responsible for technical architecture and system optimization"
+            "name": "James Wilson",
+            "position": "CTO & Co-Founder",
+            "bio": "Architecting scalable solutions for visual content generation"
           },
           {
-            "name": "Lisa Wang",
-            "position": "Design Lead",
-            "bio": "Responsible for visual design and user experience"
+            "name": "Aisha Patel",
+            "position": "Design Director",
+            "bio": "Creating beautiful templates for professional card design"
           },
           {
-            "name": "Tom Johnson",
-            "position": "Frontend Developer",
-            "bio": "Focused on frontend development and user interaction"
+            "name": "Marcus Kim",
+            "position": "Lead Engineer",
+            "bio": "Building robust features for seamless Md2Card conversion"
           }
         ]
       },
       "pricing": {
-        "title": "Choose the Plan That's Right for You",
-        "subtitle": "Flexible Pricing to Meet Different Needs",
+        "title": "Features & Pricing",
         "plans": [
           {
-            "title": "Free",
-            "description": "Basic features for individual users",
+            "title": "Free Plan",
+            "description": "Access all basic features",
             "buttonText": "Get Started",
             "benefits": [
-              "5 card projects",
+              "Real-time Markdown rendering",
               "Basic template library",
               "Standard export formats",
-              "Community support",
               "Local storage"
             ]
           },
           {
-            "title": "Professional",
-            "description": "Complete features for professional users",
-            "buttonText": "Upgrade to Professional",
+            "title": "Pro Plan",
+            "description": "Unlimited templates and batch export",
+            "buttonText": "Upgrade to Pro",
             "benefits": [
-              "Unlimited card projects",
-              "Premium template library",
-              "Advanced export formats",
-              "Priority technical support",
-              "Cloud sync",
-              "AI smart optimization"
+              "Unlimited templates",
+              "Batch creation & export",
+              "Advanced customization",
+              "Priority support"
             ],
             "popular": true
           },
           {
-            "title": "Enterprise",
-            "description": "Enterprise solutions for team collaboration",
-            "buttonText": "Contact Sales",
+            "title": "Team Plan",
+            "description": "Collaboration with multiple users for workflow efficiency",
+            "buttonText": "Start Team Trial",
             "benefits": [
-              "Team collaboration features",
-              "Custom branding",
-              "API access",
-              "Dedicated customer service",
-              "Data security guarantee",
-              "Customization services"
+              "Team collaboration",
+              "Shared templates",
+              "Team analytics",
+              "Dedicated support"
+            ]
+          },
+          {
+            "title": "Lifetime Plan",
+            "description": "One-time purchase, free updates forever",
+            "buttonText": "Buy Lifetime",
+            "benefits": [
+              "One-time payment",
+              "All future updates",
+              "Priority lifetime support",
+              "All premium features"
             ]
           }
-        ],
-        "guarantee": {
-          "title": "Get Unlimited Access",
-          "description": "Upgrade now to unlock all premium features"
+        ]
+      },
+      "partnership": {
+        "title": "Partner with Ant Card - The Leading Md2Card Platform",
+        "inviteCreators": {
+          "title": "Invite creators to share Ant Card's Markdown card generator and earn rewards",
+          "description": "Join our affiliate program and earn commissions for every referral to the best card creation tool"
         },
-        "popular": "Most Popular",
-        "monthly": "/month"
+        "referralLinks": {
+          "title": "Unique referral links and discount codes for Ant Card",
+          "description": "Get personalized links and codes to track your referrals to our Md2Card platform"
+        },
+        "analytics": {
+          "title": "Real-time analytics for your Ant Card referrals",
+          "description": "Track your performance promoting our Markdown card generator and withdraw earnings easily"
+        },
+        "easySetup": {
+          "title": "Easy three-step setup for effortless Ant Card commissions",
+          "description": "Sign up, get your Ant Card referral links, and start earning in minutes"
+        }
+      },
+      "useCases": {
+        "title": "Real Md2Card Examples from Ant Card Users",
+        "subtitle": "Showcase stunning examples created with our Markdown card generator",
+        "description": "Social media cards, blog share graphics, newsletter covers, and more - all created effortlessly with Ant Card's card creation tool"
       },
       "faq": {
-        "title": "Frequently Asked Questions",
-        "subtitle": "We've compiled some common questions",
+        "title": "FAQs",
+        "subtitle": "Have questions about Ant Card? Find answers below or [contact us](mailto:support@antcard.com)",
+        "quickLinks": [
+          { "text": "Getting Started", "anchor": "#get-started" },
+          { "text": "Pricing Plans", "href": "/pricing" },
+          { "text": "Features", "anchor": "#solutions" },
+          { "text": "Use Cases", "anchor": "#use-cases" }
+        ],
         "questions": [
           {
-            "question": "Is this template free?",
-            "answer": "Yes, this is a completely free open-source template that you can use and modify freely."
+            "question": "What formats does Ant Card support for Md2Card creation?",
+            "answer": "Ant Card supports Markdown, Md2Card format, and plain text input. You can also export your Md2Cards to PNG, JPEG, SVG, and PDF formats. Our Markdown card generator handles all popular formats.",
+            "relatedLinks": "Learn more about our [Md2Card format support](#md2card-support)"
           },
           {
-            "question": "What export formats are supported?",
-            "answer": "Currently supports PNG, JPEG, SVG, PDF and other mainstream formats, with more format support coming in the future."
+            "question": "Can I create multiple Md2Cards at once with Ant Card?",
+            "answer": "Yes! Ant Card's batch creation feature allows you to generate multiple Md2Cards simultaneously. This card creation tool can process dozens of cards in minutes, perfect for bulk content creation.",
+            "relatedLinks": "See [batch creation features](#batch-creation) in action"
           },
           {
-            "question": "How is data security guaranteed?",
-            "answer": "All data is stored on your local device, we do not collect or store any of your personal information."
+            "question": "How does Ant Card's Markdown to Md2Card conversion work?",
+            "answer": "Ant Card uses advanced rendering technology to convert your Markdown text into beautiful Md2Cards instantly. Our card creation tool maintains perfect formatting and visual appeal throughout the conversion process.",
+            "relatedLinks": "Try our [real-time Markdown rendering](#real-time-rendering)"
           },
           {
-            "question": "Can I customize templates?",
-            "answer": "Yes, we provide flexible customization features where you can adjust colors, fonts, layouts and other aspects."
+            "question": "Is Ant Card the best Markdown card generator for social media?",
+            "answer": "Ant Card is specifically optimized for social media content creation. Our Markdown card generator provides platform-ready sizes, smart text splitting, and batch export features that make it ideal for social media managers and content creators.",
+            "relatedLinks": "Explore our [social media templates](#templates)"
           },
           {
-            "question": "Is there technical support?",
-            "answer": "We provide community support, you can submit issues through GitHub Issues and we will respond as soon as possible."
+            "question": "Can I customize Md2Card templates in Ant Card?",
+            "answer": "Absolutely! Ant Card offers extensive customization options for your Md2Cards including colors, fonts, layouts, and more. Our card creation tool makes it easy to match your brand while maintaining professional quality.",
+            "relatedLinks": "View our [template customization options](#templates)"
           }
-        ],
-        "stillHaveQuestions": "Still have questions?",
-        "contactUs": "Contact Us"
+        ]
+      },
+      "getStarted": {
+        "title": "Start Creating Md2Cards with Ant Card Today!",
+        "subtitle": "Everything is ready — start turning your Markdown into beautiful Md2Cards with the ultimate card creation tool. Join thousands of creators who trust Ant Card for their content needs.",
+        "description": "Start creating your first Md2Card for free with Ant Card. No credit card required, instant access to all basic features.",
+        "button": "👉 Try Ant Card Markdown Card Generator",
+        "secondaryText": "Join 50,000+ creators already using Ant Card"
       },
       "statistics": {
         "users": {
@@ -1002,10 +1161,62 @@
       },
       "navbar": {
         "features": "Features",
+        "templates": "Templates",
+        "blog": "Blog",
         "testimonials": "Testimonials",
         "pricing": "Pricing",
         "faq": "FAQ",
-        "cardProject": "Card Project"
+        "cardProject": "Card Project",
+        "coverMaker": "Cover Maker"
+      },
+      "coverMaker": {
+        "title": "Cover Maker",
+        "subtitle": "Create stunning covers for your blog, social media, and more",
+        "comingSoon": "Coming Soon",
+        "comingSoonDescription": "We're working hard to bring you powerful cover creation tools. Stay tuned!",
+        "features": {
+          "customDesign": {
+            "title": "Custom Design",
+            "description": "Personalize every aspect of your cover with advanced editing tools"
+          },
+          "templates": {
+            "title": "Rich Templates",
+            "description": "Choose from dozens of professional templates for every occasion"
+          },
+          "export": {
+            "title": "Easy Export",
+            "description": "Export your covers in multiple formats with high quality"
+          }
+        }
+      },
+      "blog": {
+        "title": "Ant Card Blog",
+        "subtitle": "Tips, tutorials, and insights about creating stunning Md2Cards with Ant Card. Learn from experts and transform your content creation workflow.",
+        "featuredArticles": "Featured Articles",
+        "categories": {
+          "all": "All",
+          "tutorials": "Tutorials",
+          "design": "Design",
+          "productivity": "Productivity",
+          "reviews": "Reviews"
+        },
+        "post": {
+          "readMore": "Read More",
+          "readTime": "min read",
+          "byAuthor": "By",
+          "backToBlog": "Back to Blog",
+          "share": "Share",
+          "tableOfContents": "Table of Contents",
+          "relatedArticles": "Related Articles",
+          "publishedOn": "Published on",
+          "featured": "Featured",
+          "getStarted": "Get Started Free",
+          "readyToCreate": "Ready to Create Your Own Md2Cards?",
+          "startCreating": "Start transforming your Markdown content into beautiful visual cards with Ant Card.",
+          "newsletterTitle": "Stay Updated",
+          "newsletterDescription": "Get the latest tips, tutorials, and updates about Ant Card delivered to your inbox.",
+          "startCreatingNow": "Start Creating Now"
+        }
       }
     }
   }

@@ -135,3 +135,9 @@ export interface TemplateConfig {
     styles: CSSProperties;
   };
 }
+
+export interface CardTemplateProps {
+  data: CardForm;
+  style: CardStyle;
+  config: CardSwitchConfig;
+}

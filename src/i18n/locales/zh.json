@@ -1,8 +1,24 @@
 {
+  "Metadata": {
+    "title": "Ant Card | Markdown 卡片生成器 | 即时创建精美 Md2Card"
+  },
+  "BlogPage": {
+    "title": "Ant Card 博客",
+    "description": "使用 Ant Card 创建精美 Md2Cards 的技巧、教程和见解。向专家学习，改变您的内容创作流程。",
+    "categories": {
+      "all": "全部"
+    },
+    "nested": {
+      "categories": {
+        "all": "全部"
+      }
+    }
+  },
   "common": {
-    "title": "Ant Card",
+    "title": "Ant Card | Markdown 卡片生成器 | 即时创建精美 Md2Card",
     "subtitle": "AI 驱动卡片编辑器",
-    "description": "Ant Card是一款开源的卡片编辑器，免费，隐私优先。无需注册登录，数据完全存储在本地，支持数据导出备份，确保您的卡片数据随时可用。",
+    "description": "Ant Card 是一款智能 Markdown 卡片生成器，可将您的文本即时转换为精美的 Md2Card。支持多种模板、平台适配尺寸、长文本分割和批量导出，让内容创作更快速高效。",
+    "keywords": "Ant Card, Markdown卡片生成器, Md2Card, card2 card, mdcard, 小红书卡片制作, 社交媒体卡片设计, Instagram卡片, 可视化内容生成器, 文本转图片, 排版设计",
     "dashboard": "仪表盘",
     "edit": "编辑",
     "delete": "删除",
@@ -735,11 +751,115 @@
     },
     "landing": {
       "hero": {
-        "smartCard": "智能卡片",
-        "makingTool": "制作工具",
-        "description": "轻松创建专业精美的个人卡片，支持实时编辑、多种模板和智能布局。让您的个人展示更加出色。",
-        "startMaking": "开始制作",
+        "title": "将您的 Markdown 即时转换为精美的 Md2Card",
+        "subtitle": "Ant Card Markdown 卡片生成器",
+        "description": "将您的纯文本在几秒钟内转换为美观、可分享的卡片。无需设计技能 - 只需输入并见证奇迹的发生。",
+        "startMaking": "👉 立即尝试 Ant Card",
         "githubRepo": "Github 仓库"
+      },
+      "challenges": {
+        "title": "您是否面临这些内容创作挑战？",
+        "subtitle": "您并不孤单。成千上万的内容创作者每天面临这些障碍，这些障碍会减慢工作流程并降低生产力。但如果有解决方案能够改变您创建、格式化和分享视觉内容的方式呢？",
+        "solution": "Ant Card 通过智能自动化和专业设计工具解决所有这些挑战，帮助您在几分钟而不是几小时内创建精美的卡片。",
+        "plainText": {
+          "title": "纯文本缺乏视觉吸引力？",
+          "description": "将枯燥的文本转换为引人注目的视觉内容，吸引注意力并在所有平台上推动参与度。"
+        },
+        "platforms": {
+          "title": "多个平台和风格难以适配？",
+          "description": "一种卡片设计适用于所有地方 - 社交媒体、博客、演示文稿。停止为不同平台重新创建内容。"
+        },
+        "splitting": {
+          "title": "分割和格式化长内容很繁琐？",
+          "description": "使用智能算法自动将长内容分割成完美格式的卡片，保持上下文和可读性。"
+        },
+        "exporting": {
+          "title": "导出多张图片和批量处理很复杂？",
+          "description": "一键批量导出满足您所有内容需求。同时生成数十张专业卡片，支持多种格式。"
+        }
+      },
+      "solutions": {
+        "title": "Ant Card 如何解决您的问题",
+        "subtitle": "通过专为现代创作者设计的智能工具，改变您的内容创作工作流程",
+        "realTimeRendering": {
+          "title": "🪄 Markdown 实时转换为 Md2Card",
+          "description": "使用我们先进的 Markdown 卡片生成器，在输入时实时看到您的 Md2Card 外观。Ant Card 的实时渲染节省时间并确保您创建的每个 Md2Card 都有完美的格式。非常适合实时演示和即时内容创作。",
+          "useCases": "非常适合需要即时视觉反馈的教育工作者、演示者和内容创作者，满足他们的卡片创建工具工作流程需求",
+          "relatedLinks": "查看我们的 [使用案例](#use-cases) 了解实时创建示例"
+        },
+        "templates": {
+          "title": "🎨 社交媒体专业卡片模板",
+          "description": "使用我们广泛的模板库轻松设计专业外观的 Md2Card。从商务卡片到社交媒体帖子，这个卡片创建工具中的每个模板都为最大化参与度而优化。Ant Card 让模板选择变得直观。",
+          "useCases": "非常适合需要在所有 Md2Card 中保持一致品牌形象的营销人员、设计师和专业人员"
+        },
+        "smartSplitting": {
+          "title": "🧩 AI 驱动长文本智能分割为多张卡片",
+          "description": "当您的内容超过最佳长度时，自动生成具有适当布局的多张 Md2Card。我们的 AI 确保逻辑中断并在所有生成的卡片中保持视觉连贯性。这个 Markdown 卡片生成器功能让长篇内容变得易于管理。",
+          "useCases": "对于使用 Ant Card 智能卡片创建工具的博客文章系列、教育内容和详细产品描述至关重要"
+        },
+        "batchCreation": {
+          "title": "⚡ 批量创建社交媒体 Md2Card",
+          "description": "使用我们强大的批处理系统节省时间并在平台间重复使用。在几分钟内创建数十张 Md2Card，并同时以多种格式导出。Ant Card 的批量创建功能是效率的终极 Markdown 卡片生成器。",
+          "useCases": "对于需要批量卡片创建工具的社交媒体经理、内容代理机构和企业团队来说是革命性的",
+          "relatedLinks": "了解更多关于我们的 [定价方案](#pricing) 中的批量创建功能"
+        },
+        "md2cardSupport": {
+          "title": "🌈 通用 Md2Card 格式支持所有平台",
+          "description": "与大多数平台兼容，无缝分享。Md2Card 格式确保您的内容无论是在社交媒体上分享、嵌入网站还是用于演示文稿，都能保持完美的格式。Ant Card 的通用格式让分享变得毫不费力。",
+          "useCases": "非常适合跨平台内容分发和保持您的 Md2Card 品牌一致性"
+        },
+        "chromeExtension": {
+          "title": "🧭 浏览器扩展即时创建卡片",
+          "description": "直接在浏览器中使用 Ant Card，无需安装软件。我们轻量级的扩展与您的工作流程无缝集成，只需点击一下即可从任何网页创建 Md2Card。便利性的终极卡片创建工具。",
+          "useCases": "非常适合远程工作者、数字游牧者和任何需要随时快速 Markdown 到 Md2Card 转换的人"
+        }
+      },
+      "benefits": {
+        "title": "为什么创作者选择 Ant Card",
+        "subtitle": "节省高达 80% 的格式化时间",
+        "description": "使内容在视觉上更具吸引力和参与度，使用全球超过 50,000 名创作者信赖的工具",
+        "features": [
+          "一键生成社交媒体就绪的卡片",
+          "支持 Markdown、Md2Card 和纯文本输入",
+          "120+ 个国家的专业人士使用",
+          "10,000+ 评价，4.8/5 星评分"
+        ],
+        "testimonials": [
+          "Ant Card 彻底改变了我的内容创作工作流程。过去需要几个小时的工作现在只需几分钟！",
+          "我用过的最好的 Markdown 卡片生成器。导出质量非常出色。",
+          "作为社交媒体经理，这个工具每周为我节省 10 多个小时。绝对是必需品！"
+        ]
+      },
+      "socialProof": {
+        "title": "受到全球创作者信赖",
+        "subtitle": "加入数千名已经改变内容创作方式的专业人士",
+        "stats": {
+          "users": {
+            "number": "50,000+",
+            "label": "活跃创作者"
+          },
+          "cards": {
+            "number": "200万+",
+            "label": "创建的卡片"
+          },
+          "countries": {
+            "number": "120+",
+            "label": "国家"
+          },
+          "rating": {
+            "number": "4.8/5",
+            "label": "用户评分"
+          }
+        },
+        "platforms": {
+          "title": "推荐平台",
+          "list": [
+            "Product Hunt",
+            "GitHub 热门",
+            "Indie Hackers",
+            "Hacker News"
+          ]
+        }
       },
       "about": {
         "title": "关于",
@@ -826,27 +946,27 @@
         "subtitle": "来自真实用户的评价和反馈",
         "reviews": [
           {
-            "name": "张三",
-            "username": "@zhangsan",
-            "comment": "这个卡片制作工具太棒了！界面简洁，功能强大，帮我快速制作了专业的名片。",
+            "name": "陈晓明",
+            "username": "@chenxiaoming_design",
+            "comment": "Ant Card 彻底改变了我的社交媒体内容创作。Markdown 到 Md2Card 的转换即时且完美！",
             "rating": 5
           },
           {
-            "name": "李四",
-            "username": "@lisi",
-            "comment": "模板非常精美，编辑体验很好，导出质量也很高。强烈推荐！",
+            "name": "李美玲",
+            "username": "@limeiling_mm",
+            "comment": "作为内容营销师，这个 Markdown 卡片生成器每周为我节省 15+ 小时。批量导出功能是革命性的！",
             "rating": 5
           },
           {
-            "name": "王五",
-            "username": "@wangwu",
-            "comment": "作为设计师，我对这个工具的布局和配色非常满意。客户都很喜欢我做的卡片。",
+            "name": "王建国",
+            "username": "@wangjianguo_tech",
+            "comment": "AI 驱动的文本分割和实时预览功能让创建专业卡片变得毫不费力。强烈推荐！",
             "rating": 5
           },
           {
-            "name": "赵六",
-            "username": "@zhaoliu",
-            "comment": "操作简单，功能全面。特别是AI智能优化功能，省了我很多时间。",
+            "name": "张雨欣",
+            "username": "@zhangyuxin_creates",
+            "comment": "将博客内容转换为可分享视觉卡片的完美工具。Md2Card 格式在所有平台上都适用！",
             "rating": 5
           }
         ]
@@ -857,105 +977,144 @@
         "description": "我们是一支充满激情的团队，致力于为用户提供最好的卡片制作体验。",
         "members": [
           {
-            "name": "陈明",
-            "position": "产品经理",
-            "bio": "专注于用户体验设计和产品创新"
+            "name": "马晓婷",
+            "position": "产品总监",
+            "bio": "引领直观 Markdown 卡片创建工具的愿景"
           },
           {
-            "name": "李婷",
-            "position": "技术总监",
-            "bio": "负责技术架构和系统优化"
+            "name": "张伟明",
+            "position": "CTO & 联合创始人",
+            "bio": "构建可扩展的视觉内容生成解决方案"
           },
           {
-            "name": "王强",
-            "position": "设计主管",
-            "bio": "负责视觉设计和用户体验"
+            "name": "林雅琪",
+            "position": "设计总监",
+            "bio": "创建专业卡片设计的精美模板"
           },
           {
-            "name": "刘芳",
-            "position": "前端开发",
-            "bio": "专注于前端开发和用户交互"
+            "name": "金俊宇",
+            "position": "首席工程师",
+            "bio": "构建无缝 Md2Card 转换的强大功能"
           }
         ]
       },
       "pricing": {
-        "title": "选择适合您的方案",
-        "subtitle": "灵活的定价，满足不同需求",
+        "title": "功能与定价",
         "plans": [
           {
-            "title": "免费版",
-            "description": "适合个人用户的基础功能",
+            "title": "免费计划",
+            "description": "访问所有基础功能",
             "buttonText": "开始使用",
             "benefits": [
-              "5个卡片项目",
+              "实时 Markdown 渲染",
               "基础模板库",
               "标准导出格式",
-              "社区支持",
               "本地存储"
             ]
           },
           {
-            "title": "专业版",
-            "description": "适合专业用户的完整功能",
+            "title": "专业计划",
+            "description": "无限模板和批量导出",
             "buttonText": "升级到专业版",
             "benefits": [
-              "无限卡片项目",
-              "高级模板库",
-              "高级导出格式",
-              "优先技术支持",
-              "云端同步",
-              "AI智能优化"
+              "无限模板",
+              "批量创建和导出",
+              "高级自定义",
+              "优先支持"
             ],
             "popular": true
           },
           {
-            "title": "企业版",
-            "description": "适合团队协作的企业方案",
-            "buttonText": "联系销售",
+            "title": "团队计划",
+            "description": "多用户协作，提高工作流程效率",
+            "buttonText": "开始团队试用",
             "benefits": [
-              "团队协作功能",
-              "自定义品牌",
-              "API接入",
-              "专属客服",
-              "数据安全保障",
-              "定制化服务"
+              "团队协作",
+              "共享模板",
+              "团队分析",
+              "专属支持"
+            ]
+          },
+          {
+            "title": "终身计划",
+            "description": "一次性购买，永久免费更新",
+            "buttonText": "购买终身版",
+            "benefits": [
+              "一次性付款",
+              "所有未来更新",
+              "终身优先支持",
+              "所有高级功能"
             ]
           }
-        ],
-        "guarantee": {
-          "title": "获得无限访问权限",
-          "description": "立即升级，解锁所有高级功能"
+        ]
+      },
+      "partnership": {
+        "title": "合作伙伴与联盟计划",
+        "inviteCreators": {
+          "title": "邀请创作者分享 Ant Card 并获得奖励",
+          "description": "加入我们的联盟计划，为每个推荐获得佣金"
         },
-        "popular": "最受欢迎",
-        "monthly": "/月"
+        "referralLinks": {
+          "title": "独特的推荐链接和折扣码",
+          "description": "获取个性化链接和代码来跟踪您的推荐"
+        },
+        "analytics": {
+          "title": "实时分析和灵活提现",
+          "description": "跟踪您的表现并轻松提取收益"
+        },
+        "easySetup": {
+          "title": "简单的三步设置，轻松获得佣金",
+          "description": "注册、获取您的链接、几分钟内开始赚钱"
+        }
+      },
+      "useCases": {
+        "title": "特色使用案例",
+        "subtitle": "展示由 Ant Card 用户创建的真实示例",
+        "description": "社交媒体卡片、博客分享图形、新闻通讯封面等"
       },
       "faq": {
-        "title": "常见问题",
-        "subtitle": "我们整理了一些常见问题",
+        "title": "常见问题解答",
+        "subtitle": "对 Ant Card 有疑问吗？在下面找到答案或 [联系我们](mailto:support@antcard.com)",
+        "quickLinks": [
+          { "text": "开始使用", "anchor": "#get-started" },
+          { "text": "定价方案", "href": "/pricing" },
+          { "text": "功能特性", "anchor": "#solutions" },
+          { "text": "使用案例", "anchor": "#use-cases" }
+        ],
         "questions": [
           {
-            "question": "这个模板是免费的吗？",
-            "answer": "是的，这是一个完全免费的开源模板，您可以自由使用和修改。"
+            "question": "Ant Card 支持 Md2Card 创建的哪些格式？",
+            "answer": "Ant Card 支持 Markdown、Md2Card 格式和纯文本输入。您也可以将您的 Md2Card 导出为 PNG、JPEG、SVG 和 PDF 格式。我们的 Markdown 卡片生成器处理所有流行格式。",
+            "relatedLinks": "了解更多关于我们的 [Md2Card 格式支持](#md2card-support)"
           },
           {
-            "question": "支持哪些导出格式？",
-            "answer": "目前支持PNG、JPEG、SVG、PDF等主流格式，未来还会添加更多格式支持。"
+            "question": "我可以使用 Ant Card 一次创建多个 Md2Card 吗？",
+            "answer": "可以！Ant Card 的批量创建功能允许您同时生成多个 Md2Card。这个卡片创建工具可以在几分钟内处理数十张卡片，非常适合批量内容创建。",
+            "relatedLinks": "查看 [批量创建功能](#batch-creation) 的实际效果"
           },
           {
-            "question": "数据安全如何保障？",
-            "answer": "所有数据都存储在您的本地设备中，我们不会收集或存储您的任何个人信息。"
+            "question": "Ant Card 的 Markdown 到 Md2Card 转换是如何工作的？",
+            "answer": "Ant Card 使用先进的渲染技术将您的 Markdown 文本即时转换为精美的 Md2Card。我们的卡片创建工具在整个转换过程中保持完美的格式和视觉吸引力。",
+            "relatedLinks": "尝试我们的 [实时 Markdown 渲染](#real-time-rendering)"
           },
           {
-            "question": "可以自定义模板吗？",
-            "answer": "是的，我们提供灵活的自定义功能，您可以调整颜色、字体、布局等各个方面。"
+            "question": "Ant Card 是社交媒体最好的 Markdown 卡片生成器吗？",
+            "answer": "Ant Card 专门为社交媒体内容创建而优化。我们的 Markdown 卡片生成器提供平台就绪的尺寸、智能文本分割和批量导出功能，使其成为社交媒体经理和内容创作者的理想选择。",
+            "relatedLinks": "探索我们的 [社交媒体模板](#templates)"
           },
           {
-            "question": "有技术支持吗？",
-            "answer": "我们提供社区支持，您可以通过GitHub Issues提交问题，我们会尽快回复。"
+            "question": "我可以在 Ant Card 中自定义 Md2Card 模板吗？",
+            "answer": "当然可以！Ant Card 为您的 Md2Card 提供广泛的自定义选项，包括颜色、字体、布局等。我们的卡片创建工具让您轻松匹配品牌，同时保持专业质量。",
+            "relatedLinks": "查看我们的 [模板自定义选项](#templates)"
           }
-        ],
-        "stillHaveQuestions": "还有其他问题？",
-        "contactUs": "联系我们"
+        ]
+      },
+      "getStarted": {
+        "title": "立即开始使用 Ant Card 创建 Md2Card！",
+        "subtitle": "一切准备就绪 — 使用终极卡片创建工具开始将您的 Markdown 转换为精美的 Md2Card。加入数千名信任 Ant Card 满足其内容需求的创作者。",
+        "description": "免费使用 Ant Card 开始创建您的第一个 Md2Card。无需信用卡，立即访问所有基础功能。",
+        "button": "👉 尝试 Ant Card Markdown 卡片生成器",
+        "secondaryText": "加入 50,000+ 已经使用 Ant Card 的创作者"
       },
       "statistics": {
         "users": {
@@ -1001,14 +1160,66 @@
           "dribbble": "Dribbble"
         },
         "copyright": "© 2024 Ant Card Team. 保留所有权利。",
-        "poweredBy": "基于 Next.js/React 构建"
+        "poweredBy": "Ant Card | Md2Card 卡片生成器"
       },
       "navbar": {
         "features": "功能特点",
+        "templates": "模板库",
+        "blog": "博客",
         "testimonials": "用户评价",
         "pricing": "定价",
         "faq": "常见问题",
-        "cardProject": "卡片项目"
+        "cardProject": "卡片项目",
+        "coverMaker": "封面制作"
+      },
+      "coverMaker": {
+        "title": "封面制作",
+        "subtitle": "为您的博客、社交媒体等创建精美的封面图片",
+        "comingSoon": "即将推出",
+        "comingSoonDescription": "我们正在努力为您开发强大的封面创作工具，敬请期待！",
+        "features": {
+          "customDesign": {
+            "title": "自定义设计",
+            "description": "使用高级编辑工具个性化封面的每个方面"
+          },
+          "templates": {
+            "title": "丰富模板",
+            "description": "从数十种专业模板中选择，适用于各种场合"
+          },
+          "export": {
+            "title": "轻松导出",
+            "description": "以多种格式高质量导出您的封面作品"
+          }
+        }
+      },
+      "blog": {
+        "title": "Ant Card 博客",
+        "subtitle": "使用 Ant Card 创建精美 Md2Cards 的技巧、教程和见解。向专家学习，改变您的内容创作流程。",
+        "featuredArticles": "精选文章",
+        "categories": {
+          "all": "全部",
+          "tutorials": "教程",
+          "design": "设计",
+          "productivity": "效率",
+          "reviews": "评测"
+        },
+        "post": {
+          "readMore": "阅读更多",
+          "readTime": "分钟阅读",
+          "byAuthor": "作者",
+          "backToBlog": "返回博客",
+          "share": "分享",
+          "tableOfContents": "目录",
+          "relatedArticles": "相关文章",
+          "publishedOn": "发布于",
+          "featured": "精选",
+          "getStarted": "免费开始",
+          "readyToCreate": "准备创建您自己的 Md2Cards 了吗？",
+          "startCreating": "使用 Ant Card 开始将您的 Markdown 内容转换为精美的视觉卡片。",
+          "newsletterTitle": "保持更新",
+          "newsletterDescription": "获取关于 Ant Card 的最新技巧、教程和更新，直接发送到您的收件箱。",
+          "startCreatingNow": "立即开始创作"
+        }
       }
     }
   }
